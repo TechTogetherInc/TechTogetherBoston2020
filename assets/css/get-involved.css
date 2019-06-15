@@ -1,0 +1,97 @@
+body{
+    font-family: 'HelveticaNeue-Roman', sans-serif;
+    min-height: 100%;
+}
+
+.main-box{
+    background-color: #FFF;
+    display: block;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.margin-top-zero{
+    margin-top: 0;
+}
+
+.role-name{
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: bolder;
+}
+
+#get-involved-header{
+  background: white;
+  height: 10vw;
+}
+
+#get-involved-blurb{
+  line-height:1.5em;
+}
+
+#prehacks-blurb{
+  line-height: 1.8em;
+}
+
+.center-align{
+  text-align: center;
+}
+
+.button-width{
+   min-width: 15em;
+   height: auto;
+}
+
+.register{
+   padding: 0;  /* The word Ambassador is large*/
+}
+
+#ambassador-spotlight{
+  padding:1em;
+}
+
+@media screen and (max-width: 500px) {
+  #volunteer-card{
+    margin-top: 30vw !important;
+
+  }
+
+  #get-involved-banner{
+    padding-bottom: 45vw !important;
+    padding-top: 25vw !important;
+  }
+
+  .apply-button{
+    margin-left: auto !important;
+  }
+
+   .button-width{
+      min-width: 20em;
+   }
+
+   .register{
+      font-size: 3.6vw;
+   }
+
+   .apply-button{
+      margin: 0;
+      min-width: 0;
+      width: 100%;
+      font-size: 4vw;
+   }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 501px){
+
+   .main-box{
+       margin: 5em 5% 0 5%;
+   }
+
+   .apply-button{
+      margin: 0;
+      min-width: 0;
+      width: 100%;
+   }
+
+}

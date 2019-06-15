@@ -1,0 +1,65 @@
+.card-image{
+   padding: 1em 2em 1em 2em;
+   min-height: 15em;
+}
+
+.valign-wrapper{
+   display: flex;
+   flex-flow: column;
+}
+
+.card .card-content p{
+   margin: .5em 0 .5em 0;
+}
+
+h5{
+   margin-bottom: 1em;
+}
+
+.list_ofLinks{
+   margin-left: 40px; /* Default margin ???*/
+}
+
+.list_ofLinks li{
+   list-style: disc !important;
+}
+
+.list_ofLinks li a{
+   color: #3366BB;
+}
+
+.link{
+   color: #3366BB;
+}
+
+h3{
+   margin: 1.5em 0 .5em 0;
+}
+
+/*
+.highlight{
+   background-color: #F3F315;
+}
+*/
+
+@media only screen and (max-width: 1000px) {
+
+   .card-image{
+      min-height: 20em;
+   }
+
+
+}
+
+
+/*
+
+Blue: #52D9F6
+Purple: #808cFB
+Pink: #FD7361
+Red: #E73F33
+
+*/
+
+
+

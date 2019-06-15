@@ -1,0 +1,106 @@
+body{
+    min-height: 100%;
+}
+
+.about-img-5{
+    margin: 3em 0 3em 0;
+    width: 60%;
+}
+
+.about-box-6{
+    width: 48%;
+}
+
+.grid-container-2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 2fr));
+    grid-template-rows: repeat(auto);
+    grid-column-gap: .6em;
+    grid-row-gap: 1.5em;
+}
+
+.grid-container-2 div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-container-2 div img{
+    width: 11em;
+    height: 11em;
+    object-fit: cover;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.grid-container-2 div a img{
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+    -webkit-clip-path: none;
+    clip-path: none;
+}
+
+.margin-top-zero{
+    margin-top: 0;
+}
+
+.grid-container-2 div p:nth-child(2){
+    font-size: 1.6em;
+}
+
+.grid-container-2 div p:nth-child(3){
+    font-size: 1.3em;
+}
+
+.grid-container-2 div p:nth-child(4){
+    font-size: 1em;
+}
+
+#about_ul{
+  padding-left:2em;
+  font-size: 1.4em;
+}
+
+.taller-line-height{
+  line-height: 1.4em;
+}
+
+#blob-computer{
+  height:auto;
+  width:100%;
+}
+
+#about-banner{
+  margin-top: 0;
+}
+/************** Mobile/Tablet Responsiveness ********************/
+
+@media screen and (max-width: 500px) {
+
+    .about-img-5{
+        margin: 1.2em 0 1.2em 0;
+        height: 30vw;
+        width: 100%;
+    }
+
+    .about-box-6{
+        width: 110%;
+    }
+
+    .grid-container-2{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 501px){
+
+    .about-box-5{
+        float: left;
+        width: 47%;
+        margin: 0 2% 0 0;
+    }
+}

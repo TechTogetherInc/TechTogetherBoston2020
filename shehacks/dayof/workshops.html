@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/sheHacksboston_logo.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SheHacks Boston - Live</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v4.7.0/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+    gtag('config', 'UA-104887569-2');
+  </script>
+
+
+</head>
+
+<body>
+  <!--Sidebar-->
+
+<div class="mobile-bar-wrapper">
+
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+  <a href="index.html">Home</a>
+  <!-- <a href="schedule.html">Overview</a> -->
+  <a href="workshops.html">Schedule</a>
+  <a href="companies.html">Company Highlights</a>
+  <a href="maps.html">Map</a>
+  <a href="prizes.html">Challenges &amp; Prizes</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">SCHEDULE</span></span>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+
+  <ul id="slide-out" class="side-nav fixed">
+    <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+    <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="schedule.html">Overview</a></li> -->
+    <li><a href="workshops.html">Schedule</a></li>
+    <li><a href="companies.html">Company Highlights</a></li>
+    <li><a href="maps.html">Map</a></li>
+    <li><a href="prizes.html">Challenges &amp; Prizes</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <!-- <li><a href="http://shehacks.io">Full Site</a></li> -->
+    <div id="contact">
+      <div style="padding-bottom:10px;">
+        <p> &copy; SheHacks 2017 / Boston, MA / info@shehacks.io </p>
+        <p><a style="color:#ffb400;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.facebook.com/SheHacksBoston/?ref=br_rs" target="_blank"><img src="img/socialicons/facebook.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.instagram.com/shehacksboston/" target="_blank"><img src="img/socialicons/instagram.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.twitter.com/shehacksboston/" target="_blank"><img src="img/socialicons/twitter.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <!--end sidebar-->
+
+
+  <!--anything not in the sidebar should go within these main tags-->
+  <main id="main-sidebar">
+    <img src="img/schedule-header.png" alt="workshops" class="company-logo" id="workshop_column_labels">
+    <div class="row" id="workshop_column_labels">
+      <div class="col">
+        <h3>Event Name</h3>
+      </div>
+      <div class="col-sm-2">
+        <h3>Host</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Description</h3>
+      </div>
+      <div class="col">
+        <h3>Location* &amp; Time</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:black">
+      <div class="col-sm-1">
+        <i class="fa fa-star fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">OPENING CEREMONY</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Metcalf</br><i>Friday, 10PM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/dockerbootcamp.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Erik Dasque</br><i>Evertrue</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Learn the basics of Docker, the why and the how</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #320</br><i>Friday, 11pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/introtoopensource.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Gina Likins</br><i>Red Hat</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Gina Likins, longtime veteran of the IT industry and enthusiastic convert to open source, will talk about what open source is, how it works, and why it's interesting from the perspectives of business, culture, and developers.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #310</br><i>Friday, 11pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/whatthetech.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jennifer Meade</br><i>General Assembly</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Would you make a great product manager or engineer? In this workshop, you'll learn about Product Management and Engineering roles, and what a day-in-life is for each. Find out what are the key characteristics that often lead to success in these roles, and what are the foundational skills you can be developing now to put you on a path to your future career in tech!</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #321 // 3rd Floor Conference Room - #310</br><i>Friday, 11pm</br>Saturday, 10am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/google cloud.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Elizabeth Byerly</br><i>Google</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>In this workshop, you'll learn how to use Google Cloud Platform's most popular products for hackathons. These include 5 of our Machine Learning APIs, App Engine, and Cloud SQL. We'll be focusing on how you can make your project more awesome with GCP.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Friday, 11pm</br>Saturday, 12am</i></p>
+      </div>
+    </div>
+    <hr>
+<!--     <div class="row" style="background-color:black">
+      <div class="col-sm-1">
+        <i class="fa fa-bed fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:15%">SLEEPING AREA OPENS</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">SAO</br><i>Friday, 11PM</i></p>
+      </div>
+    </div>
+    <hr> -->
+    <div class="row eventbanner" style="background-color:#C1F881">
+      <div class="col-sm-1">
+        <i class="fa fa-cutlery fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">DINNER</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">GSU Basement, BU Central</br><i>Saturday, 12AM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/finsys.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Kelly An</br><i>PayPal</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Democratize the financial systems from Node.js open source to public API/SDKs. The idea is to touch on all sides of the population – Developers, merchants and consumers.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #320</br><i>Saturday, 12am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/webdev.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Alexa Sih</br><i>Open Web BU</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Get started with HTML and CSS to create a basic website that you can use for your projects!</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #310</br><i>Saturday, 12am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:black">
+      <div class="col-sm-1">
+        <i class="fa fa-star fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">OPENING CEREMONY 2</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Metcalf</br><i>Saturday, 8AM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#C1F881">
+      <div class="col-sm-1">
+        <i class="fa fa-cutlery fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">BREAKFAST</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">GSU Basement, BU Central</br><i>Saturday, 8:30AM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#82dcfe">
+      <div class="col-sm-1">
+        <i class="fa fa-bullhorn fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Holly St. Clair</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Saturday, 9AM</i> <br> <br> <span style="text-transform:uppercase;">Chief Digital Officer at Executive Office of Technology Services and Security</span></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/chatbot.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Matthias Keller</br><i>KAYAK</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>This workshop teaches the fundamentals on how chatbots are built including hands-on examples on how to build a very own chatbots.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Saturday, 10am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/forboston.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">City of Boston Digital Team</br><i>City of Boston</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Never doubt that a small group of dedicated and passionate people can make a difference. Meet part of the team behind Boston.gov and hear first-hand how they're innovating for Boston and working to improve the digital experience for residents and visitors. Learn how you can have a career like this, and ways to follow our work (and maybe one day join our team!)</p>
+      </div>
+      <div class="col">
+        <p class="time">EPIC #208</br><i>Saturday, 10am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/iosdev.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Beth Marshdoyle</br><i>Apple Inc.</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>This introductory course is meant for anyone who has never programmed in iOS but wish they could. During this session you will learn the basics of iOS app development and the characteristics of Apple’s Swift programming language. In this session we will also focus on the mobile application development environment, best practices for development and how mobile apps differ from computer programs from a coding point of view.</p>
+      </div>
+      <div class="col">
+        <p class="time">LSE - Room B01 // 3rd Floor Conference Room - #321</br><i>Saturday, 10am</br>Saturday, 12pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/userexperience.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jason Reynolds</br><i>General Assembly</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>User experience is the key to making a product truly great. No amount of advanced technology or beautiful visuals will matter if the experience of using your website or application isn’t simple, intuitive, and enjoyable. To build that, you must first learn to understand your customers and what they need. In this workshop participants will learn what a User Experience (UX) Designer does, why it’s a critical role, and how backgrounds of all types can break into the field. Participants will get a simple and practical introduction to the field of UX design.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #320</br><i>Saturday, 10am</br>Saturday, 11am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/createyourgreat.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Scott Stolze</br><i>Teaching 2 Lead</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>If you are frustrated with poor management, stagnant career progression, lack of clarity of your goals and purpose, or you struggle with peers, co-workers, or customers, this 60 minute workshop will fuel you with the mindset to take control of your career and give you the tools to create fulfillment in your work and make a meaningful impact for yourself and for others.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #321</br><i>Saturday, 10am</br>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#fa8dd5">
+      <div class="col-sm-1">
+        <i class="fa fa-comments-o fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Future Careers in IT</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">LSE - Room B01</br><i>Saturday, 11AM</i></p>
+        <p style="color:white;">A small panel of female technology professionals will describe their career paths and give their perspectives in future career opportunities for women in technology.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/difference.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jeanathe Falvey</br><i>City of Boston</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>You're ready to take on the world, you have skills, ideas, maybe even a strong passion for a cause. But what do you do next? How can that help you get a job that is meaningful? Where do you start? Everyone's path is unique, but there are some simple things you can keep in mind that will make a huge difference; for you, and for the change you want to see in the world.</p>
+      </div>
+      <div class="col">
+        <p class="time">EPIC #208</br><i>Saturday, 11am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/webvr.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Kathy Trogolo</br><i>Fasility LLC</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>A-Frame is an extension of HTML created with JavaScript, THREE.js, and open collaboration. It sits on top of the proposed WebVR standard, making it easier to access and promoting interoperability between the very different cardboard, mobile, and high end VR vertical markets. We will look at A-Frame, its origins at Google and Mozilla, and THREE.js, the popular, free library A-Frame uses to talk to graphics cards via WebGL. A-Frame’s code and community have grown quickly. Its openness, HTML and smart defaults have enabled mainstream web developers to get their feet wet, and even seasoned WebGL 3D developers have begun to use it as a reliable compatibility library. When the Web embraces a technology, it accelerates, gets adaptive, and goes mainstream. WebVR is just getting started. Thanks to A-Frame, it has the familiarity of HTML behind it, and a new generation of web developers learning a new medium that turns websites into nearly physical experiences.</p>
+      </div>
+      <div class="col">
+        <p class="time">Theology - Room B23</br><i>Saturday, 11am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:20%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;text-align:left;padding-left:10%;">Girls on the Run</h2>
+      </div>
+      <div class="col">
+        <p class="presenter" style="color:white"></br><i></i></p>
+        <p style="color:white">#HACKINGEXERCISE</p>
+        <p class="time" style="color:white">Stone Lobby</br><i>Saturday, 11am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/apporsite.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jeffrey Levy</p>
+      </div>
+      <div class="col-sm-4">
+        <p>How do you decide whether to build an app or a website? Come talk through those questions in general and for your specific idea.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Saturday, 11am</br>Saturday, 5pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/imgmanip.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Rebecca Perry</br><i>Wayfair</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Imagery is essential to the success of ecommerce. At Wayfair, we serve customers inspirational imagery of all things home. Creating this imagery and serving it to our customers on Wayfair.com and in augmented reality on mobile devices requires computational image manipulation. In this workshop, you’ll see how digital images are simply arrays of numbers that you can manipulate in Python like any other data structure. Specifically, we’ll walk through an implementation of the Seam Carving algorithm that stealthily removes the least interesting parts of images. [please follow these setup instructions prior to workshop: https://rebeccawperry.github.io/python_seam_carving/]</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #310</br><i>Saturday, 11am</br>Saturday, 3pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#C1F881">
+      <div class="col-sm-1">
+        <i class="fa fa-cutlery fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:15%">LUNCH</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">GSU Basement, BU Central</br><i>Saturday, 12PM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#fa8dd5">
+      <div class="col-sm-1">
+        <i class="fa fa-comments-o fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Hear it First From Startup Women in Tech</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">BUild Lab</br><i>Saturday, 12PM</i></p>
+        <p style="color:white;">Thinking about joining a startup or starting your own startup? Don't miss this opportunity to hear from female BU alumni and affiliates as they share best practices and pitfalls to avoid for starting your own venture.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/healthcare.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Amar Das</br><i>IBM</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Big Data is ovewhelming the healthcare system, but it is difficult to find actionable insights. We encourage participants to create AI and machine learning solutions that can improve care.</p>
+      </div>
+      <div class="col">
+        <p class="time">LSE - Room B01</br><i>Saturday, 12pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/hardware.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Lucas Watson</br><i>OpenWeb</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Short overview for beginners of the technology space in hardware. Majority of the workshop on Arduino or Raspberry Pi (TBD)</p>
+      </div>
+      <div class="col">
+        <p class="time">EPIC #208</br><i>Saturday, 12pm</br>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/iosdev2.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Beth Marshdoyle</br><i>Apple Inc.</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>In this session Apple Consulting Engineer, Nina Kominiak will be discussing Apple tools for development including frameworks that will enable you to build productivity apps to augmented reality apps. If you want to follow along with the training, please bring a Mac and have Xcode preloaded from the Mac App Store. You must be running High Sierra version 10.13.2. Please be certain to start Xcode at least once prior to the session to ensure that all components are installed.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #321</br><i>Saturday, 12pm</br></i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/gitandgithub.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Emmanuel Amponsah</br><i>Boston University</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Teaches the basics of Git and Github by getting participants to set up their first repositories</p>
+      </div>
+      <div class="col">
+        <p class="time">EPIC #206</br><i>Saturday, 12pm</br>Saturday, 4pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#82dcfe">
+      <div class="col-sm-1">
+        <i class="fa fa-bullhorn fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Robin Healey</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Saturday, 1PM</i> <br><br><span style="text-transform:uppercase;">Chief Information Officer at Massachusetts State Treasury</span></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/hshackers.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Iccha Singh</br><i>SheHacks Boston's High School Ambassador</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>This workshop will be lead by Candace and I and it will give High Schoolers (especially beginners) tips and tricks about being at a hacckathon. It will be a place for people to form teams as it may be hard for high school beginners to gel with collegiate hackers. Most importantly, we will be hosting a mini brainstorming session for ideation and getting set up. We'll explain the agenda/steps of the SheHacks hackathon and we will get them set up with any software/the slack. Overall, it will be a space for high school beginners to ease into their first hackathon experience (for most) and get them assimilated to the atmosphere.</p>
+      </div>
+      <div class="col">
+        <p class="time">Theology - Room B23</br><i>Saturday, 1pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/proptech.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Bina Carroll</br><i>CBRE</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Come join us as we discuss the Property Tech (a.k.a. PropTech) phenomenon and the huge impact it is having on technological innovation. We'll also demo how CBRE uses WebGL and ReactJS to change the real estate industry.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #320</br><i>Saturday, 1pm</br>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/vrorar.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jeffrey Jacobson</br><i>EnterpriseVR</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Detailed discussion of what Virtual Reality is, What Augmented Reality is, and how to conceive a good hackathon project that uses either one.</p>
+      </div>
+      <div class="col">
+        <p class="time">LSE - Room B01</br><i>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/htmlandcss2.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Khanh Dao</br><i>Realtor.com</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Get started with front-end web development quickly and easily. Dive head first into HTML/CSS by building a basic web page from scratch.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/datascience.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Max Margenot</br><i>Quantopian, Inc.</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>An introduction to the fundamentals of data science: this workshop will provide an overview of the key concepts of Python, how to use NumPy for computing data, and an introduction to using pandas to manage and analyze your data.</p>
+      </div>
+      <div class="col">
+        <p class="time">EPIC #206</br><i>Saturday, 2pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/venmo.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Emily Wagner</br><i>PayPal</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Tech companies like Venmo are busy prepping for game day too. Engineers from across Venmo will discuss how they gear up for the largest social event of the year.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Saturday, 3pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/apachestorm.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Justine Bellew</br><i>Bloomberg</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Apache Storm is a free and open source distributed real-time computation system. It is fast, reliable, and scalable. This talk introduces the basics of Apache Storm and explains the concepts using a word count example. It highlights the Trade Automation Rule Builder application developed by the Bloomberg Execution Management System team, and how we use Apache Storm to evaluate the rules using real-time market data and to trigger alerts. This talk also explores the lessons we have learned from the development.</p>
+      </div>
+      <div class="col">
+        <p class="time">Theology - Room B23</br><i>Saturday, 3pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/hackyourhoodie.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Gina Likins</br><i>Red Hat</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Gina Likins, Red Hatter and open source advocate, will teach a “Hack Your Hoodie: Introduction to Wearable Electronics” class (Instructions are here: <a href="http://bit.ly/hoodie_info" target="_blank">http://bit.ly/hoodie_info</a> ). Participants will add LEDs to the item of clothing of their choice (which participants will supply), while learning the basics of adding circuits to clothing. Red Hat and SparkFun are supplying all the materials (except the clothing); however, we only have space for 25 participants, so please register if you’re interested.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #321</br><i>Saturday, 3pm</br>Saturday, 4pm</i> <br>         <br>       <a href="https://docs.google.com/spreadsheets/u/1/d/1LlEZ4VGcy3YtFjbAPoiMN11Kk4OElpDJEDb6h0z0_RM/edit?usp=sharing" target="_blank"><button type="button" name="button" class="workshopButton">RSVP for Workshop</button></a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#82dcfe">
+      <div class="col-sm-1">
+        <i class="fa fa-bullhorn fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Julie Johnson</h1>
+      </div>
+      <div class="col-md">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Saturday, 4PM</i> <br><br>CO-FOUNDER AND PRESIDENT, ARMORED THINGS</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/hackingthehackathon.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Fiona Whittington</br><i>SheHacks Director</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Want to learn how to plan your own hackathon? Join SheHacks director Fiona as she talks about her experience with SheHacks and provides advice on planning a hackathon.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room #310</br><i>Saturday, 5pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/techandenvironment.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Jeffrey Levy</p>
+      </div>
+      <div class="col-sm-4">
+        <p>Curious how you can combine tech and protecting our planet? Jeffrey Levy will discuss how he used tech through 21 years of working on the ozone layer, acid rain, radiation, hurricane response, and 9/11.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Saturday, 7pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/datavis.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Lisa Williams</br><i>General Assembly</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>A fun, fast tour through the history and future of data visualization -- complete with hands-on activities where you build your own visualizations from real-world data.</p>
+      </div>
+      <div class="col">
+        <p class="time">LSE - Room B01</br><i>Saturday, 4pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;top:20%;text-align:left;padding-left:6%;">MLH CUPSTACKING</h2>
+      </div>
+      <div class="col">
+        <p class="presenter" style="color:white">Kyle Suero</br><i>Major League Hacking</i></p>
+        <p style="color:white">Who can stack the highest cup tower? Teams of two. Free mlh season shirts at the end</p>
+        <p class="time" style="color:white">BU Central (GSU Basement)</br><i>Saturday, 4pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:20%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;text-align:left;padding-left:6%;">YOGA</h2>
+      </div>
+      <div class="col">
+        <p class="presenter" style="color:white">Sarah Griesdorf</br><i></i></p>
+        <p style="color:white"></p>
+        <p class="time" style="color:white">3rd Floor Conference Room - #320</br><i>Saturday, 4pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#C1F881">
+      <div class="col-sm-1">
+        <i class="fa fa-cutlery fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">DINNER</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">GSU Basement, BU Central</br><i>Saturday, 6PM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/reactjs.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Khanh Dao</br><i>Move Inc (Realtor.com)</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>ReactJS is taking over front end development by storm. How will I do it's a right technology choice for the company? In this talk, we will walk through our own migration story to ReactJS at Realtor.com, our lesson learned and good practices, and how ReactJS has positively affected our front-end development cycle.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #321</br><i>Saturday, 6pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/womanleader.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Sue Priver</br><i>Business Leadership Coach</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>1. What to do when men talk over you 2. How to gain respect in a male dominated industry 3. The secret to getting your fellow students/co-workers to look at you as a leader</p>
+      </div>
+      <div class="col">
+        <p class="time">Theology - Room B23</br><i>Saturday, 6pm</br>Saturday, 10pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/shehackyourlife.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Sue Priver</br><i>Business Leadership Coach</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>1. Feel like you have all the time in the world to do everything that you want 2. Learn how to shut up the negative voice in your head 3. Key secrets of how to be a successful, powerful woman</p>
+      </div>
+      <div class="col">
+        <p class="time">Theology - Room B23</br><i>Saturday, 8pm</br>Sunday, 12am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/htmlandcss.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Shayna Cummings</br><i>Director of Women Who Code Boston</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>In this hands-on workshop, you'll learn how to build a webpage from scratch using HTML and CSS. No prior coding experience is necessary. We'll go through the basics, and provide lots of resources for further learning.</p>
+      </div>
+      <div class="col">
+        <p class="time">3rd Floor Conference Room - #310</br><i>Saturday, 7pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;top:20%;text-align:left;padding-left:6%;">MASSAGES</h2></br>
+        <!-- <p style="color:white;position:relative;top:22%;text-align:left;padding-left:6%;">*Please come to the room 5 min before your booked time!</p> -->
+        <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScsCDMFyyz67gzPpb1Guvnk3kuj0yrwsR6jPL2AHaygcQkwHw/viewform" target="_blank"><button type="button" name="button" class="buttonstyle1" style="margin-left:6%; margin-top:7%">RSVP for Massage</button></a> -->
+        <p style="color:white;position:relative;top:20%;text-align:left;padding-left:6%;">RSVPs for massages are now closed.</p>
+      </div>
+      <div class="col">
+        <p class="presenter" style="color:white; padding-top:2em;">Jacky Barry</br><i>PayPal</i></p>
+        <p style="color:white">Let PayPal deliver a massage to you! The Sooth team will help you work out all the kinks from hacking and help you relax with 15 - minute chair massage. Our therapists are all licensed professionals and will bring all needed supplies, including the massage chair. Massages will be fully clothed - attendees should sign up ahead of time.</p>
+        <p class="time" style="color:white">3rd Floor Conference Room - #320</br><i>Saturday, 8pm to 10pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:20%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;text-align:left;padding-left:10%;">Arielle Tindel &amp; the Spider Monkeys</h2>
+      </div>
+      <div class="col">
+        <p class="presenter" style="color:white"></br><i></i></p>
+        <p style="color:white">Music Performance</p>
+        <p class="time" style="color:white">Conference Auditorium</br><i>Saturday, 9pm</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#82dcfe">
+      <div class="col-sm-1">
+        <i class="fa fa-bullhorn fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Jesslyn Tannady</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Sunday, 1AM</i> <br><br>UNDERGRADUATE RESEARCH ASSISTANT, MIT MAN VEHICLE LAB
+WELLESLEY COLLEGE STUDENT, 2018
+DIRECTOR, WHACK (WELLESLEY HACKS)</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#FFD46F">
+      <div class="col-sm-1">
+        <i class="fa fa-smile-o fa-5x" style="color:white; position:relative;top:20%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h2 style="color:white;position:relative;text-align:left;padding-left:6%;">FACE MASKS</h2>
+      </div>
+      <div class="col">
+        <p class="time" style="color:white"></br><i>Sunday, 2am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <img src="img/workshops/linkedin.png" width="100%">
+      </div>
+      <div class="col-sm-2">
+        <p class="presenter">Fiona Whittington</br><i>SheHacks Director</i></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Get started with LinkedIn, and learn how to make your profile appealing to employers.</p>
+      </div>
+      <div class="col">
+        <p class="time">Conference Auditorium</br><i>Sunday, 3am</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#C1F881">
+      <div class="col-sm-1">
+        <i class="fa fa-cutlery fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">BREAKFAST</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">GSU Basement, BU Central</br><i>Sunday, 8:30AM</i></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#82dcfe">
+      <div class="col-sm-1">
+        <i class="fa fa-bullhorn fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Cynthia Breazeal</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Sunday, 9:30AM</i> <br>  <br><span>ASSOCIATE PROFESSOR, MEDIA ARTS & SCIENCES, MIT
+CO-DIRECTOR, CENTER FOR FUTURE STORYTELLING</span></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row eventbanner" style="background-color:#fa8dd5">
+      <div class="col-sm-1">
+        <i class="fa fa-comments-o fa-5x" style="color:white; position:relative;top:30%;"></i>
+      </div>
+      <div class="col-md-8">
+        <h1 style="color:white;position:relative;left:6%">Women of Color in Tech</h1>
+      </div>
+      <div class="col">
+        <p style="color:white;padding-top:2%">Conference Auditorium</br><i>Sunday, 11AM</i></p>
+        <p style="color:white;">B*tch, better have my money, and more stories.  Hosted by We Ceremony</p>
+      </div>
+    </div>
+    <hr>
+
+
+
+
+  <!--live button in bottom corner-->
+    <div id="livesquare">
+      <button type="button" class="btn livesquare" style="padding:0 1rem;"><i class="fa fa-circle text-danger Blink" style="font-size: .6rem;padding-right:4px;"></i>LIVE</button>
+    </div>
+  </main>
+</body>
+
+</html>

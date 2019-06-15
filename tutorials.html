@@ -1,0 +1,421 @@
+<html>
+
+   <head>
+      <title> Tutorials </title>
+      <link href="assets/css/materialize_copy.css" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet">
+      <link href="assets/css/tutorial.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+      <link rel="icon" href="assets/imgs/favicon.png">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta charset="utf-8">
+   </head>
+
+   <body>
+      <header>
+         <a href="index.html"><img src="assets/imgs/Logo.png" class="logo2"></a>
+
+         <div class="button_container-2" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+         </div>
+
+         <div class="flex-end navigation">
+            <a href="index.html" class="underline-hover"> Home </a>
+            <a href="about.html" class="underline-hover"> About </a>
+            <a href="faq.html" class="underline-hover"> FAQ </a>
+            <div class="dropdownNav desktop-only">
+               <p class="no-margin">Attend <span class="fas fa-angle-down"></span></p>
+               <div class="dropdownNav-content" href="travel.html">
+                  <p><a href="get-involved.html#prehacks" id="#prehacks">PreHacks</a></p>
+                  <hr class="hr_style">
+                  <p><a href="travel.html">Travel</a></p>
+                  <hr class="hr_style">
+                  <p><a href="live/index.html">Live Site</a></p>
+                  <hr class="hr_style">
+                  <p><a href="schedule.html">Schedule</a></p>
+               </div>
+            </div>
+            <div class="dropdownNav desktop-only">
+               <p class="no-margin">Resources <span class="fas fa-angle-down"></span></p>
+               <div class="dropdownNav-content">
+                  <p><a href="tutorials.html">Tutorials</a></p>
+                  <hr class="hr_style">
+                   <p><a href="https://boston.techtogether.io/live/schedule">Workshops</a></p>
+               </div>
+            </div>
+            <a href="contact.html" class="underline-hover"> Contact </a>
+         </div>
+         <a id="mlh-trust-badge" class="MLH" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+      </header>
+
+
+      <!-- Hamburger Nav - Start -->
+      <div class="overlay overlay-2" id="overlay">
+         <nav class="overlay-menu">
+            <ul>
+               <li>
+                  <a href="index.html">
+                     <section class="flex-center">
+                        <p class="bold">Home</p>
+                     </section>
+                  </a>
+               </li>
+               <li>
+                  <a href="about.html">
+                     <section class="flex-center">
+                        <p class="bold">About</p>
+                     </section>
+                  </a>
+               </li>
+               <li>
+                  <a href="faq.html">
+                     <section class="flex-center">
+                        <p class="bold">FAQ</p>
+                     </section>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" id="attend">
+                     <section class="flex-center">
+                        <p class="bold">&nbsp;&nbsp;Attend <span class="fas fa-angle-down"></span></p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend5">
+                  <a href="get-involved.html#prehacks">
+                     <section class="flex-center">
+                        <p class="bold">PreHacks</p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend">
+                  <a href="travel.html">
+                     <section class="flex-center">
+                        <p class="bold">Travel</p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend2">
+                  <a href="live/index.html">
+                     <section class="flex-center">
+                        <p class="bold">Live Site</p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend3">
+                  <a href="schedule.html">
+                     <section class="flex-center">
+                        <p class="bold">Schedule</p>
+                     </section>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" id="resources">
+                     <section class="flex-center">
+                        <p class="bold">&nbsp;&nbsp;Resources <span class="fas fa-angle-down"></span></p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend4">
+                  <a href="tutorials.html">
+                     <section class="flex-center">
+                        <p class="bold">Tutorials</p>
+                     </section>
+                  </a>
+               </li>
+               <li class="dropdown_mobile" id="extend6">
+                   <a href="workshops.html">
+                     <section class="flex-center">
+                       <p class="bold">Workshops</p>
+                     </section>
+                   </a>
+              </li>
+               <li>
+                  <a href="contact.html">
+                     <section class="flex-center">
+                        <p class="bold">Contact</p>
+                     </section>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <!-- Ham Nav - End-->
+
+      <div class="banner light-blue-color flex-center-3">
+         <h3 class="bold white-text no-margin"> Resources &#38; Tutorials </h3>
+      </div>
+
+      <div class="main-box">
+        
+         <div class="tab" align="center">
+            <button class="tablinks" onclick="openCity(event, 'ESSENTIALS')" id= "defaultOpen">ESSENTIALS</button>
+            <button class="tablinks" onclick="openCity(event, 'WEBDEVELOPMENT')">WEB DEV.</button>
+            <button class="tablinks" onclick="openCity(event, 'MOBILEDEVELOPMENT')">MOBILE DEV.</button>
+            <button class="tablinks" onclick="openCity(event, 'PRODUCT_MANAGEMENT')">PRODUCT MANAGEMENT</button>
+            <button class="tablinks" onclick="openCity(event, 'HARDWARE')">HARDWARE</button>
+         </div>
+
+         <div id="ESSENTIALS" class="tabcontent">
+            <div class="container-fluid-resources" id="resourceEssentials">
+               <h1>Essentials</h1><br>
+               <div class="grid-container-4cols">
+                  <div>
+                     <h4>Intro Coding</h4><hr>
+                     <ul>
+                        <li><a href="https://studio.code.org/courses" target="_blank"><p>Code Studio</p></a><br>Lots of Resources!</li>
+                        <li><a href="https://hourofcode.com/us/learn" target="_blank"><p>Hour of Code</p></a><br>Introductory Simulations</li>
+                        <li><a href="http://lightbot.com" target="_blank"><p>Lightbot</p></a><br>Programming Puzzles</li>
+                        <li><a href="http://scratch.mit.edu" target="_blank"><p>Scratch</p></a><br>Drag and Drop Programming Language</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h4>Java</h4><hr>
+                     <ul>
+                        <li><a href="http://docs.oracle.com/javase/tutorial/" target="_blank"><p>Oracle</p></a><br>Java Tutorials</li>
+                        <li><a href="https://www.youtube.com/course?list=ECFE2CE09D83EE3E28" target="_blank"><p>The New Boston</p></a><br>Java Intro Videos</li>
+                        <li><a href="http://www.leepoint.net/JavaBasics/index.html" target="_blank"><p>Java Notes</p></a><br>Basic Concepts of Java</li>
+                        <li><a href="http://codingbat.com/java" target="_blank"><p>Coding Bat</p></a><br>Java Practice Problems</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h4>Python</h4> <hr>
+                     <ul>
+                        <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank"><p>Wiki Python</p></a><br>Beginner's Guide</li>
+                        <li><a href="https://www.codecademy.com/learn/learn-python" target="_blank"><p>Code Academy</p></a><br>Python Lessons</li>
+                        <li><a href="http://introtopython.org/resources.html" target="_blank"><p>Intro Python</p></a><br>Python Tutorials</li>
+                        <li><a href="https://python-reference.readthedocs.io/en/latest/" target="_blank"><p>Python Reference</p></a><br>Easy-to-Read Reference</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h4>Misc.</h4> <hr>
+                     <ul>
+                        <li><a href="http://code.tutsplus.com/tutorials/20-all-too-common-coding-pitfalls-for-beginners--net-27963" target="_blank"><p>Tutsplus</p></a><br>Coding Pitfalls for Beginners</li>
+                        <li><a href="https://www.pluralsight.com/blog/software-development/github-tutorial" target="_blank"><p>Pluralsight</p></a><br>Getting Started with Github</li>
+                        <li><a href="https://blog.hartleybrody.com/debugging-code-beginner/" target="_blank"><p>Hartley Brody</p></a><br>Debugging Tips</li>
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <div id="WEBDEVELOPMENT" class="tabcontent">
+            <div class="container-fluid-resources" id="resourceWeb">
+               <h1>Web Development</h1><br>
+               <div class="grid-container-4cols">
+
+                  <div>
+                     <h4>General</h4>
+                     <ul>
+                        <li><a href="https://learntocodewith.me/getting-started/" target="_blank"><p>Getting Started with Web. Dev</p></a><br>The Bread and Butter of Web Dev.</li>
+                        <li><a href="https://developers.google.com/training/web/" target="_blank"><p>Google Web Dev. Resources</p></a><br>Resources from Google</li>
+                        <li><a href="https://hackdesign.org/lessons" target="_blank"><p>Hack Design UI Lessons</p></a><br>Fundamentals of UI Design</li>
+                        <li><a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893" target="_blank"><p>Google Responsive Web Design Course</p></a><br>Building Websites for Desktop and Mobile</li>
+                        <li><a href="https://www.designbetter.co/design-systems-handbook/introducing-design-systems " target="_blank"><p>How to Design Better Systems</p></a><br>System Design Thinking</li>
+                     </ul>
+
+                  </div>
+
+
+                  <div>
+                     <h4>HTML/CSS</h4><hr>
+                     <ul>
+                        <li><a href="https://www.codecademy.com/learn/web" target="_blank"><p>Code Academy</p></a><br>HTML and CSS Lessons</li>
+                        <li><a href="http://htmldog.com/guides/html/" target="_blank"><p>HTML Dog</p></a><br>HTML Tutorials</li>
+                        <li><a href="https://digital.com/tools/html-cheatsheet/" target="_blank"><p>Digital</p></a><br>HTML Cheatsheet</li>
+                        <li><a href="http://labs.jensimmons.com/" target="_blank"><p>Jen Simmons</p></a><br>CSS Lab</li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h4>JavaScript</h4>
+                     <ul>
+                        <li><a href="https://www.learn-js.org/" target="_blank"><p>Interactive JS Tutorial</p></a><br>JavaScript Tutorial</li>
+                        <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank"><p>Codecademy Intro to JS</p></a><br>Learning JavaScript with Codecademy</li>
+                        <li><a href="https://www.udacity.com/course/object-oriented-javascript--ud711" target="_blank"><p>Udacity Course</p></a><br>Learning JavaScript with Udacity</li>
+                        <li><a href="https://www.edx.org/course/javascript-introduction" target="_blank"><p>Intro JavaScript Course</p></a><br>Learning Javascript with edX</li>
+                        <li><a href="https://www.edx.org/course/programming-web-javascript-pennx-sd4x" target="_blank"><p>UPenn Online JS Course</p></a><br>Learning JavaScript with UPenn</li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h4>React</h4>
+                     <ul>
+                        <li><a href="https://reactjs.org/tutorial/tutorial.html" target="_blank"><p>Official React Tutorial</p></a><br>Intro to React.js</li>
+                        <li><a href="https://medium.freecodecamp.org/learning-react-roadmap-from-scratch-to-advanced-bff7735531b6" target="_blank"><p>From Scratch to Advanced</p></a><br>Advanced React.js Roadmap</li>
+                        <li><a href="https://egghead.io/courses/the-beginner-s-guide-to-react" target="_blank"><p>Beginner's Guide</p></a><br>React for Beginners</li>
+                        <li><a href="https://github.com/enaqx/awesome-react" target="_blank"><p>Resources Mega-List</p></a><br>Tons or React.js Resources!</li>
+                     </ul>
+                  </div>
+
+
+
+                  <!--
+<div>
+<h4>Ruby on Rails</h4><hr>
+<ul>
+<li><a href="https://www.railstutorial.org/book" target="_blank"><p>Ruby Tutorials</p></a><br>Comprehensive Ruby Tutorials</li>
+<li><a href="http://guides.rubyonrails.org/" target="_blank"><p>Rails Guides</p></a><br>List of Different Guides</li>
+<li><a href="http://railsforzombies.org/" target="_blank"><p>Rails for Zombies</p></a><br>Intro Game</li>
+<li><a href="http://guides.railsgirls.com/" target="_blank"><p>Rails Girls</p></a><br>List of Guides for Each Step</li>
+</ul>
+</div>
+-->
+
+               </div>
+            </div>
+         </div>
+
+         <div id="MOBILEDEVELOPMENT" class="tabcontent">
+            <div class="container-fluid-resources" id="resourceMobile">
+               <h1>Mobile Development</h1><br>
+               <div class="grid-container-2cols">
+                  <div>
+                     <h4>iOS</h4><hr>
+                     <ul>
+                        <li><a href="http://www.hongkiat.com/blog/ios-development-guide-part1/" target="_blank"><p>Hongkiat</p></a><br>Introductory iOS Guide</li>
+                        <li><a href="https://www.raywenderlich.com/category/ios" target="_blank"><p>Ray Wenderlich</p></a><br>Comprehensive Swift Tutorials</li>
+                        <li><a href="http://www.appcoda.com/" target="_blank"><p>App Coda</p></a><br>Lots of iOS Resources</li>
+                        <li><a href="https://www.tutorialspoint.com/ios/index.htm" target="_blank"><p>Tutorials Point</p></a><br>iOS Reference Materials</li>
+                     </ul>
+
+                  </div>
+                  <div>
+                     <h4>Android</h4><hr>
+                     <ul>
+                        <li><a href="https://developer.android.com/training/index.html" target="_blank"><p>Android Developers</p></a><br>Comprehensive Guide</li>
+                        <li><a href="http://appinventor.mit.edu/explore/ai2/beginner-videos.html" target="_blank"><p>App Inventor</p></a><br>Beginner Android Tutorials</li>
+                        <li><a href="https://www.codementor.io/android/tutorial/get-started-android-ui-design-and-more" target="_blank"><p>Code Mentor</p></a><br>Getting Started Q&amp;A</li>
+                        <li><a href="https://www.tutorialspoint.com/android/index.htm" target="_blank"><p>Tutorials Point</p></a><br>Android Reference Materials</li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+         <div id="PRODUCT_MANAGEMENT" class="tabcontent">
+            <div class="container-fluid-resources" id="resourceWeb">
+               <h1>Product Management</h1><br>
+               <div class="grid-container-1col">
+                  <div>
+                     <h4>The Basics</h4> <hr>
+                     <ul>
+                        <li><a href="https://medium.com/pminsider/preparing-for-pm-interviews-how-to-get-there-in-15-20-hours-193f6fcbf606" target="_blank"><p>Preparing for PM Interviews</p></a><br>How to Get There in 15-20 Hours</li>
+                        <li><a href="https://thepminterview.com/" target="_blank"><p>The PM Interview</p></a><br>Interview Simulation and Resources</li>
+                        <li><a href="https://stellarpeers.com/" target="_blank"><p>StellarPeers</p></a><br>Practicing PM Mock Interviews</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="HARDWARE" class="tabcontent">
+            <div class="container-fluid-resources" id="resourceHardware">
+               <h1>Hardware</h1><br>
+               <div class="grid-container-2cols">
+                  <div>
+                     <h4>Introduction</h4><hr>
+                     <ul>
+                        <li><a href="https://www.arduino.cc/" target="_blank"><p>Arduino</p></a></li>
+                        <li><a href="https://www.raspberrypi.org/" target="_blank"><p>Raspberry Pi</p></a></li>
+                        <li><a href="https://education.lego.com/en-us/elementary/shop/wedo-2" target="_blank"><p>Lego WeDo</p></a></li>
+                        <li><a href="https://www.pjrc.com/teensy/" target="_blank"><p>Teensy Development Board</p></a></li>
+                     </ul>
+
+                  </div>
+                  <div>
+                     <h4>Inspiration</h4><hr>
+                     <ul>
+                        <li><a href="http://makezine.com/projects/" target="_blank"><p>Makezine</p></a></li>
+                        <li><a href="https://www.makershed.com/collections/beginner" target="_blank"><p>Makershed</p></a></li>
+                        <li><a href="http://www.instructables.com/id/Beginners-Electronics-Projects/" target="_blank"><p>Instructables</p></a></li>
+                        <li><a href="https://diyhacking.com/" target="_blank"><p>DIY Hacking</p></a></li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <footer class="flex-footer orange">
+
+         <div class="footer-col">
+            <center><img src="assets/imgs/techtogetherlogo-white.png" class="logo3"></center>
+
+            <!-- Social media -->
+            <div class="footer-col-social center">
+               <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><img src="assets/imgs/facebook_white.png" class="icon-3"></a>
+               <a href="https://twitter.com/techtogetherbos?lang=en" target="_blank"><img src="assets/imgs/twitter_white.png" class="icon-3"></a>
+               <a href="https://www.instagram.com/techtogetherboston/" target="_blank"><img src="assets/imgs/instagram_white.png" class="icon-3"></a>
+            </div>
+
+            <div class="footer-col-social center">
+               <p> <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="white-text center">MLH Code of Conduct</a> </p>
+            </div>
+         </div>
+
+         <div class="footer-col">
+
+            <p class="white-text signup"> Sign up for our newsletter! </p>
+
+            <!-- Sign Up Beginning -->
+            <div class="row signup">
+               <div class="col" style="padding-left: 0px">
+                  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                  <style type="text/css">
+                     #mc_embed_signup {
+                        background: rgb(253, 115, 97);
+                        clear: left;
+                        font: 14px Barlow, Helvetica, Arial, sans-serif;
+                     }
+
+                     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                  </style>
+                  <div id="mc_embed_signup" style="z-index:10; position:relative">
+                     <form action="https://shehacks.us17.list-manage.com/subscribe/post?u=34946c2c134f07563cac527a4&amp;id=d441aab50c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate no-margin" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                           <!-- Email box-->
+                           <div class="mc-field-group">
+                              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width:125%; border: .75px solid #FFF; color:white; font-family: Barlow;">
+                           </div>
+                           <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                           </div>
+                           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_34946c2c134f07563cac527a4_d441aab50c" tabindex="-1" value=""></div>
+
+                           <!-- Button -->
+                           <div class="clear"><input type="submit" value="SUBSCRIBE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button" style="width:100%; color:white; background-color: #808cf4; margin-top:10px; font-weight:600; border-radius:1px;"></div>
+
+                        </div>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+            <!-- Sign up End -->
+
+            <!--  Subscribe for mobile -->
+            <div class="footer-col center signup-mobile">
+               <!-- Button -->
+               <div class="clear center"><input type="submit" value="Subscribe to our newsletter!" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button" style="width:80%; color:white; background-color: #808cf4; font-weight:600; border-radius:1px;" onclick="window.location.href='https://shehacks.us17.list-manage.com/subscribe/post?u=34946c2c134f07563cac527a4&id=d441aab50c'"></div>
+            </div>
+
+         </div>
+      </footer>
+
+      <script src="assets/js/tableOfContents.js"> </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="assets/js/ham_menu.js"> </script>
+   </body>
+</html>

@@ -1,0 +1,647 @@
+/* relevant styles */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.overlay-advocate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-advocate:hover .overlay-advocate {
+  height: 100%;
+}
+
+.overlay-celebrate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-celebrate:hover .overlay-celebrate {
+  height: 100%;
+}
+
+.overlay-sponsorship {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-sponsorship:hover .overlay-sponsorship {
+  height: 100%;
+}
+
+.overlay-volunteer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-volunteer:hover .overlay-volunteer {
+  height: 100%;
+}
+
+.engage-text {
+  font-size: 1.2em;
+  font-family: "Barlow", sans-serif;
+  ;
+  font-style: normal;
+  font-weight: 400;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: wrap;
+  color: #2d3033;
+}
+
+.panel-body {
+  background-color: #f3a958;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.3em;
+}
+
+/* ------------------------------------------------------------------------------
+	Template Name: Flosix
+	Author: Designstub
+	Author URI: http://www.designstub.com
+
+
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+
+/* @import url(http://fonts.googleapis.com/css?family=Source%20Sans%20Pro:300,400,500,600,700); */
+
+@font-face {
+  font-family: "bebas";
+  src: url('bebas.ttf');
+}
+
+body p {
+  font-family: 'Barlow', sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: bebas;
+  /*font-family: 'Barlow', sans-serif;*/
+  line-height: 20px;
+  color: #6c7279;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: 'barlow';
+  color: #2d3033;
+}
+
+h2 {
+  font-size: 2.6em;
+  font-family: "Barlow";
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.8em !important;
+  color: black !important;
+  font-family: 'Barlow';
+  font-weight: bold !important;
+  text-align: center;
+}
+
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-family: bebas;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 14px;
+  color: #2d3033;
+  font-family: bebas;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #e95491;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #e95491;
+  color: #fff;
+}
+
+.btn-large {
+  padding: 15px 40px;
+  font-family: Roboto;
+}
+
+.btn2 {
+  background-color: #0c1a24;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: Roboto;
+  margin-top: 20px;
+}
+
+.btn:hover2, .btn:focus2 {
+  background-color: #0c1a24;
+  color: #fff;
+}
+
+.btn-large2 {
+  padding: 15px 40px;
+}
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+
+a {
+  color: #f3a958;
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  -moz-transition: background-color, color, 0.3s;
+  -o-transition: background-color, color, 0.3s;
+  -webkit-transition: background-color, color, 0.3s;
+  transition: background-color, color, 0.3s;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: orange;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-gutter [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.space {
+  margin-top: 60px;
+}
+
+/* ------------------------------------------------------------------------------
+  Sidebar nav
+-------------------------------------------------------------------------------*/
+
+#contact {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+}
+
+#contact p {
+  font-size: .8em;
+  margin-bottom: 0;
+}
+
+#socialicon {
+  width: 40%;
+}
+
+.livesquare {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+
+.Blink {
+  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#descriptionlower {
+  color: black;
+  border: 10px;
+  border-color: white;
+  background: #FFD46F;
+  border-style: dashed;
+  border-width: .3em;
+  font-family: 'Barlow', sans-serif;
+  padding: 2%;
+  width: 80%;
+}
+
+#slide-out a {
+  font-family: "Barlow";
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#nav-mobile a {
+  font-family: "Barlow";
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#information, #helpSection {
+  text-align: center;
+}
+
+#information h1, #helpSection h1 {
+  font-family: 'Barlow';
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bold_text {
+  font-weight: bold;
+  color: black;
+}
+
+/*.title{
+  padding: 1em;
+  border-bottom: 2px solid #bdbdbd;
+}*/
+
+#information a {
+  text-decoration: underline;
+}
+
+.buttonstyle1 {
+  color: white;
+  background: #28b7ab;
+  /*border: 4px #82dcfe dashed;*/
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Barlow';
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em;
+  box-shadow: 1px 3px 2px #b0bec5;
+}
+
+.help_icon {
+  color: #e53935;
+}
+
+.icon-button {
+  /*background: #fafafa;*/
+  width: 50%;
+  /*border: #fa8dd5 5px dashed;*/
+  border-radius: 15px;
+  /*border: #fa8dd5 4px dashed;*/
+  padding: 7px;
+  margin-bottom: 1.4em;
+  box-shadow: 1px 3px 2px #b0bec5;
+}
+
+#question .question-col {
+  padding: 0 30px;
+}
+
+/*tabs for schedule days*/
+
+/* Style the tab */
+
+.daytab {
+  overflow: hidden;
+  background-color: #000000;
+  padding-left: 10%;
+  /*width:33%;*/
+  font-family: bebas;
+}
+
+/* Style the buttons inside the tab */
+
+.daytab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+
+.daytab button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Create an active/current tablink class */
+
+.daytab button.active {
+  background-color: #fff;
+  color: black;
+}
+
+/* Style the tab content */
+
+.daytabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+.challenge-description {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-content.black-text .card-title.custom {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 5%;
+}
+
+.card-content.black-text .card-title.custom.shepink {
+  background: #fa8dd5;
+}
+
+.card-content.black-text .card-title.custom.shegreen {
+  background: #C1F881;
+}
+
+.card-content.black-text .card-title.custom.sheblue {
+  background: #82dcfe;
+}
+
+.card-content.black-text .card-title.custom.sheorange {
+  background: #FFD46F;
+}
+
+.card-content.black-text .card-title.custom.sheteal {
+  background: #6bd9d0;
+}
+
+.company-logo {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.presenter {
+  font-weight: bold;
+  color: black;
+}
+
+.time {
+  font-size: 1.3em;
+  /*color:#37474f ;*/
+  line-height: 1.2em;
+}
+
+.workshopButton {
+  font-size: 1.3em;
+  font-family: 'Barlow';
+  color: white;
+  background: #28b7ab;
+  padding: .5em;
+  border-radius: 15px;
+  box-shadow: 1px 3px 2px #b0bec5;
+  font-weight: bold;
+}
+
+/* TESTING OUT MENU STUFF*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'barlow';
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+#mobile-menu-button {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+#mobile_header {
+  font-family: 'barlow';
+  font-size: 1em;
+}
+
+#mobile_workshop_desc {
+  font-size: .6em;
+  max-width: 90%;
+  border: 2px dashed black;
+  padding: .3em;
+}
+
+/* MOBILE RESPONSIVENESS*/
+
+@media only screen and (max-width: 550px) {
+  .row.countdownrow {
+    display: none;
+  }
+  .row .col.s3.info {
+    display: block;
+    flex-basis: auto;
+    width: 90%;
+    margin: auto;
+  }
+  .row .question-col.col.s3{
+    display:block;
+    flex-basis: auto;
+    width: 90%;
+    margin: auto;
+  }
+  #main-sidebar {
+    padding: 0;
+  }
+  #workshop_column_labels {
+    display: none;
+  }
+  #website_workshop_desc {
+    display: none;
+  }
+  #prize_header {
+    display: none;
+  }
+
+  #faq_header{
+    display: none;
+  }
+
+    p.map-info{
+      padding-top:.2em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+  #mySidenav {
+    display: none;
+  }
+  #main-sidebar {
+    padding-left: 300px;
+  }
+  #mobile_workshop_desc {
+    display: none;
+  }
+}
+
+.map{
+  max-width:100%;
+  margin: auto;
+}
+.map-gsu{
+  max-width:100%;
+}
+
+.map-info{
+  padding-top: 4em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.map-description{
+  color:black;
+  text-transform: uppercase;
+  font-size:1.3em;
+}
+
+.map-subtitle{
+  font-size:.8em;
+  font-weight: normal;
+}
+
+.company-highlight{
+  font-weight:600;
+  font-size:1.2em;
+}

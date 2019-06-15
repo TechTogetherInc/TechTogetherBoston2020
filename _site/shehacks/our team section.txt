@@ -1,0 +1,62 @@
+﻿<!-- 
+<!-- our team section -->
+<section id="teams" class="section teams">
+  <div class="container">
+    <div class="row">
+      <!-- team member 1 -->
+      <div class="col-md-4 col-sm-8">
+        <div class="person"> <img src="images/team-1.png" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Fiona Whittington</h4>
+            <h5>Director</h5>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+          </div>
+          <ul class="social-icons clearfix">
+            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- team member 1 -->
+      <!-- team member 2 -->
+      <div class="col-md-4 col-sm-8">
+        <div class="person"> <img src="images/team-2.png" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Lisa Brown</h4>
+            <h5 class="role">Creative head</h5>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div>
+          <ul class="social-icons clearfix">
+            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- team member 2 -->
+      <!-- team member 3 -->
+      <div class="col-md-4 col-sm-8">
+        <div class="person"> <img src="images/team-3.png" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Mike Collins</h4>
+            <h5 class="role">Technical lead</h5>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div>
+          <ul class="social-icons clearfix">
+            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- team member 1 -->
+    </div>
+  </div>
+</section>

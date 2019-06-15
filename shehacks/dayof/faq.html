@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/sheHacksboston_logo.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SheHacks Boston - Live</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v4.7.0/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+    gtag('config', 'UA-104887569-2');
+  </script>
+
+
+</head>
+
+<body>
+  <div class="mobile-bar-wrapper">
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+    <a href="index.html">Home</a>
+    <!-- <a href="schedule.html">Schedule</a> -->
+    <a href="workshops.html">Schedule</a>
+    <a href="companies.html">Company Highlights</a>
+    <a href="maps.html">Map</a>
+    <a href="prizes.html">Challenges &amp; Prizes</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">FAQ</span></span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!--Sidebar-->
+  <ul id="slide-out" class="side-nav fixed">
+    <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+    <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="schedule.html">Schedule</a></li> -->
+    <li><a href="workshops.html">Schedule</a></li>
+    <li><a href="companies.html">Company Highlights</a></li>
+    <li><a href="maps.html">Map</a></li>
+    <li><a href="prizes.html">Challenges &amp; Prizes</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <!-- <li><a href="http://shehacks.io">Full Site</a></li> -->
+    <div id="contact">
+      <div style="padding-bottom:10px;">
+        <p> &copy; SheHacks 2017 / Boston, MA / info@shehacks.io </p>
+        <p><a style="color:#ffb400;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.facebook.com/SheHacksBoston/?ref=br_rs" target="_blank"><img src="img/socialicons/facebook.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.instagram.com/shehacksboston/" target="_blank"><img src="img/socialicons/instagram.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.twitter.com/shehacksboston/" target="_blank"><img src="img/socialicons/twitter.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <!--end sidebar-->
+
+
+  <!--anything not in the sidebar should go within these main tags-->
+  <main id="main-sidebar">
+    <img src="img/faq-header.png" alt="" class="company-logo" id="faq_header"> <br>
+    <div class="row" id="information" style="padding-right:30px;">
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-bed fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">Where can I sleep?</h3>
+        <p>Our sleeping areas are located at SAO SAC Gym (2AM-8AM) and in Theology building (Open starting 1AM) and in Hariri (Open now). You can find these locations on our <a href="maps.html">map!</a></p>
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-user fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How can I find a mentor?</h3>
+        <p>You can request a mentor <a href="https://docs.google.com/forms/d/e/1FAIpQLSdj9SmtNIj5m1EWZez1NrcsjrAWBScmZ6e2A6wlEDqF7-vjmg/viewform" target="_blank">here</a>.</p>
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-users fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How many members can I have on my team?</h3>
+        <p>Each team needs to have at least 2 members and a maximum of 6 members.</p>
+      </div>
+    </div>
+    <div class="row" id="information" style="padding-right:30px;">
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-pencil fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How many workshops can I attend?</h3>
+        <p>You can attend as many workshops and talks as you'd like! Our workshops are first come first serve due to limited room capacity. Once a workshop has filled up we will close the room door. The Hack Your Hoodie workshop requires an RSVP, you can view all our workshops on our <a href="workshops.html" target="_blank">schedule page</a>.</p>
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-trophy fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How are projects being judged?</h3>
+        <p>Category and Fun challenges will be judged in the following areas: Technical Difficulty, Usefulness &amp; Relevance, Creativity, and Overall Polish. More details can be found on our <a href="prizes.html" target="_blank">prizes page</a>.</p>
+
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-list-ol fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How many challenges can I apply to?</h3>
+        <p>You can apply to as many categories as your hack can qualify for!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="question" class="col-sm-6" style="padding: 0 20px;">
+        <h3 style="font-size:1.5rem;">What do the different wrist-bands mean?</h3>
+        <img src="img/wristband_key.png" alt="" style="max-width:100%; margin:auto;">
+      </div>
+      <div id="question" class="col-sm-6" style="padding: 0 20px;">
+        <h3 style="font-size:1.5rem;">Where is food?</h3>
+        <p>Snacks, coffee, and fruit will be served in the Academy Room (GSU First Floor), and all meals will be served in BU Central (GSU Basement).</p>
+      </div>
+    </div>
+
+    <!--live button in bottom corner-->
+    <div id="livesquare">
+      <button type="button" class="btn livesquare" style="padding:0 1rem;"><i class="fa fa-circle text-danger Blink" style="font-size: .6rem;padding-right:4px;"></i>LIVE</button>
+    </div>
+  </main>
+</body>
+
+</html>

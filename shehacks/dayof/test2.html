@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/sheHacksboston_logo.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SheHacks Boston - Live</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v4.7.0/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+    })
+  </script>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+    gtag('config', 'UA-104887569-2');
+  </script>
+  <!--
+<script type="text/javascript">
+    $( document ).ready(function(){
+       $(".button-collapse").sideNav();
+    })
+</script> -->
+
+
+</head>
+
+<body>
+  <!--Sidebar-->
+  <div class="mobile-bar-wrapper">
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+<a href="index.html">Home</a>
+      <!-- <a href="schedule.html">Schedule</a> -->
+      <a href="workshops.html">Schedule</a>
+      <a href="maps.html">Map</a>
+      <a href="prizes.html">Challenges &amp; Prizes</a>
+      <a href="faq.html">FAQ</a>
+</div>
+
+<span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">HOME</span></span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <ul id="nav-mobile" class="side-nav fixed">
+    <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+    <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="schedule.html">Schedule</a></li> -->
+    <li><a href="workshops.html">Schedule</a></li>
+    <li><a href="maps.html">Map</a></li>
+    <li><a href="prizes.html">Challenges &amp; Prizes</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+
+
+  <div id="contact">
+      <div style="padding-bottom:10px;">
+        <p> &copy; SheHacks 2017 / Boston, MA / info@shehacks.io </p>
+        <p><a style="color:#ffb400;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.facebook.com/SheHacksBoston/?ref=br_rs" target="_blank"><img src="img/socialicons/facebook.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.instagram.com/shehacksboston/" target="_blank"><img src="img/socialicons/instagram.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.twitter.com/shehacksboston/" target="_blank"><img src="img/socialicons/twitter.png" alt="facebook icon" id="socialicon"></a>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <!--end sidebar-->
+
+
+  <!--anything not in the sidebar should go within these main tags-->
+  <main id="main-sidebar">
+    <div class="">
+      <div class="row countdownrow">
+        <img src="img/countdown.png" style="max-width:55%; height:auto;margin:auto" alt="">
+      </div>
+
+      <!--countdown clock-->
+      <div class="row countdownrow" style="background-image:url(img/challengeheader.png); max-width:100%;">
+        <div style="vertical-align:middle;position:relative;left:25%;padding-bottom:2%;">
+          <div class="clock-builder-output"></div>
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+          <style text="text/css">
+            body .flip-clock-wrapper ul li a div div.inn,
+            body .flip-clock-small-wrapper ul li a div div.inn {
+              color: #ffffff;
+              /*change font color*/
+              background-color: #fa8dd5;
+              /*change clock color*/
+            }
+
+            body .flip-clock-dot,
+            body .flip-clock-small-wrapper .flip-clock-dot {
+              background: #fa8dd5;
+              /*change dot color*/
+              box-shadow: none;
+            }
+
+            body .flip-clock-wrapper .flip-clock-meridium a,
+            body .flip-clock-small-wrapper .flip-clock-meridium a {
+              color: #fa8dd5;
+              /*change clock color*/
+            }
+          </style>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              FlipClock.Lang.Custom = {
+                days: 'DAYS',
+                hours: 'HOURS',
+                minutes: 'MINUTES',
+                seconds: 'SECONDS'
+              };
+              var opts = {
+                clockFace: 'HourCounter',
+                countdown: true,
+                language: 'Custom'
+              };
+              var countdown = 1517155200 - ((new Date().getTime()) / 1000); // from: 01/28/2018 11:00 am -0500
+              countdown = Math.max(1, countdown);
+              // $(document).ready(function() {
+              //   $('.clock-builder-output').FlipClock(countdown, opts);
+              // });
+              $('.clock-builder-output').FlipClock(countdown, opts);
+            });
+          </script>
+
+        </div>
+      </div>
+      <!-- <div class="row"> -->
+      <hr>
+      <div class="row" id="information">
+        <div class="col s3 info">
+          <h1 class="title">Wifi</h1>
+          <i class="fa fa-wifi fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <p><span class="bold_text">Network:</span> SheHacks18</p>
+          <p><span class="bold_text">Key:</span> makingthenewnormal</p>
+        </div>
+        <div class="col s3 info">
+          <h1 class="title">Stay in the loop</h1>
+          <a href="https://join.slack.com/t/shehacksboston/shared_invite/enQtMjk5NTg3NDg0OTMxLTFmNTdlNGUyMTgyM2Q4ZmQ5YWY0NTU2ZDg0MTgxOWY5ZDNlZTk1NWU4YThmZGY5OGRiZGQ0MjZjMTY4ZTM5NmE"><i class="fa fa-slack fa-5x icon-button" style="margin-bottom:10px; color:#49C4A1; background: #C1F881;" aria-hidden="true"></i></a>
+          <p>Join our <a href="https://join.slack.com/t/shehacksboston/shared_invite/enQtMjk5NTg3NDg0OTMxLTFmNTdlNGUyMTgyM2Q4ZmQ5YWY0NTU2ZDg0MTgxOWY5ZDNlZTk1NWU4YThmZGY5OGRiZGQ0MjZjMTY4ZTM5NmE">hacker Slack channel</a> for updates on workshops, speakers, and challenges!</p>
+        </div>
+        <div class="col s3 info">
+          <h1 class="title">Find Teammates</h1>
+          <i class="fa fa-facebook fa-5x icon-button" style="color:#4867AA; margin-bottom:10px; background:#82dcfe;"></i>
+          <p>Connect with other hackers and build your team in our <a href="https://www.facebook.com/groups/2114116722143511/">Facebook group</a>!</p>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row" id="helpSection">
+        <div class="col s3 info">
+          <h1>Need Help <span class="help_icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span></h1>
+        </div>
+        <div class="col s3 info">
+          <a href="faq.html" target="_blank"><button type="button" name="button" class="buttonstyle1">Read our FAQ</button></a>
+        </div>
+        <div class="col s3 info">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdj9SmtNIj5m1EWZez1NrcsjrAWBScmZ6e2A6wlEDqF7-vjmg/viewform" target="_blank"><button type="button" name="button" class="buttonstyle1">Request a Mentor</button></a>
+        </div>
+      </div>
+
+      <!--live button in bottom corner-->
+      <div id="livesquare">
+        <button type="button" class="btn livesquare" style="padding:0 1rem;"><i class="fa fa-circle text-danger Blink" style="font-size: .6rem;padding-right:4px;"></i>LIVE</button>
+      </div>
+  </main>
+  <!--Import jQuery before materialize.js-->
+  <!-- <script type="text/javascript">
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+    })
+  </script> -->
+</body>
+
+</html>

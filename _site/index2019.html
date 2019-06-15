@@ -1,0 +1,664 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132771953-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+ }
+ gtag('js', new Date());
+
+ gtag('config', 'UA-132771953-1');
+</script>
+  <title> TechTogether Boston </title>
+  <link href="assets/css/materialize_copy.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <link rel="icon" href="assets/imgs/favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <div class="button_container-2" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="flex-end navigation">
+      <a href="about.html" class="underline-hover"> About </a>
+      <a href="faq.html" class="underline-hover"> FAQ </a>
+       <div class="dropdownNav desktop-only">
+        <p class="no-margin">Attend <span class="fas fa-angle-down"></span></p>
+        <div class="dropdownNav-content" href="travel.html">
+           <p><a href="get-involved.html#prehacks" id="#prehacks">PreHacks</a></p>
+            <hr class="hr_style">
+          <p><a href="travel.html">Travel</a></p>
+           <hr class="hr_style">
+          <p><a href="live/index.html">Live Site</a></p>
+           <hr class="hr_style">
+          <p><a href="schedule.html">Schedule</a></p>
+        </div>
+      </div>
+       <div class="dropdownNav desktop-only">
+        <p class="no-margin">Resources <span class="fas fa-angle-down"></span></p>
+        <div class="dropdownNav-content">
+          <p><a href="tutorials.html">Tutorials</a></p>
+            <hr class="hr_style">
+          <p><a href="https://boston.techtogether.io/live/schedule">Workshops</a></p>
+        </div>
+      </div>
+      <a href="contact.html" class="underline-hover"> Contact</a>
+    </div>
+
+    <a id="mlh-trust-badge" class="MLH" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+  </header>
+
+  <div id="first-section">
+    <div class="row no-margin" style="display: block; z-index: 2;">
+      <canvas id="my-canvas-2"></canvas>
+      <div class="col s8 offset-s1 bold italic">
+        <p class="no-margin" id="shehacks-tagline"> Previously Known as SheHacks...</p>
+      </div>
+    </div>
+
+    <div class="row no-margin">
+      <img src="assets/imgs/Logo.png" class="logo-2">
+    </div>
+
+    <div class="row" style="margin-bottom:2%;">
+      <div class="col s10 offset-s1">
+        <h4 class="bold">Boston's Largest All-Female &amp; Non-binary Hackathon!</h4>
+        <h4 class="no-margin"> 3/22/19 - 3/24/19 @ Boston University</h4> <br>
+        <h4 class="no-margin">Now accepting applications for TechTogether 2020 Organizers!</h4>
+        <h4 class="word-cloud">#MAKINGTHENEWNORMAL</h4>
+      </div>
+    </div>
+
+    <div class="row" id="first-apply-now-btn">
+      <div class="col s3 offset-s1">
+        <a href="live/index.html" target="_blank"><button class="btn btn-large register button-width">View Live Site</button></a>
+      </div>
+      <div class="col s3 desktop-only">
+        <a href="https://techtogetherboston.typeform.com/to/jUBBaP"><button class="btn btn-large register button-width" id="get-involved-button">Apply</button></a>
+      </div>
+      <a href="https://techtogetherboston.typeform.com/to/jUBBaP"><button class="btn btn-large register button-width mobile-only" id="get-involved-button-mobile">Apply</button></a>
+    </div>
+
+    <!-- Hamburger Nav - Start -->
+    <div class="overlay overlay-2" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <section class="flex-center">
+                <p class="bold">Home</p>
+              </section>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <section class="flex-center">
+                <p class="bold">About</p>
+              </section>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html">
+              <section class="flex-center">
+                <p class="bold">FAQ</p>
+              </section>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="attend">
+              <section class="flex-center">
+                <p class="bold">&nbsp;&nbsp;Attend <span class="fas fa-angle-down"></span></p>
+              </section>
+            </a>
+          </li>
+           <li class="dropdown_mobile" id="extend5">
+               <a href="get-involved.html#prehacks">
+                  <section class="flex-center">
+                     <p class="bold">PreHacks</p>
+                  </section>
+               </a>
+            </li>
+          <li class="dropdown_mobile" id="extend">
+            <a href="travel.html">
+              <section class="flex-center">
+                <p class="bold">Travel</p>
+              </section>
+            </a>
+          </li>
+           <li class="dropdown_mobile" id="extend2">
+            <a href="live/index.html">
+              <section class="flex-center">
+                <p class="bold">Live Site</p>
+              </section>
+            </a>
+           <li class="dropdown_mobile" id="extend3">
+            <a href="schedule.html">
+              <section class="flex-center">
+                <p class="bold">Schedule</p>
+              </section>
+            </a>
+          </li>
+           <li>
+            <a href="#" id="resources">
+              <section class="flex-center">
+                <p class="bold">&nbsp;&nbsp;Resources <span class="fas fa-angle-down"></span></p>
+              </section>
+            </a>
+          </li>
+           <li class="dropdown_mobile" id="extend4">
+            <a href="tutorials.html">
+              <section class="flex-center">
+                <p class="bold">Tutorials</p>
+              </section>
+            </a>
+          </li>
+           <li class="dropdown_mobile" id="extend6">
+            <a href="workshops.html">
+              <section class="flex-center">
+                <p class="bold">Workshops</p>
+              </section>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <section class="flex-center">
+                <p class="bold">Contact</p>
+              </section>
+            </a>
+          </li>
+          <li >
+              <a href="shehacks/index.html">
+                  <section class="flex-center">
+                      <p class="bold">Past SheHacks</p>
+                  </section>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Ham Nav - End-->
+
+    <!-- Social Media Icon Source: www.iconfinder.com/iconsets/transparent-on-dark-grey -->
+    <div class="row z-index-1" id="top-social-icons">
+      <div class="col s7 offset-s1">
+        <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><img src="assets/imgs/facebook.png" class="icon-2"></a>
+        <a href="https://twitter.com/techtogetherbos?lang=en" target="_blank"><img src="assets/imgs/twitter.png" class="icon-2"></a>
+        <a href="https://www.instagram.com/techtogetherboston/" target="_blank"><img src="assets/imgs/instagram.png" class="icon-2"></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="row no-margin our-mission">
+    <video autoplay muted loop id="myVideo" class="desktop-only">
+            <source src="assets/imgs/promo-video.mov">
+         </video>
+    <div class="blue-box cell-mobile-padding" style="z-index:10">
+      <h3 class="bold"> Our Mission</h3>
+
+      <h5 id="mission-tagline">At TechTogether Boston, we're looking to shape the way women and non-binary people get involved with tech. </h5>
+      <p>We aim create an inclusive environment to encourage more underrepresented people to either get introduced to the world of technology or harness their skills to create projects of their own.</p>
+
+      <p>With the support of the technology community, industry, and individuals we can chip away at the gender gap and empower anyone from someone with a non-technical major with an interest in tech to seasoned hackathon veterans looking to build out a
+        complicated, groundbreaking product with a little extra support.</p>
+
+      <h3 class="bold"> What is a hackathon?</h3>
+      <img src="assets/imgs/hackathon_recipe.png" class="image-1" style="height:auto"> <br>
+
+      <p class="">You'll enjoy a weekend of awesome tech, food, swag, workshops, and mini-events while learning from distinguished speakers, inspiring mentors, and peers.</p> <br>
+
+      <!-- <a href="https://www.youtube.com/watch?v=-9oHE0guBLk" target="_blank"><img src="assets/imgs/video_recap.JPG" class="image-2" style="height:auto"></a> -->
+    </div>
+  </div>
+
+  <div class="table inline-block">
+    <div class="tablerow white-font">
+      <div class="cell1 orange min-height-1 cell-mobile-padding">
+        <div id="transform-section-text">
+          <h3><b> Transform Ideas into Impact</b></h3>
+
+          <p> Hackathons can be an intimidating environment for anyone involved (even us organizers), so as another option, we curated special tracks to help you get the most out of our event. </p>
+
+          <p>See one or more track that you like? </p>
+          <p>No problem, we welcome women and non-binary folks who want to do it all and drink some soylent too. </p>
+          <div class="table" style="width:100%;" id="mobile-track-icons">
+            <div class="tablerow">
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/design.png" class="icon-5" />
+                  <h5 class="track-name">Product Management</h5>
+                </center>
+              </div>
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/webdev.png" class="icon-5" />
+                  <h5 class="track-name"> Web<br>Development </h5>
+                </center>
+              </div>
+              <div class="cell6 track-display-2">
+                <div class="flex-center">
+                  <img src="assets/imgs/hardware.png" class="icon-5" />
+                  <h5 class="track-name">Hardware</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="tablerow">
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/social_impact.png" class="icon-5" />
+                  <h5 class="track-name"> Career<br>Development</h5>
+                </center>
+              </div>
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/machinelearning.png" class="icon-5" />
+                  <h5 class="track-name"> Data<br>Science</h5>
+                </center>
+
+              </div>
+              <div class="cell6 track-display-2">
+                <center>
+                  <img src="assets/imgs/datascience.png" class="icon-5" />
+                  <h5 class="track-name"> Mobile<br>Development</h5>
+                </center>
+              </div>
+            </div>
+
+            <div class="tablerow track-display-1">
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/hardware.png" class="icon-5" />
+                  <h5 class="track-name"> Hardware</h5>
+                </center>
+              </div>
+              <div class="cell6">
+                <center>
+                  <img src="assets/imgs/datascience.png" class="icon-5" />
+                  <h5 class="track-name"> Career<br>Development</h5>
+                </center>
+              </div>
+            </div>
+          </div>
+          <a href="https://shehacksboston.devpost.com/submissions" target="_blank"><button class="btn btn-large register button-width mobile-button-margin" id="view-expo-button">View SheHacks 2018 Expo</button></a>
+        </div>
+      </div>
+
+      <div class="cell2 purple-color desktop-only">
+        <div class="table">
+          <div class="tablerow">
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/design.png" class="icon-5" />
+                <h5>Product Management</h5>
+              </center>
+            </div>
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/webdev.png" class="icon-5" />
+                <h5> Web<br>Development </h5>
+              </center>
+            </div>
+            <div class="cell6 track-display-2">
+              <div class="flex-center">
+                <img src="assets/imgs/hardware.png" class="icon-5" />
+                <h5>Hardware</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablerow">
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/social_impact.png" class="icon-5" />
+                <h5> Career<br>Development</h5>
+              </center>
+            </div>
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/machinelearning.png" class="icon-5" />
+                <h5> Data<br>Science</h5>
+              </center>
+
+            </div>
+            <div class="cell6 track-display-2">
+              <center>
+                <img src="assets/imgs/datascience.png" class="icon-5" />
+                <h5> Mobile<br>Development</h5>
+              </center>
+            </div>
+          </div>
+
+          <div class="tablerow track-display-1">
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/hardware.png" class="icon-5" />
+                <h5> Hardware</h5>
+              </center>
+            </div>
+            <div class="cell6">
+              <center>
+                <img src="assets/imgs/datascience.png" class="icon-5" />
+                <h5> Career<br>Development</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-center-2 about-box-1" id="explore-with-us-section">
+    <div class="about-box-2">
+      <h3 class="bold"> Explore with Us</h3>
+      <p class="">TechTogether Boston is one the world's largest all-female and non-binary hackathons. For 36 hours, we equip women and non-binary folks with all the resources they need to transform their dreams into reality. <br><br> No experience is necessary to attend TechTogether
+        Boston, only a passion for exploring the exciting the world of technology!
+      </p> <br>
+
+      <div class="flex-space-2 about-box-3">
+        <div>
+          <img src="assets/imgs/meetnewpeople.png" class="about-img-1">
+          <p class="bold"> Meet New People </p>
+        </div>
+        <div>
+          <img src="assets/imgs/relievestress.png" class="about-img-2">
+          <p class="bold"> Relieve Stress </p>
+        </div>
+      </div>
+
+      <div class="flex-space-2">
+        <div>
+          <img src="assets/imgs/explorecity.png" class="about-img-3">
+          <p class="bold"> Explore The City </p>
+        </div>
+        <div>
+          <img src="assets/imgs/learnskills.png" class="about-img-4">
+          <p class="bold"> Learn New Skills </p>
+        </div>
+      </div>
+      <a href="https://techtogetherboston.typeform.com/to/neFmKu" target="_blank"><button class="btn btn-large register button-width mobile-button-margin" id="second-apply-button">Join the Waitlist</button></a>
+    </div>
+
+    <div class="about-box-4">
+      <img src="assets/imgs/Sponsor_Rep.JPG" class="image-4">
+      <img src="assets/imgs/facemasks.jpg" class="image-4">
+    </div>
+    <div class="about-box-5">
+      <img src="assets/imgs/hacking2.JPG" class="image-4">
+      <img src="assets/imgs/Winning_Team.JPG" class="image-4">
+    </div>
+  </div>
+
+
+  <div class="row desktop-only" id="thanks-header">
+      <div class="col s12">
+         <h2 class="bold text-center"> Thank you to our Sponsors &#38; Partners!</h2>
+      </div>
+  </div>
+   <div class="row mobileAndTablet">
+      <div class="col">
+         <h2 class="bold text-center"> Thank you to our Sponsors &#38; Partners!</h2>
+      </div>
+  </div>
+
+  <div class="row">
+    <p class="text-center no-margin"> Interested in partnering with us? Email <a href="mailto:sponsor@techtogether.io" class="blue-url">sponsor@techtogether.io</a> for partnership inquiries! </p>
+  </div>
+
+
+    <div class="host-sponsor">
+      <div class="grid-container grid-BU_Logo">
+            <p class="bold no-margin"> Host Partner</p>
+            <a href="http://www.bu.edu/" target="_blank"><img src="assets/imgs/partner-logos/BU-logo-.png" class="partner-logo" alt="bu"></a>
+      </div>
+
+      <div class="grid-container grid-BU">
+          <a href="https://www.bu.edu/cas/" target="_blank" class="center-align">
+            <div>
+            <img src="assets/imgs/partner-logos/BU-logos/cas-logo.png" class="partner-logo" alt="Boston University College of Arts and Sciences">
+               College of Arts &amp; Sciences
+            </div>
+          </a>
+          <a href="https://www.bu.edu/cs/" target="_blank" class="center-align">
+            <div>
+            <img src="assets/imgs/partner-logos/BU-logos/cs-logo.jpg" class="partner-logo" alt="Boston University Computer Science Department">
+               Dept. of Computer Science
+            </div>
+          </a>
+          <a href="https://www.bu.edu/eng/departments/ece/" target="_blank" class="center-align">
+            <div>
+            <img src="assets/imgs/partner-logos/BU-logos/ece-logo.jpg" class="partner-logo" alt="Boston University Electrical and Computer Engineering">
+               Dept. of Electrical and Computer Engineering
+            </div>
+          </a>
+          <div class="desktop-only"> <br> </div>
+          <div class="desktop-only"> <!-- Empty div for grid spacing --> </div>
+          <div class="desktop-only"> <!-- Empty div for grid spacing --> </div>
+         <a href="http://www.bu.edu/spark/" target="_blank" class="center-align">
+            <div>
+            <img src="assets/imgs/partner-logos/BU-logos/spark-logo.png" class="partner-logo" alt="Boston University Spark!" style="width:50%; display:block; margin-left:25%; margin-bottom:1em;">
+               BU Spark
+            </div>
+          </a>
+          <a href="http://www.bu.edu/casit/" target="_blank" class="center-align">
+            <div>
+            <img src="assets/imgs/partner-logos/BU-logos/ist-logo.png" class="partner-logo" alt="Boston University IS and T department">
+               Information Services &amp; Technology
+            </div>
+          </a>
+          <a href="https://www.bu.edu/research/" target="_blank" class="center-align">
+            <div>
+              <img src="assets/imgs/partner-logos/BU-logos/research-logo.png" class="partner-logo" alt="Boston University Research">
+               BU Research
+            </div>
+          </a>
+      </div>
+    </div>
+<br>
+    <hr class="hr-light" style="width:80%">
+
+  <div class="grid-container grid-pita-plus">
+    <div class="border_box">
+      <p class="bold no-margin"> Title Sponsor</p>
+      <a href="https://www.wayfaircareers.com/students" target="_blank"><img src="assets/imgs/partner-logos/Wayfair_logo.png" class="partner-logo" alt="Wairfair_Logo"> </a>
+    </div>
+  </div>
+
+  <div class="grid-container grid-pita">
+    <a href="https://careers.toasttab.com/" target="_blank"><img src="assets/imgs/partner-logos/toast-logo.png" class="partner-logo" alt="toast logo"></a>
+    <a href="https://jobs.fidelity.com/page/show/students" target="_blank"><img src="assets/imgs/partner-logos/Fidelity_Logo.jpg" class="partner-logo" alt="Fidelity"> </a>
+    <a href="https://www.redhat.com/en" target="_blank"><img src="assets/imgs/partner-logos/red hat logo.png" class="partner-logo" alt="Red Hat"></a>
+  </div>
+
+  <div class="grid-container grid-tera">
+    <a href="https://careers.microsoft.com/us/en/students-and-graduates" target="_blank"><img src="assets/imgs/partner-logos/microsoft-logo.png" class="partner-logo" alt="Microsoft Logo"> </a>
+     <a href="https://jobs.dell.com/internships" target="_blank"><img src="assets/imgs/partner-logos/Dell_Logo_Blue_rgb-01.jpg" class="partner-logo dell_logo" alt="Dell Logo"> </a>
+    <a href="https://www.bcbs.com/careers" target="_blank"><img src="assets/imgs/partner-logos/BCBS.png" class="partner-logo" alt="BlueCrossBlueShield Logo"> </a>
+   </div>
+   <div class="grid-container grid-sub2">
+      <a href="https://www.atlassian.com/company/careers/interns" target="_blank"><img src="assets/imgs/partner-logos/Atlassian-horizontal-blue-onecolor@2x-cmyk.png" class="partner-logo" alt="Atlassian Logo"> </a>
+   </div>
+
+  <div class="grid-container grid-giga">
+    <a href="https://www.sap.com/uk/about/careers/university-programs/students/internships/internship-experience-project.html" target="_blank"><img src="assets/imgs/partner-logos/sap-logo.png" class="partner-logo" alt="sap logo"></a>
+    <a href="https://www.cbre.us/about/careers/students-graduates" target="_blank"><img src="assets/imgs/partner-logos/CBRE_Group_logo.svg.png" class="partner-logo" alt="CBRE"> </a>
+    <a href="https://www.twosigma.com/" target="_blank"><img src="assets/imgs/partner-logos/TwoSigma_Logo_RGB_transp_1000px (12).png" class="partner-logo" alt="TwoSigma"></a>
+    <a href="https://careers.jpmorgan.com/careers/US/en/programs" target="_blank"><img src="assets/imgs/partner-logos/jpmorgan-chase_logo%20(2).jpg" class="partner-logo" alt="JP Morgan"> </a>
+    <a href="https://www.slalombuild.com/" target="_blank"><img src="assets/imgs/partner-logos/Logo-Black-Cyan.png" class="partner-logo" alt="Slalom"></a>
+    <a href="https://careers.ibm.com/" target="_blank"><img src="assets/imgs/partner-logos/ibm-logo.png" class="partner-logo" alt="ibm logo"></a>
+    <a href="https://www.techatbloomberg.com/?utm_source=bloomberg-menu&utm_medium=bcom" target="_blank"><img src="assets/imgs/partner-logos/logoBBGblck.png" class="partner-logo" alt="Bloomberg"></a>
+    <a href="https://careers.travelers.com/students-grads/internships/" target="_blank"><img src="assets/imgs/partner-logos/trav_1797+K.png" class="partner-logo" alt="Travelers"> </a>
+     <a href="https://www.umb.edu/" target="_blank"><img src="assets/imgs/partner-logos/UMASSB0STON_ID_blue.png" class="partner-logo" alt="UMass Boston"> </a>
+    <a href="https://www.validity.com/" target="_blank"><img src="assets/imgs/partner-logos/ValidityLogo.png" class="partner-logo" alt="Validity"> </a>
+    <a href="https://www.mathworks.com/company/jobs/students/edg-masters-phd.html?s_tid=cr_nav_engcs&source=15448" target="_blank"><img src="assets/imgs/partner-logos/MathWorks.jpg" class="partner-logo" alt="MathWorks"> </a>
+     <a href="https://www.johnhancock.com/careers/student-opportunities.html" target="_blank"><img src="assets/imgs/partner-logos/JH_blue_logo.png" class="partner-logo" alt="John Hancock Logo"> </a>
+  </div>
+   <div class="grid-container grid-sub">  <!-- Giga Sponsors' Last Row -->
+      <a href="https://www.masscec.com/clean-energy-internship-program" target="_blank"><img src="assets/imgs/partner-logos/MassCleanEnergyLogo.png" class="partner-logo" alt="Mass CLean Energy"> </a>
+   </div>
+
+  <div class="grid-container grid-mega">
+    <a href="https://balsamiq.com/" target="_blank"><img src="assets/imgs/partner-logos/balsamiq-logo-screen.png" class="partner-logo" alt="Balsamiq"></a>
+    <a href="https://careers.google.com/students/engineering-and-technical-internships/" target="_blank"><img src="assets/imgs/partner-logos/Google_Logo.png" class="partner-logo" alt="Google"></a>
+    <a href="https://www.jobs.libertymutualgroup.com/category/internships-jobs/685/39303/1" target="_blank"><img src="assets/imgs/partner-logos/liberty_mutual.png" class="partner-logo" alt="Liberty_Mutual"></a>
+    <a href="https://www.facebook.com/careers/students-and-grads/?teams[0]=Internship%20-%20Engineering%2C%20Tech%20%26%20Design&teams[1]=Internship%20-%20Business&teams[2]=Internship%20-%20PhD&teams[3]=University%20Grad%20-%20PhD%20%26%20Postdoc&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=University%20Grad%20-%20Business" target="_blank"><img src="assets/imgs/partner-logos/Facebook%20Logo19.png" class="partner-logo" alt="Facebook Logo"> </a>
+  </div>
+   <div class="grid-container grid-sub3"> <!-- Mega Sponsors' Last Row-->
+     <a href="https://campus.capitalone.com/" target="_blank"><img src="assets/imgs/partner-logos/Capital%20One%20Logo.png" class="partner-logo" alt="Capital One Logo"></a>
+      <a href="https://www.bookbub.com/positions" target="_blank"><img src="assets/imgs/partner-logos/BookBub_Logo.png" class="partner-logo" alt="BookBub Logo"></a>
+   </div>
+
+  <div class="grid-container">
+    <!-- Custom Amount or Unknown Amount -->
+    <a href="https://www.armoredthings.com" target="_blank"><img src="assets/imgs/partner-logos/armored-things-logo.png" class="partner-logo" alt="armored-things logo"></a>
+    <a href="https://www.drift.com/jobs/" target="_blank"><img src="assets/imgs/partner-logos/drift_logo.png" class="partner-logo" alt="Drift"> </a>
+    <a href="https://www.generalcatalyst.com/" target="_blank"><img src="assets/imgs/partner-logos/gc.png" class="partner-logo" alt="General Catalyst"> </a>
+    <a href="http://www.roughdraft.vc/" target="_blank"><img src="assets/imgs/partner-logos/8IuORa3t_400x400.jpg" class="partner-logo roughdraft-img" alt="Rough Draft"> </a>
+    <a href="https://www.accenture.com/us-en/careers/find-your-fit-students-graduates-undergraduate-summer-internships" target="_blank"><img src="assets/imgs/partner-logos/accenture_logo.png" class="partner-logo" alt="Accenture logo"></a>
+  </div>
+  <div class="grid-container grid-sub4">
+   <a href="https://www.csail.mit.edu/" target="_blank"><img src="assets/imgs/partner-logos/csail-logo.png" class="partner-logo" alt="MIT CSAIL Logo" style="width: 80%;"></a>
+     <a href="https://www.khoury.northeastern.edu/" target="_blank"><img src="assets/imgs/partner-logos/northeastern.png" class="partner-logo" alt="NorthEastern Logo" ></a>
+     <a href="https://careers.shutterstock.com/" target="_blank"><img src="assets/imgs/partner-logos/ShutterStock_Logo.png" class="partner-logo" alt="ShutterStock Logo"></a>
+  </div>
+
+  <h4 class="bold no-margin center-align" style="margin-bottom:3%; margin-top: 1em"> Partners</h4>
+  <div class="row partner-row">
+    <div class="col s12 m2 l2">
+          <a href="https://hackplus.io/" target="_blank"><img src="assets/imgs/partner-logos/Hack-plus.png" class="partner-logo" alt="Hackplus"></a>
+    </div>
+    <div class="col s12 m2 l2">
+          <a href="https://www.womenwhocode.com/boston" target="_blank"> <img src="assets/imgs/partner-logos/WWCode_Logo.jpg" class="partner-logo" alt="WWCode Logo"></a>
+    </div>
+    <div class="col s12 m2 l2">
+          <a href="https://mlh.io/" target="_blank"><img src="assets/imgs/partner-logos/mlh-logo-color.png" class="partner-logo" style="padding-top:1.5em;" alt="mlh"></a>
+    </div>
+    <div class="col s12 m2 l2">
+          <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank"><img src="assets/imgs/partner-logos/sticker-mule-logo.png" class="partner-logo" alt="Sticker Mule"></a>
+    </div>
+    <div class="col s12 m2 l2">
+          <a href="https://www.experimentalcivics.io/" target="_blank"><img src="assets/imgs/partner-logos/Experimental_Civics_Logo.png" class="partner-logo experimental_civics_logo" alt="Experimental_Civics" style="width:85%; margin-top:-1em"></a>
+    </div>
+     <div class="col s12 m2 l2">
+          <a href="https://www.starthub.org/" target="_blank"><img src="assets/imgs/partner-logos/starthublogo_long.png" class="partner-logo" alt="StartHub" style="padding-top: 2em"></a>
+    </div>
+
+  </div>
+
+     <footer class="flex-footer orange">
+
+
+     <div class="footer-col">
+      <center><img src="assets/imgs/techtogetherlogo-white.png" class="logo3"></center>
+
+       <!-- Social media -->
+      <div class="footer-col-social center">
+        <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><img src="assets/imgs/facebook_white.png" class="icon-3"></a>
+        <a href="https://twitter.com/techtogetherbos?lang=en" target="_blank"><img src="assets/imgs/twitter_white.png" class="icon-3"></a>
+        <a href="https://www.instagram.com/techtogetherboston/" target="_blank"><img src="assets/imgs/instagram_white.png" class="icon-3"></a>
+      </div>
+
+       <div class="footer-col-social center">
+        <p> <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="white-text center">MLH Code of Conduct</a> </p>
+      </div>
+    </div>
+
+     <div class="footer-col">
+
+       <p class="white-text signup"> Sign up for our newsletter! </p>
+
+       <!-- Sign Up Beginning -->
+      <div class="row signup">
+        <div class="col" style="padding-left: 0px">
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup {
+              background: rgb(253, 115, 97);
+              clear: left;
+              font: 14px Barlow, Helvetica, Arial, sans-serif;
+            }
+             /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup" style="z-index:10; position:relative">
+            <form action="https://shehacks.us17.list-manage.com/subscribe/post?u=34946c2c134f07563cac527a4&amp;id=d441aab50c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate no-margin" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+
+                 <!-- Email box-->
+                <div class="mc-field-group">
+                  <input type="email" value="" name="EMAIL" class="required email email-width" id="mce-EMAIL" style="width:175%; border: .75px solid #FFF; color:white; font-family: Barlow;">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_34946c2c134f07563cac527a4_d441aab50c" tabindex="-1" value=""></div>
+
+                 <!-- Button -->
+                <div class="clear"><input type="submit" value="SUBSCRIBE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button" style="width:100%; color:white; background-color: #808cf4; margin-top:10px; font-weight:600; border-radius:1px;"></div>
+
+               </div>
+            </form>
+          </div>
+        </div>
+
+       </div>
+      <!-- Sign up End -->
+
+       <!--  Subscribe for mobile -->
+      <div class="footer-col center signup-mobile">
+        <!-- Button -->
+        <div class="clear center"><input type="submit" value="Subscribe to our newsletter!" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button" style="width:80%; color:white; background-color: #808cf4; font-weight:600; border-radius:1px;" onclick="window.location.href='https://shehacks.us17.list-manage.com/subscribe/post?u=34946c2c134f07563cac527a4&id=d441aab50c'"></div>
+      </div>
+
+     </div>
+  </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="assets/js/ham_menu.js">
+  </script>
+
+   <script>
+    $("#myVideo").height($(".blue-box").height() * 1.2);
+  </script>
+
+   <!-- confetti thanks to: https://github.com/Agezao/confetti-js -->
+  <script type="text/javascript" src="confetti-js-master/dist/index.min.js"></script>
+  <script type="text/javascript">
+    var confettiSettings = {
+      target: "my-canvas-2",
+      max: 55,
+      size: 2.5,
+      animate: true,
+      props: ["circle", "square", "triangle", "line"],
+      colors: [
+        [165, 104, 246],
+        [230, 61, 135],
+        [0, 199, 228],
+        [253, 214, 126]
+      ],
+      clock: 40,
+      rotate: true,
+      height: document.getElementById('first-section').clientHeight
+    };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  </script>
+
+
+</body>
+
+</html>

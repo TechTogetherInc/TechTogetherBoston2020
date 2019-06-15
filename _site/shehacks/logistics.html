@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/sheHacksboston_logo.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SheHacks Boston</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font-icon.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-104887569-2');
+  </script>
+
+
+</head>
+
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black"
+  target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+
+<body>
+  <header id="header-resources">
+    <div class="header-content clearfix">
+      <!-- <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a> -->
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#s">Sponsors</a></li>
+          <li id="challengeMobileMenu"><a href="challenges.html">Prizes</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <!-- <li><a href="#sponsorship">Get Involved</a></li> -->
+          <li id="resourcesmenuhide">
+            <div class="dropdownNav">
+              <a href="">Resources</a><i class="fas fa-angle-down" style="color:white;border:none;"></i>
+              <div class="dropdownNav-content" style="left:40px">
+                <p><a href="resources.html" style="color:black;margin-left:0px;">Tools &amp; Tutorials</a></p>
+                <hr class="style1">
+                <p><a href="challenges.html" style="color:black;margin-left:0px;">Prizes</a></p>
+                <hr class="style1">
+                <p><a href="logistics.html" style="color:black;margin-left:0px;">Logistics</a></p>
+              </div>
+            </div>
+          </li>
+          <li><a href="https://bu-spark.typeform.com/to/LOXa1I" target="_blank">Attend</a></li>
+          <li><a href="mailto:info@shehacks.io">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!--header navigation -->
+
+  <!-- header section -->
+
+
+  <div>
+    <img src="img/logisticsmobile.png" alt="" class="header" id="challengeMobileHeader">
+  </div>
+  <div>
+    <img src="img/logistics.png" width=100% style="padding-top:50px" id="logistics-mobile-hide">
+  </div>
+
+
+  <!-- <div id="schedule">
+    <h1 class="barlow">Tentative Schedule</h1>
+    <div class="daytab">
+      <button class="tablinks" onclick="openDay(event, 'Friday')" id="defaultOpen">Friday</button>
+      <button class="tablinks" onclick="openDay(event, 'Saturday')">Saturday</button>
+      <button class="tablinks" onclick="openDay(event, 'Sunday')">Sunday</button>
+    </div>
+
+    <div id="Friday" class="daytabcontent">
+      <img src="fri-cal.png" style="width:90%;padding-left:10%">
+    </div>
+
+    <div id="Saturday" class="daytabcontent">
+      <img src="sat-cal.png" style="width:90%;padding-left:10%">
+    </div>
+
+    <div id="Sunday" class="daytabcontent">
+      <img src="sun-cal.png" style="width:90%;padding-left:10%">
+    </div>
+  </div> -->
+
+  <!-- <div id="schedule-mobile">
+    <h1 class="barlow">Tentative Schedule</h1>
+    <h2 class="logistics" style="padding-left:.5em;">Friday, Jan 26th</h2>
+    <ul class="schedule-list">
+      <li>8:00PM Registration Begins</li>
+      <li>10:00PM Opening Ceremony </li>
+      <li>11:00PM Workshops Begin</li>
+      <li>12:00AM Midnight Pizza </li>
+      <li>2:00AM Late Night Snacks</li>
+    </ul>
+    <h2 class="logistics" style="padding-left:.5em;">Saturday, Jan 27th</h2>
+    <ul class="schedule-list">
+      <li>8:00AM Opening Ceremony Day 2</li>
+      <li>8:30AM Breakfast Begins</li>
+      <li>9:00AM Keynote: Jesslyn Tannady</li>
+      <li>11:00AM Girls on the Run 5k w/ SheHacks Boston Director Fiona #hackingexercise</li>
+      <li>12:00PM Lunch Begins</li>
+      <li>1:00PM Keynote: Robin</li>
+      <li>2:00PM Snacks</li>
+      <li>6:00PM Dinner Begins</li>
+      <li>9:00-11:00PM Arielle Tindel & Spider Party</li>
+      <li>12:00AM Midnight Snacks</li>
+    </ul>
+    <h2 class="logistics" style="padding-left:.5em;">Sunday, Jan 28th</h2>
+    <ul class="schedule-list">
+      <li>8:00AM Breakfast</li>
+      <li>9:00AM Submissions Due & Workshops End</li>
+      <li>10:15AM Judging Begins</li>
+      <li>11:00AM Women of Color in Tech: B*tch, Better Have My Money & More Stories</li>
+      <li>11:30AM Lunch</li>
+      <li>1PM Closing Ceremony & Winners Announced</li>
+      <li>2PM Event Ends</li>
+    </ul>
+  </div> -->
+
+  <hr class=“style1” style="padding-bottom:20px;border-top: 1px solid #8c8b8b;">
+  <div id="workshop_logistics">
+    <div class="row">
+      <h1 class="barlow">Workshop Highlights</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-3 workshop">
+        <h2 class="workshops">Designing the User Experience </h2>
+        <p class="workshop_host">Hosted by Jason Reynolds from General Assembly</p>
+        <img src="img/companies/ga-logo.png" alt="" class="prizeimage green" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">User experience is the key to making a product truly great. No amount of technology or visuals will matter if the experience of using your website or application isn’t simple, intuitive, and enjoyable. <br> In this workshop participants will learn
+          what a User Experience (UX) Designer does, why it’s a critical role, and get a practical introduction to the field of UX design.</p>
+      </div>
+      <div class="col-md-3 workshop">
+        <h2 class="workshops">Hack Your Hoodie with RedHat</h2>
+        <p class="workshop_host">Hosted by Gina Likins, Red Hatter and open source advocate</p>
+        <img src="img/companies/hoodie.jpg" alt="" class="prizeimage orange" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">Participants will add LEDs to the item of clothing of their choice (which participants will supply), while learning the basics of adding circuits to clothing. Red Hat and SparkFun are supplying all the electronic materials (except the clothing).
+          <strong>This intro to wearable electronics workshop will have 2 sessions, with 20 available seats per workshop. We will share the RSVP link closer to the event.</strong> </p>
+      </div>
+      <div class="col-md-3 workshop">
+        <h2 class="workshops" style="font-size:1.58em;">How Apache Storm Is Used to Alert Traders to Real-Time Financial Market Events</h2>
+        <p class="workshop_host">Hosted by Zijie Li from Bloomberg</p>
+        <img src="img/companies/bloomberg-2.png" alt="" class="prizeimage blue" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">Apache Storm is a free and open source distributed real-time computation system. This talk introduces the basics of Apache Storm and explains the concepts using a word count example. It highlights the Trade Automation Rule Builder application
+          developed by the Bloomberg Execution Management System team, and how we use Apache Storm to evaluate the rules using real-time market data and to trigger alerts.</p>
+      </div>
+      <div class="col-md-3 workshop">
+        <h2 class="workshops">High School Hacker's Workshop</h2>
+        <p class="workshop_host">Hosted by Candace Williams and Iccha Singh from SheHacks Boston Leadership Team</p>
+        <img src="img/companies/iccha-workshop.jpg" alt="" class="prizeimage pink" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">This workshop will be a place for high schoolers to form teams as it may be hard for high school beginners to gel with collegiate hackers. Most importantly, we will be giving hackathon tips &amp; tricks, and hosting a mini brainstorming session
+          for ideation and getting set up. Overall, it will be a space for high school beginners to ease into their first hackathon experience and help them assimilate better into the atmosphere.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 workshop">
+        <h2 class="workshops">iOS Development for Augmented Reality</h2>
+        <p class="workshop_host">Hosted by Nina Kominiak from Apple</p>
+        <img src="img/companies/swift-logo.png" alt="" class="prizeimage blue" style="max-width:70%;">
+        <hr>
+        <p class="workshop_des">In this session Apple Consulting Engineer, Nina Kominiak will be discussing Apple tools for development including frameworks that will enable you to build productivity apps to augmented reality apps.</p>
+      </div>
+      <div class="col-md-3 workshop">
+        <h2 class="workshops">Stealthy Image Manipulation with Python</h2>
+        <p class="workshop_host">Hosted by Rebecca Perry from Wayfair</p>
+        <img src="img/companies/rebecca-perry.jpg" alt="" class="prizeimage green" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">In this workshop, you’ll see how digital images are simply arrays of numbers that you can manipulate in Python like any other data structure. Specifically, we’ll walk through an implementation of the Seam Carving algorithm that stealthily removes
+          the least interesting parts of images.</p>
+      </div>
+      <!-- <div class="col-md-3 workshop">
+      <h2 class="workshops" style="font-size:1.58em;">Hear it First from Startup Women in Tech</h2>
+      <p class="workshop_host">Hosted by Rachel Spekman,
+Business Ventures Director from Innovate@BU</p>
+      <img src="img/companies/build-logo2.png" alt="" class="prizeimage pink" style="max-width:70%"> <hr>
+      <p class="workshop_des">Thinking about joining a startup or starting your own startup? Don't miss this opportunity to hear from female BU alumni and affiliates as they share best practices and pitfalls to avoid for starting your own venture.</p>
+    </div> -->
+      <div class="col-md-3 workshop">
+        <h2 class="workshops" style="font-size:1.58em;">Hacking Healthcare with Artificial Intelligence</h2>
+        <p class="workshop_host">Hosted by Amar Das from IBM</p>
+        <img src="img/companies/ibm-workshop.png" alt="" class="prizeimage pink" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">Big Data is ovewhelming the healthcare system, but it is difficult to find actionable insights. We encourage participants to create AI and machine learning solutions that can improve healthcare.</p>
+      </div>
+      <div class="col-md-3 workshop">
+        <h2 class="workshops" style="font-size:1.58em;">Getting Started with HTML and CSS</h2>
+        <p class="workshop_host">Hosted by Shayna Cummings, Director of Women Who Code Boston</p>
+        <img src="img/companies/shayna.jpg" alt="" class="prizeimage orange" style="max-width:70%">
+        <hr>
+        <p class="workshop_des">In this hands-on workshop, you'll learn how to build a webpage from scratch using HTML and CSS. We'll go through the basics, and provide lots of resources for further learning. <br> <strong>No prior coding experience is necessary. </strong></p>
+      </div>
+    </div> <br>
+    <div class="row">
+      <h1 class="barlow" style="font-size:2em; max-width:80%; margin:auto;">In addition to these workshops, we will have another 15+ topics with instructors from Google, KAYAK, CBRE, Evertrue, and more! </h1>
+    </div>
+  </div>
+
+  <hr class="style1">
+  <div class="panels">
+    <h1 class="barlow" style="text-align:center">Panels &amp; Talks</h1>
+
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-5 workshop">
+        <h2 class="panel-title-2" style="background:#C1F881">Future Careers in IT Panel Discussion</h2>
+        <p class="workshop_host">Hosted by Tracy Schroeder, the BU's VP of IS&amp;T department and steering committee member</p>
+        <p>A small panel of female technology professionals will describe their career paths and give their perspectives in future career opportunities for women in technology.</p>
+      </div>
+      <div class="col-md-5 workshop">
+        <h2 class="panel-title-2" style="background:#82dcfe">Hear it First from Startup Women in Tech</h2>
+        <p class="workshop_host">Hosted by Rachel Spekman, the Business Ventures Director at Innovate@BU</p>
+        <p>Thinking about joining a startup or starting your own startup? Don't miss this opportunity to hear from female BU alumni and affiliates as they share best practices and pitfalls to avoid for starting your own venture.</p>
+
+      </div>
+    </div>
+    <div class="row" style="  text-align: center; padding:2em;" id="panel_graphic_hide">
+      <h2 class="panel-title-2" style="background:#fa8dd5; width:75%; margin-left:12.5%;">Women of Color in Tech: B*tch, Better Have My Money & More Stories</h2>
+      <p class="workshop_host">Hosted by We Ceremony</p>
+      <img src="panel.png" alt="" style="max-width:90%" id="panel-graphic">
+      <!-- <div class="col-md-10" id="panel-graphic">
+
+    </div> -->
+    </div>
+  </div>
+
+  <hr class="style1">
+
+  <div class="" id="venueinfo">
+    <h1 class="barlow" style="text-align:center">Venue Information &amp; Directions</h1>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3" id="address">
+        <h2 class="logistics">Address</h2>
+        <p class="logistics">George Sherman Union <br>775 Commonwealth Avenue <br> Boston, MA 02215</p>
+      </div>
+      <div class="col-md-7">
+        <h2 class="logistics"><i class="fa fa-plane" ></i> From Logan Airport </h2>
+        <p class="logistics">Take the MBTA silver line shuttle to South Station.Transfer to the red line and take inbound to Park Street.Transfer to Green line and take the ‘B’ line Outbound towards Boston College, and get off at Boston University Central. Alternatively,
+          you can also order a Uber, Lyft, or other car service to the venue address.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3">
+        <h2 class="logistics"><i class="fa fa-car" ></i> Driving Directions</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3">
+        <h2 class="logistics">From the North</h2>
+        <p>Take I-93 South to Boston. After the bridge,take the Storrow Drive/Cambridge exit.Follow Storrow Drive approximately 2 miles to the Kenmore Square exit. Continue to follow the local directions to arrive at venue.</p>
+      </div>
+      <div class="col-md-3">
+        <h2 class="logistics">From the South</h2>
+        <p>Washington, DC or NYC, take I-95N to New Haven, CT. Then take I-91N to Hartford, where you will get I-84 East. Follow this to I-90 East,the Massachusetts Turnpike. Continue to follow the local directions to arrive at venue.</p>
+      </div>
+      <div class="col-md-4">
+        <h2 class="logistics">From the West</h2>
+        <p>Take the Massachusetts Turnpike(I-90) East to Exit 18, Brighton/Cambridge. Follow the right side of the ramp towards Cambridge. At the bottom of the ramp there will be several traffic lights. Turn right at the hotel onto StorrowDrive. Exit Storrow
+          Drive at the Kenmore Square exit. Continue to follow the local directions to arrive at venue.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-5">
+        <h2 class="logistics">Local Directions</h2>
+        <p>From the Kenmore Square exit off Storrow Drive,follow ramp to traffic lights. Turn right on to Beacon Street. At this point, the road will fork. Follow the left side of fork into Kenmore Square and at the second traffic light, bear right for Commonwealth
+          Avenue. The venue will be on the right, at 775 Commonwealth Ave.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class=“style1” style="padding-top:20px;padding-bottom:20px;border-top: 1px solid #8c8b8b;">
+
+  <div id="teams" class="row">
+    <h1 class="barlow">Team &amp; Mentor Info</h1>
+    <!-- <div class="col-md-1">
+  </div> -->
+    <div class="col-md-7">
+      <div style="display: inline-block;position: relative;">
+        <img src="img/team.png" width=100% style="display:block;margin:auto;" alt="team">
+        <a href="https://www.facebook.com/groups/2114116722143511/">
+      <img src="img/fb-logo.png" style="position: absolute;width:6%;left:57%;bottom:16%"></a>
+        <!--     <map name="team">
+        <area shape="rect" coords="652,384,720,453" alt="fbLink" href="https://www.facebook.com/groups/2114116722143511/">
+      </map> -->
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div id="mentors">
+        <!-- <h1 class="barlow">Mentor Info</h1> -->
+        <div id="descriptionlower" style="background:white; border-color:#fa8dd5; margin-top:12%;">
+          <p style="font-size:1.5em;text-align:center; line-height:1.5em;">Click below to see who has been assigned your mentor or mentee. We recommend finding your buddy online via Facebook or Slack before the hackathon, so you can get to know each other a bit before the event.</p>
+        </div>
+        <div class="wrapper_sign" align="center" style="padding-top:20px; margin-left:-13%;">
+          <p><br><a href="https://docs.google.com/spreadsheets/d/1mD-wbPOa6sKA3TStfSbblrps65gMkCO-X3ZkKqYfsMk/edit#gid=0" class="sign" target="_blank">SEE MENTOR LIST</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <hr class=“style1” style="padding-top:20px;padding-bottom:20px; border-top: 1px solid #8c8b8b;"> -->
+
+
+  <script>
+    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();
+
+    function openDay(evt, day) {
+      var i, daytabcontent, tablinks;
+      daytabcontent = document.getElementsByClassName("daytabcontent");
+      for (i = 0; i < daytabcontent.length; i++) {
+        daytabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(day).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  <!-- <div style="height:600px;">
+  <img src="sat-cal.png" style="width:95%;padding-left:5%">
+</div>
+<div style="height:600px;">
+  <img src="sun-cal.png" style="width:95%;padding-left:5%">
+</div> -->
+  <!-- register section -->
+  <section id="register" class="section register">
+    <div class="container-fluid">
+      <div class="row pink">
+        <h1 style="text-align:center;" id="title-responsive">Want to <span class ="registeroptions">[design, innovate, create]</span> hack?</h1>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- register section -->
+
+
+
+
+
+  <!-- contact section -->
+  <footer id="contact">
+    <div>
+      <center>
+        <p> &copy; SheHacks 2017 / Boston, MA / info@shehacks.io </p>
+      </center>
+      <center>
+        <p><a style="color:#ffb400;" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+      </center>
+    </div>
+
+
+    <center>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.facebook.com/SheHacksBoston/?ref=br_rs" target="_blank"><img src="img/socialicons/facebook.png" alt="facebook icon" id="socialicon-facebook"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.instagram.com/shehacksboston/" target="_blank"><img src="img/socialicons/instagram.png" alt="facebook icon" id="socialicon-instagram"></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://www.twitter.com/shehacksboston/" target="_blank"><img src="img/socialicons/twitter.png" alt="facebook icon" id="socialicon-instagram"></a>
+        </div>
+      </div>
+    </center>
+
+
+  </footer>
+  <!-- register section -->
+
+  <!-- JS FILES -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/retina.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("defaultOpen").click();
+
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+  </script>
+
+  </script>
+</body>
+
+</html>

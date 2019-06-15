@@ -1,0 +1,452 @@
+
+@font-face {
+   font-family: HelveticaNeue-Roman !important;
+   src: url(../fonts/HelveticaNeue-Roman.otf);
+}
+
+body{
+   background-color: #eceff1;
+   font-family: 'HelveticaNeue-Roman', sans-serif;
+}
+
+.blue-url{
+  text-decoration: underline;
+  font-weight: bold;
+  color:#039be5;
+}
+
+.button-1{
+  padding:1em;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+#main-sidebar{
+  width: 90%;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.lighter{
+  font-weight: lighter !important;
+}
+
+.bolder{
+  font-weight: bolder !important;
+}
+
+.upper{
+  text-transform: uppercase !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  /*#mySidenav {
+    display: none;
+  }*/
+  #main-sidebar {
+    padding-left: 300px;
+  }
+}
+
+.menu-link{
+  font-size:1.5em !important;
+  font-weight: lighter !important;
+  margin-bottom:10px;
+}
+
+.socialicon{
+  width: 50%;
+}
+#nav-social-icons{
+  width: 80%;
+}
+
+#desktop-copyright{
+  font-size:.8em;
+  color:gray;
+}
+
+.dashboard-icons{
+  max-width: 50%;
+}
+
+.custom-hr{
+  color:white;
+}
+
+#announcements-header{
+  margin-bottom: 0px !important;
+}
+
+.announcement-time-stamp{
+  float:right !important;
+  top:0px !important;
+  right:0px;
+  padding:0px;
+}
+
+.announcement-card{
+  margin-bottom: 0px !important;
+}
+
+.speaker-icon{
+  width: 70%;
+  padding-top:.5em;
+}
+
+.tt-blue{
+   color:#52D9F6 !important;
+   background: #52D9F6 !important;
+}
+
+.tt-blue-light{
+  background: rgb(82,217,246, .5);
+}
+
+.tt-purple{
+   color:#808cFB !important;
+   background:#808cFB !important;
+}
+
+.tt-purple-light{
+  background: rgb(128,140,251,.5) !important;
+}
+
+.tt-pink{
+   color:#FD7361 !important;
+   background:#FD7361 !important;
+}
+
+.tt-pink-light{
+  background: rgb(253,115,97,.5) !important;
+}
+
+.tt-red-light{
+  background: rgb(231,63,51,.5) !important;
+
+}
+.tt-red{
+   color:#E73F33 !important;
+   background:#E73F33 !important;
+}
+
+.tt-green{
+  background: #2e6e87 !important;
+}
+
+.tt-green-light{
+  background: rgb(46,110,135,.5) !important;
+}
+
+.hr-light{
+   height:.1px;
+   color:#fafafa;
+   background: #fafafa;
+   width:95%;
+}
+.company-logo{
+  width: 50%;
+}
+
+.ibm{
+  width: 20%;
+}
+
+.balsamiq{
+  width: 40%;
+}
+
+.mathworks{
+  width: 60%;
+}
+
+.bold{
+   font-weight: bold;
+}
+
+.mobile-only{
+  display: none;
+}
+
+footer{
+   display: none;
+   margin: 2em 0 0 0;
+}
+
+#myBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+   font-size: 2em;
+   border: none;
+   background-color: #E73F33;
+   color: #FFF;
+   cursor: pointer;
+   padding: 12px;
+   border-radius: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  .dashboard-icons{
+    font-size:2.5em !important;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+
+.speaker-icon{
+      width: 30px !important;
+      padding-right: .8em;
+      padding-top: .8em;
+
+  }
+   
+   .flip-clock-wrapper ul {
+      width: 32px !important;
+   }
+
+   .flip-clock-wrapper ul li a div div.inn {
+      font-size: 40px !important;
+   }
+   
+   .flip-clock-label{
+      margin-right: 30px !important;
+   }
+   
+}
+
+
+
+/************************** Hamburger Nav ******************************/
+/* Original Source: https://codepen.io/PaulVanO/pen/XJYGNQ */
+
+.overlay {
+   position: fixed;
+   background: #808cFB;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 0%;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+   overflow: hidden;
+   z-index: 80;
+}
+
+.overlay.open {
+   opacity: 1;
+   visibility: visible;
+   height: 100%;
+}
+
+.overlay.open li {
+   animation: fadeInRight 0.5s ease forwards;
+   animation-delay: 0.35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+   animation-delay: 0.4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+   animation-delay: 0.45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+   animation-delay: 0.5s;
+}
+
+.overlay nav {
+   position: relative;
+   height: 70%;
+   top: 45%;
+   transform: translateY(-50%);
+   font-size: 3.5em;
+   font-weight: 300;
+}
+
+.overlay ul {
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   display: inline-block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+.overlay ul li {
+   display: block;
+   height: 25%;
+   height: calc(100% / 6);
+   min-height: 50px;
+   position: relative;
+   opacity: 0;
+   float: none;
+}
+
+.overlay ul li a {
+   display: block;
+   position: relative;
+   color: #FFF;
+   text-decoration: none;
+   overflow: hidden;
+   font-size: .5em;
+   text-align: center;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+   width: 100%;
+}
+
+/* Using content="" creates an underline when hovered over */
+.overlay ul li a:after {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 0%;
+   transform: translateX(-50%);
+   height: 3px;
+   background: #FFF;
+   transition: 0.35s;
+}
+
+.overlay-menu{
+   background-color: #808cFB;
+}
+
+.overlay-menu ul li a section{
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   flex-flow: column;
+}
+
+nav{
+   box-shadow: none;
+}
+
+.overlay-menu a{
+   height: 100%;
+}
+
+a{
+   color: black;
+   text-decoration: none;
+}
+
+.mobile_logo{
+   width: 75%;
+   display: none;
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      left: 20%;
+   }
+   100% {
+      opacity: 1;
+      left: 0;
+   }
+}
+
+/************************** Hamburger Nav 2 ******************************/
+/* Source: Same As The First One */
+
+.button_container-2{
+   display: none;
+   position: relative;
+   height: 2.3em;
+   width: 3em;
+   cursor: pointer;
+   z-index: 100;
+   transition: opacity 0.25s ease;
+   left: 84%;
+   top: 4.5em;
+}
+
+.button_container-2 span {
+   background: #000;
+   border: none;
+   height: 7px;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: all 0.35s ease;
+   cursor: pointer;
+}
+
+.button_container-2.active{
+   position: fixed;
+}
+
+.button_container-2 span:nth-of-type(3) {
+   width: 60%;
+}
+
+.button_container-2.active span:nth-of-type(3) {
+   width: 100%;
+}
+
+.button_container-2:hover {
+   opacity: 0.7;
+}
+
+.button_container-2.active .top {
+   transform: translateY(13px) translateX(0) rotate(45deg);
+   background: #FFF;
+}
+
+.button_container-2.active .middle {
+   opacity: 0;
+   background: #FFF;
+}
+
+.button_container-2.active .bottom {
+   transform: translateY(-13px) translateX(0) rotate(-45deg);
+   background: #FFF;
+}
+
+.button_container-2 span:nth-of-type(2) {
+   top: 12.5px;
+}
+
+.button_container-2 span:nth-of-type(3) {
+   top: 26.5px;
+}
+
+/*************************************************************************/
+
+
+@media only screen and (max-width: 1000px) {
+
+   footer{
+      display: block;
+   }
+
+   .socialicon{
+      width: 25%;
+   }
+
+   #main-sidebar{
+      padding-left: 0;
+   }
+
+   .mobile_logo{
+      display: block;
+   }
+
+   .button_container-2{
+      display: block;
+   }
+
+}

@@ -1,0 +1,67 @@
+.company-logo{
+  width: 50%;
+}
+
+.ibm{
+  width: 20%;
+}
+
+.balsamiq{
+  width: 40%;
+}
+
+.mathworks{
+  width: 60%;
+}
+
+.dell{
+  width: 25%;
+}
+
+.sponsorsticky{
+  position: relative;
+  width: 25%;
+  float: right;
+}
+
+.sponsor-label{
+  margin-top:.1em !important;
+  font-weight: bold;
+}
+
+.sponsor-tag{
+  background:rgb(231,63,51,.5);
+  padding:.5em;
+  border-radius: 10px;
+}
+
+.trophy-icon{
+  max-width:100%;
+  padding: 0;
+  vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+   .sponsorsticky{
+      width: 75%;
+      float: left;
+      margin: 0;
+   }
+   
+   .sponsor-label{
+      text-align: center;
+      font-size: 1.2em;
+   }
+   
+   .company-logo{
+      width: 100%;
+   }
+   
+   .dell{
+      width: 50%;
+   }
+   
+}
+

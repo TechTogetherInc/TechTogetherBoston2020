@@ -1,0 +1,108 @@
+.beginner-icon {
+  width:50px;
+}
+
+.schedule-card-icon {
+  max-width: 95%;
+}
+
+.meal-title {
+  margin-top: .2em !important;
+  font-size: 2em !important;
+}
+
+.hosted-tag{
+  margin-bottom: -.4em;
+  position: relative;
+}
+
+.hosted-tag-higher {
+  margin-bottom: 0.4em;
+  position: relative;
+}
+
+.workshop-logo{
+  width:80%;
+}
+.beginner-label {
+  margin-top: .5em !important;
+  font-weight: bold;
+}
+
+.beginner-friendly-tag {
+  background: rgb(128,140,251,.5) !important;
+  margin-top:1em;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+.mini-event-tag {
+  background: rgb(82,217,246, .5) !important;
+  margin-top:1em;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.event-card {
+  /*position: absolute;*/
+  width: 100% !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+.tab a.active-mobile {
+  border-bottom: 2px solid gray;
+}
+
+.tab a.active {
+  background: #52D9F6 !important;
+  color: white !important;
+}
+
+.schedule-day-button {
+  background: none !important;
+  color: #52D9F6 !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+
+.mobile-tab-button {
+  padding: 0 .2em .1em 0!important;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: .2em;
+  background: none !important;
+}
+
+.schedule-hr{
+  margin-top:-1.5%;
+}
+
+.schedule-time{
+  margin-bottom:0;
+  margin-left:-5%;
+}
+
+@media screen and (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .schedule-hr {
+    margin-top: -1em !important;
+    width:80%;
+    margin-left:50px;
+  }
+
+}

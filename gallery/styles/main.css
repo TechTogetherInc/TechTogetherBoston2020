@@ -914,8 +914,10 @@ img.events-1 {
 
 img.graph {
   max-width: 85%;
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
   text-align: center;
+   display: flex;
+   justify-content: center;
 }
 img.rating {
   text-align: center;
@@ -1150,7 +1152,7 @@ img.help-4 {
 
 .next-year .ttb h1, h2 {
   font-family: 'Lato', Arial, sans-serif;
-  max-width: 600px;
+  max-width: 100%;
   text-align: center;
   font-size: 18px;
   vertical-align: middle;

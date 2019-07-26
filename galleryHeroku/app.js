@@ -41,8 +41,8 @@ app.post('/form', function (req, res) {
 
   console.log("testing, this is the body text: " + data.text);
 
-//   sendMail();
-//   sendMail2();
+  sendMail();
+  sendMail2();
   res.redirect('back');
 })
 

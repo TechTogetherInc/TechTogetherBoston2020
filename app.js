@@ -1,19 +1,23 @@
 const express = require('express')
-const app = express()
 const path = require('path')
+const bodyParser = require('body-parser')
+const app = express()
 
 require('dotenv').config();
 
 const PORT = process.env.PORT || 8000;
 
+app.use(bodyParser.json()); // idk what this does
+app.use(bodyParser.urlencoded({ extended: false }))
+
 app.use(express.static(__dirname + '/public'));
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 // 2020 pages
 app.use('/', require('./routes')); // index
-app.use('/gallery', require('./routes/gallery')); 
-app.use('/gallery/form-submission', require('./routes/form-submission')); 
+app.use('/', require('./routes/gallery')); // gallery
+// app.use('/gallery/test', require('./routes/test')); 
 
 // 2019 main pages
 app.use('/2019', require('./routes/2019/index')); 
@@ -57,4 +61,6 @@ app.use((req, res) => {
     res.status(404)
         .send('Error 404: Unknown Request');
 });
+
+module.exports = app;
 

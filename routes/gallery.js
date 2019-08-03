@@ -15,7 +15,7 @@ const data = {
 const data2 = {
   from: 'TechTogehter Boston <sponsor@techtogether.io>',
   to: 'email',
-  subject: 'Automated Message from TechTogether Boston [Do Not Reply]',
+  subject: 'Automated Confirmation Message from TechTogether Boston [Do Not Reply]',
   text: 'Your message on the TechTogether Boston website was sent! Thank you for reaching out. We will try to get back to you as soon as possible.'
 }
 
@@ -33,8 +33,8 @@ router.post('/gallery/form', function (req, res, next) {
   data.text = req.body.message + "\n\nThis message was sent from the TechTogether Boston gallery website through Mailgun. If you have any questions or concerns, please direct them to someone on the tech team.";
   data2.to = "<" + req.body.email + ">";
 
-  // sendMail();
-  // sendMail2();
+  sendMail();
+  sendMail2();
   
   res.redirect('back');
 });

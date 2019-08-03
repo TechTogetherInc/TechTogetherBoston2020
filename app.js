@@ -17,7 +17,6 @@ app.set('view engine', 'ejs');
 // 2020 pages
 app.use('/', require('./routes')); // index
 app.use('/', require('./routes/gallery')); // gallery
-// app.use('/gallery/test', require('./routes/test')); 
 
 // 2019 main pages
 app.use('/2019', require('./routes/2019/index')); 

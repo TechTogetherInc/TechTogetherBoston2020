@@ -11,6 +11,14 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
 .pink {
     color: $pink;
 }
@@ -35,6 +43,10 @@ body {
         display: none;
     }
 
+}
+
+header {
+    margin-bottom: 5em;
 }
 
 .navbar-toggler-icon {
@@ -82,7 +94,7 @@ body {
     margin: 10vh 0 0 0;
 
     h1 {
-        font-size: 5.5em;
+        font-size: 5em;
         font-weight: bold;
         line-height: 1em;
         margin-bottom: 30px;
@@ -104,11 +116,11 @@ body {
         margin: 2em 0;
     }
 
-    div:nth-child(5) {
-        p {
-            font-size: 2em;
-        }
-    }
+    // div:nth-child(5) {
+    //     p {
+    //         font-size: 2em;
+    //     }
+    // }
 
     button {
         margin: 2em 2em 0 0;
@@ -135,14 +147,11 @@ body {
 
 }
 
-
-
 .what-container {
 
-    margin: 12em 0;
+    margin: 5em 0;
 
     h1 {
-        font-size: 4em;
         font-weight: bold;
     }
 
@@ -160,7 +169,6 @@ body {
             }
 
             p {
-                font-size: 2em;
                 margin: 1em 0;
             }
 
@@ -185,7 +193,6 @@ body {
     h1 {
         font-weight: bold;
         color: $dark-blue;
-        font-size: 4em;
         padding: .3em 0;
     }
 
@@ -194,6 +201,7 @@ body {
         font-size: 2.5em;
         margin: 1em 0;
     }
+
 
     div {
         .grid {
@@ -224,6 +232,7 @@ body {
             }
 
             span {
+                margin: 0 5px;
                 background-color: #FFF;
                 color: $pink;
             }
@@ -263,12 +272,10 @@ body {
         width: 40%;
 
         h1 {
-            font-size: 5em;
             font-weight: bold;
         }
 
         p {
-            font-size: 1.5em;
             font-weight: 500;
         }
 
@@ -285,17 +292,25 @@ body {
         width: 50%;
 
         img {
-            height: 100%;
+            height: 100vh;
+            object-fit: cover;
         }
     }
 
+    .carousel-indicators {
+        li {
+            height: 1em;
+            width: 1em;
+            border-radius: 50%;
+        }
+    }
 
 
 }
 
 .get-involved_container {
 
-    margin: 7em 0;
+    margin: 5em 0;
 
     div {
         margin: 2em 0;
@@ -308,7 +323,6 @@ body {
         padding: 0 1em;
 
         h1 {
-            font-size: 4em;
             font-weight: bold;
             margin: 0;
             padding-bottom: 20px;
@@ -459,53 +473,135 @@ body {
 
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     background-color: $purple;
+    grid-template-areas: "lg . soc fm";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
     color: #fff;
     width: 100%;
     margin: 10em 0 0 0;
     padding: 5em 3%;
 
     .social {
+        grid-area: soc;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
         img {
             width: 3em;
-            margin: 0 1em;
+            margin: 0 1.2em;
         }
+
     }
 
-    .logo-1{
-        width: 20em;
+    input {
+        border-radius: 15px;
     }
 
-    .logo-2{
+    p {
+        margin: 0;
+    }
+
+    .logo-1 {
+        max-width: 100%;
+    }
+
+    .logo-2 {
         display: none;
     }
 
-    .contact {
-        display: flex;
-        justify-content: space-between;
+    .logo {
+        grid-area: lg;
+    }
 
-        form {
-            display: inline;
-
-            p {
-                margin: 0;
-            }
-
-            .form-control {
-                border-radius: 10em;
-            }
-        }
-        
+    .form {
+        grid-area: fm;
     }
 
 }
 
 /******************** Media Queries ********************/
 
+/* tablet and phone */
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .background-image {
+
+        .navbar-toggler-icon {
+            background-image: url(/assets_2020/imgs/nav-hamburger.png);
+        }
+
+        .nav-item {
+            text-align: center;
+
+            img {
+                margin-bottom: 1em;
+            }
+        }
+
+    }
+
+    .explore-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        section {
+            width: 100%;
+            padding: 7em;
+        }
+
+        .carousel {
+            width: 100%;
+        }
+    }
+
+    footer {
+        .social {
+            img {
+                width: 2em;
+                margin: 0 .5em;
+            }
+        }
+    }
+
+}
+
 /* phone only */
 @media screen and (max-width: 500px) {
+
+
+    header{
+        .navbar-nav{
+            position: relative;
+            padding: 1.5em 0;
+            background-color: rgba(0, 0, 0, .5);
+
+            // li{
+            //     border: solid 1px #FFF;
+            // }
+        }
+    }
+
+    .headline {
+        h1{
+            font-size: 3em;
+        }
+
+        h2{
+            font-size: 1.5em;
+        }
+
+        h3{
+            font-size: 1.25em;
+        }
+
+    }
 
     .background-image {
 
@@ -532,6 +628,12 @@ footer {
             height: 3em;
             width: 100%;
         }
+
+        div {
+            .about {
+                padding: 4em 10%;
+            }
+        }
     }
 
     .track-container {
@@ -544,6 +646,21 @@ footer {
                 margin: 0;
                 padding: 0 5%;
             }
+        }
+
+    }
+
+    .explore-container {
+
+
+        section {
+            padding: 2em 10%;
+        }
+    }
+
+    .get-involved_container {
+        .title {
+            align-items: flex-start;
         }
 
     }
@@ -579,7 +696,7 @@ footer {
             .grid,
             .grid2 {
                 grid-template-columns: 1fr;
-                grid-row-gap: 0;
+                grid-row-gap: 1em;
                 text-align: center;
 
                 img {
@@ -599,55 +716,25 @@ footer {
         }
     }
 
-    footer{
-        .logo-1{
+    footer {
+        grid-template-areas: "lg . fm"". . soc";
+        grid-template-columns: 20% 10% 70%;
+        grid-template-areas: 1fr 1fr;
+        grid-row-gap: 1em;
+
+        .logo-1 {
             display: none;
         }
 
-        .logo-2{
+        .logo-2 {
             display: block;
-            width: 1em;
-        }      
-        
-        .contact{
-            flex-direction: column-reverse;
-        }
-
-    }
-
-}
-
-/* tablet and phone */
-@media screen and (max-width: 1024px) {
-
-    .background-image {
-
-        .navbar-toggler-icon {
-            background-image: url(/assets_2020/imgs/nav-hamburger.png);
-        }
-
-        .nav-item {
-            text-align: center;
-
-            img {
-                margin-bottom: 1em;
-            }
-        }
-
-    }
-
-    .explore-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 0;
-
-        section {
             width: 100%;
         }
 
-        .carousel {
-            width: 100%;
+        .social {
+            justify-content: space-between;
         }
+
     }
 
 }
@@ -655,9 +742,26 @@ footer {
 /* tablet only */
 @media screen and (max-width: 1024px) and (min-width: 501px) {
 
+    .headline {
+        h1{
+            font-size: 3.75em;
+        }
+    }
+
     .sponsor-container {
         h2 {
             font-size: 3.5em;
+        }
+    }
+
+    footer {
+        grid-template-columns: 1fr 5% 1fr 1fr;
+
+        .social {
+            img {
+                width: 2em;
+                margin: 0 .5em;
+            }
         }
     }
 

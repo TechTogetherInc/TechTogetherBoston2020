@@ -131,6 +131,10 @@ header {
   border-bottom: 1em solid #000C54;
 }
 
+.headline div {
+  padding: 0;
+}
+
 .what-container {
   margin: 5em 0;
 }

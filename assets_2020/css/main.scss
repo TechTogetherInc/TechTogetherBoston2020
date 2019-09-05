@@ -145,6 +145,10 @@ header {
         border-bottom: 1em solid $dark-blue;
     }
 
+    div{
+        padding: 0; // remove padding from bootstrap's mx-auto
+    }
+
 }
 
 .what-container {

@@ -1,0 +1,57 @@
+body{
+    font-family: Barlow;
+    background-color: 000C54; 
+    color: white;
+    padding-left: 10px;
+}
+
+
+h1{
+    color: white;
+    padding-top: 10px;
+}
+
+#pinklongbox{
+    width: 200px;
+    height: 10px;
+    background-color: #FA7166;
+}
+
+h4{
+    color: black;
+}
+.question{
+    color: black;
+    padding-top: 10px;
+    height: 20px;
+    padding: 5px;
+    width: 350px;
+}
+
+script{
+    display: none;
+}
+
+#wordbox{
+    position: absolute;
+    right: 0px;
+    width: 650px;
+}
+
+#firstpara{
+    color: #808CFB;
+    font-size: 30px;
+    padding: 30px;
+}
+
+div{
+    padding-top: 10px;
+}
+
+#womanpic{
+    position: absolute;
+    left: 50px;
+    bottom: 170px;
+    width: 300px;
+    height: 300px;
+}

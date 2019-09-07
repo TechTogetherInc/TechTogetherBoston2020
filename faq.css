@@ -1,0 +1,64 @@
+body{
+    font-family: Barlow;
+    background-color: #000C54; 
+    color: white;
+    padding-left: 10px;
+}
+
+
+h1{
+    color: white;
+    padding-top: 10px;
+}
+
+#pinklongbox{
+    width: 400px;
+    height: 10px;
+    background-color: #FA7166;
+}
+
+h4{
+    color: black;
+}
+.question{
+    color: black;
+    padding-top: 10px;
+    height: 20px;
+    padding: 5px;
+    width: 350px;
+}
+
+#qone{
+    padding-top: 0px;
+}
+
+#askbox{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 10px 13px #0025F8;
+}
+
+script{
+    display: none;
+}
+
+#answerbubble{
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    left: 600px;
+    bottom: 350px;
+    color: black;
+    padding: 10px;
+}
+
+#blobimg{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 680px;
+    bottom: 75px;
+}

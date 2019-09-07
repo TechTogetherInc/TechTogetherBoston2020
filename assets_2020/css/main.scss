@@ -202,7 +202,7 @@ header {
 .track-container {
 
     margin: 10em 0;
-    padding: 0 5%;
+    padding: 0 5% 0 0;
 
     h1 {
         font-weight: bold;
@@ -378,6 +378,17 @@ header {
             padding: 1em 1em;
             text-align: center;
         }
+
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 1em;
+        }
+
+        img{
+            width: 15em;
+        }    
 
         a {
 

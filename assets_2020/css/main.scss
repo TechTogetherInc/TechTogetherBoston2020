@@ -4,7 +4,7 @@ $blue: #52D9F6;
 $red: #E73F33;
 $dark-blue: #000C54;
 $ocean-blue: #0025F8;
-$button-radius: 15px;
+$button-radius: 100px;
 
 body {
     font-family: Barlow !important;
@@ -12,11 +12,11 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .pink {
@@ -46,7 +46,7 @@ p {
 }
 
 header {
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
 
 .navbar-toggler-icon {
@@ -62,7 +62,7 @@ header {
         justify-content: flex-end;
 
         li {
-            margin: 0 1em;
+            margin: 0 1vw;
         }
 
         img {
@@ -83,7 +83,7 @@ header {
 
             p {
                 margin: 0;
-                padding: 4px 2.5em;
+                padding: 1px 2.5em;
             }
         }
     }
@@ -94,7 +94,7 @@ header {
     margin: 10vh 0 0 0;
 
     h1 {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: bold;
         line-height: 1em;
         margin-bottom: 30px;
@@ -102,11 +102,13 @@ header {
     }
 
     h2 {
+        font-size: 1.5em;
         color: #fff;
         font-weight: bold;
     }
 
     h3 {
+        font-size: 1.25em;
         color: #fff;
         margin: 1em 0;
         font-weight: 500;
@@ -129,14 +131,18 @@ header {
         border: none;
         border-radius: $button-radius;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1em;
 
         &:first-child {
-            background-color: $pink;
+            background-color: $ocean-blue;
         }
 
         &:nth-child(2) {
-            background-color: $ocean-blue;
+            background-color: $pink;
+        }
+
+        p {
+            margin: 0;
         }
     }
 
@@ -145,11 +151,15 @@ header {
         border-bottom: 1em solid $dark-blue;
     }
 
+    div {
+        padding: 0; // remove padding from bootstrap's mx-auto
+    }
+
 }
 
 .what-container {
 
-    margin: 5em 0;
+    margin: 10em 0;
 
     h1 {
         font-weight: bold;
@@ -161,7 +171,7 @@ header {
         .about {
             color: #fff;
             background-color: $purple;
-            padding: 4em 4em;
+            padding: 4em 7.5%;
 
             h1 {
                 display: inline-block;
@@ -170,6 +180,7 @@ header {
 
             p {
                 margin: 1em 0;
+                font-size: 1.25em;
             }
 
         }
@@ -190,6 +201,9 @@ header {
 
 .track-container {
 
+    margin: 10em 0;
+    padding: 0 5%;
+
     h1 {
         font-weight: bold;
         color: $dark-blue;
@@ -198,8 +212,18 @@ header {
 
     h2 {
         font-weight: bold;
-        font-size: 2.5em;
+        font-size: 2em;
         margin: 1em 0;
+    }
+
+    p {
+        color: $dark-blue;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .margin {
+        margin: 4em 0;
     }
 
 
@@ -210,9 +234,8 @@ header {
             grid-template-columns: auto auto;
             grid-row-gap: 10px;
             grid-column-gap: 10px;
-            margin: 0 4em 0 0;
-            width: 40%;
-            padding: 0;
+            margin-bottom: 4em;
+            padding: 0 2em 0 0;
         }
 
         img {
@@ -221,12 +244,16 @@ header {
     }
 
     section {
+
+        margin-top: 5em;
+
         a {
-            font-weight: bold;
             color: $dark-blue;
         }
 
         p {
+            font-size: 1.05em;
+
             &:hover {
                 text-decoration: underline;
             }
@@ -262,7 +289,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: $dark-blue;
-    margin: 5em 0;
+    margin: 10em 0;
     padding: 5em 0;
 
     section {
@@ -276,6 +303,7 @@ header {
         }
 
         p {
+            font-size: 1.25em;
             font-weight: 500;
         }
 
@@ -310,7 +338,7 @@ header {
 
 .get-involved_container {
 
-    margin: 5em 0;
+    margin: 10em 0;
 
     div {
         margin: 2em 0;
@@ -363,12 +391,12 @@ header {
 
 .sponsor-container {
 
-    margin: 5em 0;
+    margin: 10em 0;
 
     h2 {
         font-weight: bold;
         color: $purple;
-        font-size: 5.5em;
+        font-size: 2.75em;
         text-align: center;
     }
 
@@ -388,7 +416,8 @@ header {
             font-weight: bold;
         }
 
-        .display-2 {
+        .display-2,
+        .display-break {
             display: none;
         }
     }
@@ -482,6 +511,7 @@ footer {
     width: 100%;
     margin: 10em 0 0 0;
     padding: 5em 3%;
+    margin-top: 10em;
 
     .social {
         grid-area: soc;
@@ -527,10 +557,6 @@ footer {
 /* tablet and phone */
 @media screen and (max-width: 1024px) {
 
-    h1 {
-        font-size: 3.5em;
-    }
-
     .background-image {
 
         .navbar-toggler-icon {
@@ -553,7 +579,7 @@ footer {
 
         section {
             width: 100%;
-            padding: 7em;
+            padding: 5em 20% 5em 10%;
         }
 
         .carousel {
@@ -575,9 +601,16 @@ footer {
 /* phone only */
 @media screen and (max-width: 500px) {
 
+    h1 {
+        font-size: 2em;
+    }
 
-    header{
-        .navbar-nav{
+    p{
+        font-size: 1em;
+    }
+
+    header {
+        .navbar-nav {
             position: relative;
             padding: 1.5em 0;
             background-color: rgba(0, 0, 0, .5);
@@ -589,15 +622,15 @@ footer {
     }
 
     .headline {
-        h1{
+        h1 {
             font-size: 3em;
         }
 
-        h2{
+        h2 {
             font-size: 1.5em;
         }
 
-        h3{
+        h3 {
             font-size: 1.25em;
         }
 
@@ -621,17 +654,18 @@ footer {
     }
 
     .what-container {
-        .bar-2 {
-            background-color: $dark-blue;
-            display: block;
-            margin: 5em 0 0 0;
-            height: 3em;
-            width: 100%;
-        }
 
         div {
             .about {
-                padding: 4em 10%;
+                padding: 4em 10% 4em 10%;
+
+                h1 {
+                    border-bottom-color: $dark-blue;
+                }
+
+                p{
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -648,14 +682,42 @@ footer {
             }
         }
 
+        h2{
+            font-size: 1.5em;
+        }
+
+        p{
+            font-size: 1em;
+        }
+
+        section{
+            margin-top: 3em;
+            p{
+                font-size: 1.15em;
+            }
+        }
+
     }
 
     .explore-container {
 
-
         section {
             padding: 2em 10%;
+
+            .bar{
+                margin-bottom: 4em;
+            }
+
+            h1{
+                margin-top: 2em;
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
         }
+
     }
 
     .get-involved_container {
@@ -663,26 +725,50 @@ footer {
             align-items: flex-start;
         }
 
+        a {
+            display: flex;
+            justify-content: center;
+        }
+
+        .links {
+
+            h3 {
+                display: inline;
+                font-size: 1em;
+                padding: .5em 1em;
+            }
+
+        }
+
     }
 
     .sponsor-container {
 
         .title {
+            display: flex;
+            justify-content: flex-start; // prevent stretched border-bottom
+            padding-left: 2em;
+
             h1 {
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
             .display-1 {
                 display: none;
             }
 
+            .display-break {
+                display: block;
+            }
+
             .display-2 {
                 display: block;
+                border-bottom: solid 10px $dark-blue;
             }
         }
 
         h2 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         .gold-sponsors,
@@ -743,7 +829,7 @@ footer {
 @media screen and (max-width: 1024px) and (min-width: 501px) {
 
     .headline {
-        h1{
+        h1 {
             font-size: 3.75em;
         }
     }

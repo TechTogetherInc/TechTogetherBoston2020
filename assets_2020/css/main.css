@@ -4,11 +4,11 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .pink {
@@ -37,7 +37,7 @@ p {
 }
 
 header {
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 }
 
 .navbar-toggler-icon {
@@ -56,7 +56,7 @@ header {
 }
 
 .navbar-collapse .navbar-nav li {
-  margin: 0 1em;
+  margin: 0 1vw;
 }
 
 .navbar-collapse .navbar-nav img {
@@ -73,12 +73,12 @@ header {
   color: #fff;
   background-color: #FD7361;
   border: none;
-  border-radius: 15px;
+  border-radius: 100px;
 }
 
 .navbar-collapse .navbar-nav button p {
   margin: 0;
-  padding: 4px 2.5em;
+  padding: 1px 2.5em;
 }
 
 .headline {
@@ -86,7 +86,7 @@ header {
 }
 
 .headline h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1em;
   margin-bottom: 30px;
@@ -94,11 +94,13 @@ header {
 }
 
 .headline h2 {
+  font-size: 1.5em;
   color: #fff;
   font-weight: bold;
 }
 
 .headline h3 {
+  font-size: 1.25em;
   color: #fff;
   margin: 1em 0;
   font-weight: 500;
@@ -113,17 +115,21 @@ header {
   padding: 4px 2.5em;
   color: #fff;
   border: none;
-  border-radius: 15px;
+  border-radius: 100px;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .headline button:first-child {
-  background-color: #FD7361;
+  background-color: #0025F8;
 }
 
 .headline button:nth-child(2) {
-  background-color: #0025F8;
+  background-color: #FD7361;
+}
+
+.headline button p {
+  margin: 0;
 }
 
 .headline .bottom-border {
@@ -131,8 +137,12 @@ header {
   border-bottom: 1em solid #000C54;
 }
 
+.headline div {
+  padding: 0;
+}
+
 .what-container {
-  margin: 5em 0;
+  margin: 10em 0;
 }
 
 .what-container h1 {
@@ -146,7 +156,7 @@ header {
 .what-container div .about {
   color: #fff;
   background-color: #808cFB;
-  padding: 4em 4em;
+  padding: 4em 7.5%;
 }
 
 .what-container div .about h1 {
@@ -156,6 +166,7 @@ header {
 
 .what-container div .about p {
   margin: 1em 0;
+  font-size: 1.25em;
 }
 
 .what-container .bar-2 {
@@ -166,6 +177,11 @@ header {
   width: 100%;
 }
 
+.track-container {
+  margin: 10em 0;
+  padding: 0 5%;
+}
+
 .track-container h1 {
   font-weight: bold;
   color: #000C54;
@@ -174,8 +190,18 @@ header {
 
 .track-container h2 {
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 1em 0;
+}
+
+.track-container p {
+  color: #000C54;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.track-container .margin {
+  margin: 4em 0;
 }
 
 .track-container div .grid {
@@ -187,21 +213,24 @@ header {
       grid-template-columns: auto auto;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
-  margin: 0 4em 0 0;
-  width: 40%;
-  padding: 0;
+  margin-bottom: 4em;
+  padding: 0 2em 0 0;
 }
 
 .track-container div img {
   width: 100%;
 }
 
+.track-container section {
+  margin-top: 5em;
+}
+
 .track-container section a {
-  font-weight: bold;
   color: #000C54;
 }
 
 .track-container section p {
+  font-size: 1.05em;
   float: right;
 }
 
@@ -240,7 +269,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000C54;
-  margin: 5em 0;
+  margin: 10em 0;
   padding: 5em 0;
 }
 
@@ -256,6 +285,7 @@ header {
 }
 
 .explore-container section p {
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -283,7 +313,7 @@ header {
 }
 
 .get-involved_container {
-  margin: 5em 0;
+  margin: 10em 0;
 }
 
 .get-involved_container div {
@@ -341,13 +371,13 @@ header {
 }
 
 .sponsor-container {
-  margin: 5em 0;
+  margin: 10em 0;
 }
 
 .sponsor-container h2 {
   font-weight: bold;
   color: #808cFB;
-  font-size: 5.5em;
+  font-size: 2.75em;
   text-align: center;
 }
 
@@ -368,7 +398,8 @@ header {
   font-weight: bold;
 }
 
-.sponsor-container .title .display-2 {
+.sponsor-container .title .display-2,
+.sponsor-container .title .display-break {
   display: none;
 }
 
@@ -461,6 +492,7 @@ footer {
   width: 100%;
   margin: 10em 0 0 0;
   padding: 5em 3%;
+  margin-top: 10em;
 }
 
 footer .social {
@@ -512,9 +544,6 @@ footer .form {
 /******************** Media Queries ********************/
 /* tablet and phone */
 @media screen and (max-width: 1024px) {
-  h1 {
-    font-size: 3.5em;
-  }
   .background-image .navbar-toggler-icon {
     background-image: url(/assets_2020/imgs/nav-hamburger.png);
   }
@@ -535,7 +564,7 @@ footer .form {
   }
   .explore-container section {
     width: 100%;
-    padding: 7em;
+    padding: 5em 20% 5em 10%;
   }
   .explore-container .carousel {
     width: 100%;
@@ -548,6 +577,12 @@ footer .form {
 
 /* phone only */
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
   header .navbar-nav {
     position: relative;
     padding: 1.5em 0;
@@ -575,15 +610,14 @@ footer .form {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .what-container .bar-2 {
-    background-color: #000C54;
-    display: block;
-    margin: 5em 0 0 0;
-    height: 3em;
-    width: 100%;
-  }
   .what-container div .about {
-    padding: 4em 10%;
+    padding: 4em 10% 4em 10%;
+  }
+  .what-container div .about h1 {
+    border-bottom-color: #000C54;
+  }
+  .what-container div .about p {
+    font-size: 1em;
   }
   .track-container .row {
     -webkit-box-orient: vertical;
@@ -596,25 +630,73 @@ footer .form {
     margin: 0;
     padding: 0 5%;
   }
+  .track-container h2 {
+    font-size: 1.5em;
+  }
+  .track-container p {
+    font-size: 1em;
+  }
+  .track-container section {
+    margin-top: 3em;
+  }
+  .track-container section p {
+    font-size: 1.15em;
+  }
   .explore-container section {
     padding: 2em 10%;
+  }
+  .explore-container section .bar {
+    margin-bottom: 4em;
+  }
+  .explore-container section h1 {
+    margin-top: 2em;
+    font-size: 2em;
+  }
+  .explore-container section p {
+    font-size: 1em;
   }
   .get-involved_container .title {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .get-involved_container a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .get-involved_container .links h3 {
+    display: inline;
+    font-size: 1em;
+    padding: .5em 1em;
+  }
+  .sponsor-container .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 2em;
+  }
   .sponsor-container .title h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .sponsor-container .title .display-1 {
     display: none;
   }
-  .sponsor-container .title .display-2 {
+  .sponsor-container .title .display-break {
     display: block;
   }
+  .sponsor-container .title .display-2 {
+    display: block;
+    border-bottom: solid 10px #000C54;
+  }
   .sponsor-container h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .sponsor-container .gold-sponsors img,
   .sponsor-container .silver-sponsors img,

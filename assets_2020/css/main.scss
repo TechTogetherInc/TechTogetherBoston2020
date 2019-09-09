@@ -748,7 +748,7 @@ footer {
         grid-template-rows: 1fr;
 
         .title {
-            order: 1;
+            order: 3;
         }
 
         .answer-box {
@@ -756,11 +756,11 @@ footer {
         }
 
         .question-box {
-            order: 2;
+            order: 4;
         }
 
         .blob {
-            order: 3;
+            order: 2;
         }
 
     }

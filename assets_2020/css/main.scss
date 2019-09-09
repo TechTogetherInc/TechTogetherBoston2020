@@ -28,7 +28,7 @@ p {
 }
 
 .background-image {
-    background-image: url(/assets_2020/imgs/cover_placeholder.JPG);
+    background-image: url(/assets_2020/imgs/cover_image.png); // placeholder
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,7 +46,7 @@ p {
 }
 
 header {
-    margin-bottom: 10em;
+    margin-bottom: 7em;
 }
 
 .navbar-toggler-icon {
@@ -86,6 +86,21 @@ header {
                 padding: 1px 2.5em;
             }
         }
+
+        li {
+            &:last-child {
+                button {
+                    background-color: $ocean-blue;
+
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -99,6 +114,12 @@ header {
         line-height: 1em;
         margin-bottom: 30px;
         color: #fff;
+        display: table;
+
+        &:first-child{
+            font-size: 3.75em;
+        }
+
     }
 
     h2 {
@@ -149,6 +170,7 @@ header {
     .bottom-border {
         padding: 1em 0;
         border-bottom: 1em solid $dark-blue;
+        display: table;
     }
 
     div {
@@ -157,9 +179,45 @@ header {
 
 }
 
+.about-container {
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        color: $dark-blue;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: $purple;
+        font-weight: bold;
+        margin: 1.5em 0;
+
+        span {
+            color: $pink;
+        }
+    }
+
+    p {
+        color: $dark-blue;
+        font-weight: 500;
+        font-size: 1.25em;
+    }
+
+    .bar {
+        background-color: $pink;
+        width: 25%;
+        height: 1em;
+    }
+
+
+}
+
 .what-container {
 
-    margin: 10em 0;
+    margin: 7em 0;
 
     h1 {
         font-weight: bold;
@@ -201,7 +259,7 @@ header {
 
 .track-container {
 
-    margin: 10em 0;
+    margin: 7em 0;
     padding: 0 5% 0 0;
 
     h1 {
@@ -289,7 +347,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: $dark-blue;
-    margin: 10em 0;
+    margin: 7em 0 0 0;
     padding: 5em 0;
 
     section {
@@ -333,12 +391,87 @@ header {
         }
     }
 
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content(20em) min-content(30em);
+    grid-gap: 2em 5%;
+    padding: 4em 5%;
+    margin: 0 0 6em 0;
+    background-image: url(/assets_2020/imgs/faq_background.png); //placeholder image
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    img {
+        width: 100%;
+    }
+
+    .title {
+
+        h1 {
+            display: table; // makes bottom border contained 
+            border-bottom: 10px $pink solid;
+            padding-bottom: 5px;
+            margin: 0 0 .5em 0;
+        }
+
+        h1,
+        h3 {
+            color: #FFF;
+            font-weight: bold;
+        }
+    }
+
+    .answer-box {
+        width: 100%;
+        min-height: 15em;
+        background-color: #FFF;
+        clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0); // does not work on IE, Edge, or Opera but that's ok
+        -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
+        padding: 2em;
+        color: $dark-blue;
+        font-size: 1.2em;
+    }
+
+    .question-box {
+        background-color: #FFF;
+        box-shadow: 2em 2em $ocean-blue;
+        padding: 2em;
+
+        h3 {
+            color: $dark-blue;
+            font-size: 1.5em;
+            margin: 0 0 1em 0;
+
+            span {
+                color: #000;
+                letter-spacing: -2px;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+            padding: 1em 2em;
+            cursor: pointer;
+        }
+
+        .questions {}
+    }
+
+    .blob {
+        justify-self: center;
+    }
 
 }
 
+
 .get-involved_container {
 
-    margin: 10em 0;
+    margin: 7em 0;
 
     div {
         margin: 2em 0;
@@ -355,6 +488,7 @@ header {
             margin: 0;
             padding-bottom: 20px;
             border-bottom: .3em solid $pink;
+            color: $dark-blue;
         }
 
         h3 {
@@ -369,7 +503,7 @@ header {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding: 0 15%;
+        padding: 0 10%;
 
         h3 {
             background-color: $pink;
@@ -379,16 +513,16 @@ header {
             text-align: center;
         }
 
-        div{
+        div {
             display: flex;
             align-items: center;
             flex-direction: column;
             margin: 0 1em;
         }
 
-        img{
-            width: 15em;
-        }    
+        img {
+            width: 20em;
+        }
 
         a {
 
@@ -402,7 +536,7 @@ header {
 
 .sponsor-container {
 
-    margin: 10em 0;
+    margin: 7em 0;
 
     h2 {
         font-weight: bold;
@@ -520,9 +654,8 @@ footer {
     align-items: center;
     color: #fff;
     width: 100%;
-    margin: 10em 0 0 0;
+    margin: 7em 0 0 0;
     padding: 5em 3%;
-    margin-top: 10em;
 
     .social {
         grid-area: soc;
@@ -587,6 +720,7 @@ footer {
     .explore-container {
         flex-direction: column;
         align-items: flex-start;
+        padding-bottom: 0;
 
         section {
             width: 100%;
@@ -596,6 +730,32 @@ footer {
         .carousel {
             width: 100%;
         }
+    }
+
+    .track-container{
+        padding: 0 2em;
+    }
+
+    .faq-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .title {
+            order: 3;
+        }
+
+        .answer-box {
+            order: 1;
+        }
+
+        .question-box {
+            order: 4;
+        }
+
+        .blob {
+            order: 2;
+        }
+
     }
 
     footer {
@@ -616,8 +776,21 @@ footer {
         font-size: 2em;
     }
 
-    p{
+    p {
         font-size: 1em;
+    }
+
+
+
+    .navbar-nav {
+
+        li {
+            &:last-child {
+                button {
+                    margin: 1em 0;
+                }
+            }
+        }
     }
 
     header {
@@ -635,6 +808,10 @@ footer {
     .headline {
         h1 {
             font-size: 3em;
+
+            &:first-child{
+                font-size: 3em;
+            }
         }
 
         h2 {
@@ -674,7 +851,7 @@ footer {
                     border-bottom-color: $dark-blue;
                 }
 
-                p{
+                p {
                     font-size: 1em;
                 }
             }
@@ -693,17 +870,18 @@ footer {
             }
         }
 
-        h2{
+        h2 {
             font-size: 1.5em;
         }
 
-        p{
+        p {
             font-size: 1em;
         }
 
-        section{
+        section {
             margin-top: 3em;
-            p{
+
+            p {
                 font-size: 1.15em;
             }
         }
@@ -715,12 +893,12 @@ footer {
         section {
             padding: 2em 10%;
 
-            .bar{
+            .bar {
                 margin-bottom: 4em;
             }
 
-            h1{
-                margin-top: 2em;
+            h1 {
+                margin-top: 1em;
                 font-size: 2em;
             }
 
@@ -729,6 +907,20 @@ footer {
             }
         }
 
+    }
+
+    .faq-container {
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h3 {
+            font-size: 1.1em;
+        }
+
+        span{
+            display: none;
+        }
     }
 
     .get-involved_container {

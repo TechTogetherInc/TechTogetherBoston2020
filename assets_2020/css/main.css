@@ -20,7 +20,7 @@ p {
 }
 
 .background-image {
-  background-image: url(/assets_2020/imgs/cover_placeholder.JPG);
+  background-image: url(/assets_2020/imgs/cover_image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ p {
 }
 
 header {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 .navbar-toggler-icon {
@@ -81,6 +81,14 @@ header {
   padding: 1px 2.5em;
 }
 
+.navbar-collapse .navbar-nav li:last-child button {
+  background-color: #0025F8;
+}
+
+.navbar-collapse .navbar-nav li:last-child button a:hover {
+  text-decoration: none;
+}
+
 .headline {
   margin: 10vh 0 0 0;
 }
@@ -91,6 +99,11 @@ header {
   line-height: 1em;
   margin-bottom: 30px;
   color: #fff;
+  display: table;
+}
+
+.headline h1:first-child {
+  font-size: 3.75em;
 }
 
 .headline h2 {
@@ -135,14 +148,46 @@ header {
 .headline .bottom-border {
   padding: 1em 0;
   border-bottom: 1em solid #000C54;
+  display: table;
 }
 
 .headline div {
   padding: 0;
 }
 
+.about-container img {
+  width: 100%;
+}
+
+.about-container h1 {
+  color: #000C54;
+  font-weight: bold;
+}
+
+.about-container h2 {
+  color: #808cFB;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+
+.about-container h2 span {
+  color: #FD7361;
+}
+
+.about-container p {
+  color: #000C54;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.about-container .bar {
+  background-color: #FD7361;
+  width: 25%;
+  height: 1em;
+}
+
 .what-container {
-  margin: 10em 0;
+  margin: 7em 0;
 }
 
 .what-container h1 {
@@ -178,7 +223,7 @@ header {
 }
 
 .track-container {
-  margin: 10em 0;
+  margin: 7em 0;
   padding: 0 5% 0 0;
 }
 
@@ -269,7 +314,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000C54;
-  margin: 10em 0;
+  margin: 7em 0 0 0;
   padding: 5em 0;
 }
 
@@ -312,8 +357,82 @@ header {
   border-radius: 50%;
 }
 
+.faq-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: min-content(20em) min-content(30em);
+      grid-template-rows: min-content(20em) min-content(30em);
+  grid-gap: 2em 5%;
+  padding: 4em 5%;
+  margin: 0 0 6em 0;
+  background-image: url(/assets_2020/imgs/faq_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-container img {
+  width: 100%;
+}
+
+.faq-container .title h1 {
+  display: table;
+  border-bottom: 10px #FD7361 solid;
+  padding-bottom: 5px;
+  margin: 0 0 .5em 0;
+}
+
+.faq-container .title h1,
+.faq-container .title h3 {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.faq-container .answer-box {
+  width: 100%;
+  min-height: 15em;
+  background-color: #FFF;
+  clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
+  padding: 2em;
+  color: #000C54;
+  font-size: 1.2em;
+}
+
+.faq-container .question-box {
+  background-color: #FFF;
+  -webkit-box-shadow: 2em 2em #0025F8;
+          box-shadow: 2em 2em #0025F8;
+  padding: 2em;
+}
+
+.faq-container .question-box h3 {
+  color: #000C54;
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+.faq-container .question-box h3 span {
+  color: #000;
+  letter-spacing: -2px;
+}
+
+.faq-container .question-box p {
+  margin: 0;
+  font-weight: bold;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.faq-container .blob {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .get-involved_container {
-  margin: 10em 0;
+  margin: 7em 0;
 }
 
 .get-involved_container div {
@@ -339,6 +458,7 @@ header {
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 0.3em solid #FD7361;
+  color: #000C54;
 }
 
 .get-involved_container .title h3 {
@@ -355,7 +475,7 @@ header {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 15%;
+  padding: 0 10%;
 }
 
 .get-involved_container .links h3 {
@@ -381,7 +501,7 @@ header {
 }
 
 .get-involved_container .links img {
-  width: 15em;
+  width: 20em;
 }
 
 .get-involved_container .links a:hover {
@@ -389,7 +509,7 @@ header {
 }
 
 .sponsor-container {
-  margin: 10em 0;
+  margin: 7em 0;
 }
 
 .sponsor-container h2 {
@@ -508,9 +628,8 @@ footer {
           align-items: center;
   color: #fff;
   width: 100%;
-  margin: 10em 0 0 0;
+  margin: 7em 0 0 0;
   padding: 5em 3%;
-  margin-top: 10em;
 }
 
 footer .social {
@@ -579,6 +698,7 @@ footer .form {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-bottom: 0;
   }
   .explore-container section {
     width: 100%;
@@ -586,6 +706,35 @@ footer .form {
   }
   .explore-container .carousel {
     width: 100%;
+  }
+  .track-container {
+    padding: 0 2em;
+  }
+  .faq-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .faq-container .title {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .faq-container .answer-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .faq-container .question-box {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .faq-container .blob {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   footer .social img {
     width: 2em;
@@ -601,12 +750,18 @@ footer .form {
   p {
     font-size: 1em;
   }
+  .navbar-nav li:last-child button {
+    margin: 1em 0;
+  }
   header .navbar-nav {
     position: relative;
     padding: 1.5em 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .headline h1 {
+    font-size: 3em;
+  }
+  .headline h1:first-child {
     font-size: 3em;
   }
   .headline h2 {
@@ -667,11 +822,20 @@ footer .form {
     margin-bottom: 4em;
   }
   .explore-container section h1 {
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 2em;
   }
   .explore-container section p {
     font-size: 1em;
+  }
+  .faq-container h1 {
+    font-size: 1.8em;
+  }
+  .faq-container h3 {
+    font-size: 1.1em;
+  }
+  .faq-container span {
+    display: none;
   }
   .get-involved_container .title {
     -webkit-box-align: start;

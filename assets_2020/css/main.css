@@ -149,7 +149,7 @@ header {
   background-color: #000C54;
   width: 80%;
   height: 1em;
-  margin: 0 0 2em .5em;
+  margin: 0 0 2em 0;
 }
 
 .headline div {
@@ -837,6 +837,10 @@ footer .form {
   }
   .faq-container span {
     display: none;
+  }
+  .faq-container .question-box {
+    -webkit-box-shadow: 0.7em 0.7em #0025F8;
+            box-shadow: 0.7em 0.7em #0025F8;
   }
   .get-involved_container .title {
     -webkit-box-align: start;

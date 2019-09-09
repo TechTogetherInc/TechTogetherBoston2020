@@ -145,10 +145,11 @@ header {
   margin: 0;
 }
 
-.headline .bottom-border {
-  padding: 1em 0;
-  border-bottom: 1em solid #000C54;
-  display: table;
+.headline .bar {
+  background-color: #000C54;
+  width: 80%;
+  height: 1em;
+  margin: 0 0 2em .5em;
 }
 
 .headline div {

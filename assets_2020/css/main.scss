@@ -167,10 +167,17 @@ header {
         }
     }
 
-    .bottom-border {
-        padding: 1em 0;
-        border-bottom: 1em solid $dark-blue;
-        display: table;
+    // .bottom-border {
+    //     padding: 1em 0;
+    //     border-bottom: 1em solid $dark-blue;
+    //     display: table;
+    // }
+
+    .bar{
+        background-color: $dark-blue;
+        width: 80%;
+        height: 1em;
+        margin: 0 0 2em .5em;
     }
 
     div {

@@ -718,24 +718,25 @@ footer .form {
         grid-template-rows: 1fr;
   }
   .faq-container .title {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .faq-container .answer-box {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .faq-container .question-box {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+  .faq-container .answer-box {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 2em 0 0 0;
   }
-  .faq-container .blob {
+  .faq-container .question-box {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .faq-container .blob {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   footer .social img {
     width: 2em;

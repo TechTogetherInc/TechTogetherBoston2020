@@ -43,6 +43,10 @@ p {
         display: none;
     }
 
+    .navbar-toggler-icon {
+        background-image: url(/assets_2020/imgs/nav-hamburger.png);
+    }
+
 }
 
 header {
@@ -710,10 +714,6 @@ footer {
 
     .background-image {
 
-        .navbar-toggler-icon {
-            background-image: url(/assets_2020/imgs/nav-hamburger.png);
-        }
-
         .nav-item {
             text-align: center;
 
@@ -788,27 +788,8 @@ footer {
         font-size: 1em;
     }
 
-    .navbar-nav {
-
-        li {
-            &:last-child {
-                button {
-                    margin: 1em 0;
-                }
-            }
-        }
-    }
-
     header {
-        .navbar-nav {
-            position: relative;
-            padding: 1.5em 0;
-            background-color: rgba(0, 0, 0, .5);
-
-            // li{
-            //     border: solid 1px #FFF;
-            // }
-        }
+        .navbar-nav {}
     }
 
     .headline {
@@ -945,6 +926,10 @@ footer {
 
         .links {
 
+            img{
+                width: 15em;
+            }
+
             h3 {
                 display: inline;
                 font-size: 1em;
@@ -1065,3 +1050,78 @@ footer {
     }
 
 }
+
+/* Hamburger Menu*/
+@media screen and (max-width: 1199px) {
+
+    nav {
+        ul.navbar-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding: 0;
+            text-align: center;
+            z-index: 5;
+            background-color: $purple;
+
+            li {
+                &:last-child {
+                    button {
+                        margin: 1em 0;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+            li {
+                height: 20%;
+                border-bottom: solid rgb(85, 83, 83) 1px;
+
+                // &:not(.display-toggle) {
+                //     &:last-child {
+                //         border-bottom: 0px;
+                //     }
+                // }
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+            }
+
+            .border-change {
+                // better way to do this w/ :not selector, should change later
+                border-bottom: solid #000 0px;
+            }
+
+
+            .navbar-nav {
+                li {
+                    margin: 0;
+                }
+            }
+
+        }
+
+        .navbar-toggler {
+            position: fixed;
+            right: 5%;
+            z-index: 10;
+        }
+
+        .display-toggle {
+            display: none;
+        }
+
+    }
+
+
+}
+

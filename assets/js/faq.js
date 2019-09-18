@@ -13,18 +13,18 @@ $(function () {
 $(function () {
     $("#who").click(function () {
         $("#answerBubble").empty();
-        $("#answerBubble").append("");
+        $("#answerBubble").append("We welcome female, trans, and non-binary individuals of all skill levels who have a passion for learning more about technology and are 16 years or older.");
     });
 });
 $(function () {
-    $("#packing").click(function () {
+    $("#travel").click(function () {
         $("#answerBubble").empty();
-        $("#answerBubble").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat");
+        $("#answerBubble").append("A limited number of travel scholarships will be provided. More info will be included in our application!");
     });
 });
 $(function () {
-    $("#codeOfConduct").click(function () {
+    $("#beginner").click(function () {
         $("#answerBubble").empty();
-        $("#answerBubble").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat");
+        $("#answerBubble").append("We welcome beginners and experts alike! There will be plenty of workshops and mentors available to guide you throughout your 36-hour hacking journey, and you can also learn from other students!        ");
     });
 });

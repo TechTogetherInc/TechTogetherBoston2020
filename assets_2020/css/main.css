@@ -130,7 +130,7 @@ header {
   border: none;
   border-radius: 100px;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .headline button:first-child {
@@ -154,6 +154,10 @@ header {
 
 .headline div {
   padding: 0;
+}
+
+.about-container {
+  padding: 0 20px 0 20px;
 }
 
 .about-container img {
@@ -188,7 +192,7 @@ header {
 }
 
 .what-container {
-  margin: 7em 0;
+
 }
 
 .what-container h1 {
@@ -242,8 +246,8 @@ header {
 
 .track-container p {
   color: #000C54;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.5em;
+  /* font-weight: bold; */
 }
 
 .track-container .margin {
@@ -276,13 +280,13 @@ header {
 }
 
 .track-container section p {
-  font-size: 1.05em;
+  font-size: 1.5em;
   float: right;
 }
 
-.track-container section p:hover {
+/* .track-container section p:hover {
   text-decoration: underline;
-}
+} */
 
 .track-container section p span {
   margin: 0 5px;
@@ -331,7 +335,7 @@ header {
 }
 
 .explore-container section p {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
@@ -422,7 +426,8 @@ header {
 
 .faq-container .question-box p {
   margin: 0;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.4rem;
   padding: 1em 2em;
   cursor: pointer;
 }
@@ -770,7 +775,7 @@ footer .form {
     font-size: 1.5em;
   }
   .headline h3 {
-    font-size: 1.25em;
+    font-size: 1.3em;
   }
   .background-image .logo {
     display: none;

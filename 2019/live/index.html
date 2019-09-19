@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="assets/imgs/favicon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechTogether Boston - Live</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link type="text/css" rel="stylesheet" href="assets/css/materialize.css" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+</head>
+
+<body>
+  <!--Sidebar-->
+
+  <ul id="desktop-nav" class="side-nav fixed">
+    <img src="assets/imgs/logo.png" style="display:block;margin-bottom:20px;padding-top:40px; max-width:95%">
+    <li><a href="index.html" class="menu-link">Announcements</a></li>
+    <li><a href="schedule.html" class="menu-link">Schedule</a></li>
+    <li><a href="companies.html" class="menu-link">Sponsors</a></li>
+    <li><a href="maps.html" class="menu-link">Map</a></li>
+    <li><a href="prizes.html" class="menu-link">Challenges &amp; Prizes</a></li>
+    <li><a href="mentor-request.html" class="menu-link">Mentor Request</a></li>
+    <li><a href="faq.html" class="menu-link">FAQ</a></li>
+
+
+    <div id="contact">
+      <div class="row" id="nav-social-icons">
+        <div class="col s4">
+          <a href="https://www.facebook.com/TechTogetherBoston" target="_blank"><img src="assets/imgs/socialicons/facebook.png" alt="facebook icon" class="socialicon"></a>
+        </div>
+        <div class="col s4">
+          <a href="https://www.instagram.com/TechTogetherBoston/" target="_blank"><img src="assets/imgs/socialicons/instagram.png" alt="facebook icon" class="socialicon"></a>
+        </div>
+        <div class="col s4">
+          <a href="https://www.twitter.com/TechTogetherBos" class="center-align" target="_blank"><img src="assets/imgs/socialicons/twitter.png" alt="facebook icon" class="socialicon"></a>
+        </div>
+      </div>
+      <div style="padding-bottom:10px;" class="center-align" id="desktop-copyright">
+        <p> &copy; TechTogether 2019 / Boston, MA / info@techtogether.io </p>
+        <p><a class="blue-url" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+      </div>
+    </div>
+  </ul>
+  <!--end sidebar-->
+
+   <div class="button_container-2" id="toggle">
+         <span class="top"></span>
+         <span class="middle"></span>
+         <span class="bottom"></span>
+   </div>
+
+   <!-- Hamburger Nav - Start -->
+   <div class="overlay overlay-2" id="overlay">
+      <nav class="overlay-menu">
+         <ul>
+            <li>
+               <a href="index.html">
+                  <section>
+                     <p class="bold">Announcements</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="schedule.html">
+                  <section>
+                     <p class="bold">Schedule</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="companies.html">
+                  <section>
+                     <p class="bold">Sponsors</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="maps.html">
+                  <section>
+                     <p class="bold">Map</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="prizes.html">
+                  <section>
+                     <p class="bold">Challenges &amp; Prizes</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="mentor-request.html">
+                  <section>
+                     <p class="bold">Mentor Request</p>
+                  </section>
+               </a>
+            </li>
+            <li>
+               <a href="faq.html">
+                  <section>
+                     <p class="bold">FAQ</p>
+                  </section>
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+   <!-- Ham Nav - End-->
+
+  <!--anything not in the side menu should go within these main tags-->
+  <main id="main-sidebar">
+
+   <a href="index.html" class="mobile_logo"><img src="assets/imgs/logo.png" width="100%" ></a>
+
+   <!--countdown clock-->
+   <!-- <div class="row">
+    <h5 align="center">TIME UNTIL SUBMISSIONS</h5>
+   </div> -->
+
+   <div class="row countdownrow" style="vertical-align:middle; max-width:100%">
+      <div class = "col s12 m12 l3">
+        <br>
+        <h5 align="center" class="lighter" style="line-height: 3vw;margin-top: -.2em; margin-bottom:1em;">TIME UNTIL SUBMISSIONS</h5>
+      </div>
+
+      <div class="col s12 m12 l9 center" style="vertical-align:middle;position:relative;">
+        <div class="clock-builder-output" style="display: inline-block"></div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+        <style text="text/css">
+          body .flip-clock-wrapper ul li a div div.inn,
+          body .flip-clock-small-wrapper ul li a div div.inn {
+            color: #ffffff;
+            /*change font color*/
+            background-color: #808cFB;
+            /*change clock color*/
+          }
+
+          body .flip-clock-dot,
+          body .flip-clock-small-wrapper .flip-clock-dot {
+            background: #808cFB;
+            /*change dot color*/
+            box-shadow: none;
+          }
+
+          body .flip-clock-wrapper .flip-clock-meridium a,
+          body .flip-clock-small-wrapper .flip-clock-meridium a {
+            color: #808cFB;
+            /*change clock color*/
+          }
+
+        </style>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            FlipClock.Lang.Custom = {
+              days: 'DAYS',
+              hours: 'HOURS',
+              minutes: 'MINUTES',
+              seconds: 'SECONDS'
+            };
+            var opts = {
+              clockFace: 'HourCounter',
+              countdown: true,
+              language: 'Custom'
+            };
+            var date = new Date("March 24, 2019 8:00:00").getTime()/1000;
+            var countdown = date - ((new Date().getTime()) / 1000);
+            countdown = Math.max(1, countdown);
+            // $(document).ready(function() {
+            //   $('.clock-builder-output').FlipClock(countdown, opts);
+            // });
+            $('.clock-builder-output').FlipClock(countdown, opts);
+          });
+        </script>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 m3 l3">
+        <div class="card">
+          <div class="card-content center-align">
+            <p class="center"><i class="material-icons large dashboard-icons">
+          wifi
+        </i></p>
+        <span class="desktop-only">
+            <h6> TechTogether</h6>
+            <h6><span class="bolder">Login:</span><br>TechTogether</h6>
+            </span>
+            <span class="mobile-only">
+                <p style="font-size:.9em;"> <span class="bolder">TechTogether</span></p>
+                <p style="font-size:.9em;"><span class="bolder">Login:</span><br> TechTogether</p>
+                </span>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m3 l3">
+        <div class="card">
+          <a href="https://techtogetherboston19.slack.com" target="_blank"><div class="card-content center-align">
+            <img src="assets/imgs/slack-icon.png" alt="slack" class="dashboard-icons">
+            <h5 class="black-text">Slack</h5>
+          </div></a>
+        </div>
+      </div>
+      <div class="col s6 m3 l3">
+        <div class="card">
+          <a href="prizes.html"><div class="card-content center-align">
+            <img src="assets/imgs/trophy-icon.png" alt="slack" class="dashboard-icons">
+            <h5 class="black-text">Prizes</h5>
+          </div></a>
+        </div>
+      </div>
+      <div class="col s6 m3 l3">
+        <div class="card">
+          <a href="faq.html"><div class="card-content center-align">
+            <i class="material-icons large black-text dashboard-icons">
+          help_outline
+        </i>
+            <h5 class="black-text">FAQ</h5>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <hr class="custom-hr">
+    <div class="row" id="announcements-header">
+      <div class="col s12">
+        <h3 class="lighter">Announcements</h3>
+      </div>
+    </div>
+
+    <div class="row announcement-card" >
+      <div class="col s12">
+        <div class="card" style="background-color: #52D9F6">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Judging: Table Assignments</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Pinned Announcement </h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p> Please find your <a href="https://docs.google.com/spreadsheets/d/1il8CTysOz-w63d0ll7qZxEq5uQMe0s2of1ds9L6HMZM/edit?usp=sharing" class="blue-url">table assignment here</a>. You must be at your assigned table no later than 9:45am. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card" >
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>How to Submit Your Project on Devpost</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/23/19 @ 8:00 PM </h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>Your <a href="https://techtogetherboston19.devpost.com" class="blue-url">Devpost</a> submission is how you will enter your project for judging. <b>Only one person per team needs to make the post. </b></p> <br>
+
+                <p>For your Devpost post, make sure: <br>
+                - <b>Everyone's</b> full name is included (we need your name for prizes) <br>
+                - You pick out all the categories you want to submit your hack for! (You can submit to as many categories as you'd like) <br>
+                - You must submit your hack <b>before 8 AM on Sunday</b> <br> </p> <br>
+
+                <p>You can make edits to your Devpost after your initial submission. If you are requesting travel reimbursement, we will require your Devpost link later on to confirm your attendance. (<a href="https://help.devpost.com/hc/en-us/articles/360021748772-How-to-enter-a-submission" class="blue-url">Here is a tutorial</a> on how to make a Devpost entry!)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Presenting to Judges 101 </h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/23/19 @ 7:00 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p> If you are feeling nervous about pitching to the judges and you want some advice on how to pull your ideas together and present with confidence - Don’t miss the “Pitch Perfect” workshop from 9:00 pm to 11:00 pm in CGS-511!  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+     <div class="col s12">
+       <div class="card">
+         <div class="card-content">
+           <div class="row">
+             <div class="col s1">
+               <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+             </div>
+             <div class="col s11 m7 l7">
+               <h5>If you attend Scott's keynote at 1pm in CGS 523 and tweet #DreamCareer, you will be entered a raffle to win a Google Daydream!</h5>
+             </div>
+             <div class="col s12 m3 l3 announcement-time-stamp">
+               <h6> Posted 3/23/19 @ 1:00 PM</h6>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col s12 m8 l8 offset-m1 offset-l1">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+
+     <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Come down to the main hacking area at 12PM for lunch and a special surprise for all hackers!</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/23/19 @ 11:22 AM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <!-- <p>Hear from Massachusetts Representative and Congressman Joe Kennedy <a href="https://www.dropbox.com/sh/c4oeykjtexash0x/AADajxQWiL3aoqdEL68hygaWa?dl=0&preview=3.13+Kennedy+III+3.mp4" class="blue-url">here</a>!</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Hackathon Ideation 101 (Session 2)</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/23/19 @ 2:13 AM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p> If you aren’t quite sure what to do, and you need some help with the strategy for your project and defining the problem you want to solve - get off to the right start in the “Design Thinking” workshop at 7am in CGS-511!   </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRIDAYYYYYYYY -->
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Where can I find the showers?</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/23/19 @ 1:05 AM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>1) Locate the catering section on the main hacking floor <br>
+2) Identify the opening labeled UBS to the left of the catering section if you are looking directly at the catering section <br>
+3) Enter the opening and turn right <br>
+4) You should be able to locate locker rooms #1-4! <br>
+5) Showers are in the back of the locker rooms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Walk-ins are welcome!</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/22/19 @ 8:50 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>Invite your friends to join your hack! We will take care of registration on-site -- the more friends who hack the merrier :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Workshop: Hackathon Ideation 101 </h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/22/19 @ 8:00 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p> If you aren’t quite sure what to do, and you need some help with the strategy for your project and defining the problem you want to solve - get off to the right start in the “Design Thinking” workshop at 9pm in CGS-527!   </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Not sure what project you want to build? Need help figuring out a bug? Request a mentor! </h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/22/19 @ 7:00 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>Mentors can help you with everything from brainstorming to solving technical problems. You can request a mentor <a href="https://boston.techtogether.io/live/mentor-request.html" class="blue-url">here</a>!  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Looking for a team? Head over to the team formation area at 5pm to meet other hackers! </h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/22/19 @ 2:00 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>We will also be offering teammate recommendations at the Boston University Spark! Booth -- head over to the team formation (starting at 5pm) to learn more! </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Opportunities at John Hancock / Manulife</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/22/19 @ 11:00 AM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>We strive to be a source of hope and trust, offering a solid foundation for the financial future of our clients. In all that we do we focus on making a difference- not only with our products, but in our community, in the lives of our employees, and for the environment. </p> <br>
+                   <p> In Technology at John Hancock:</p>
+                 <ul>
+                   <li class="bullet">Your work will make a difference</li>
+
+            <li class="bullet">You’ll have the opportunity to make to shape the future of the insurance and investments industries with innovative technologies</li>
+
+                  <li class="bullet">You’ll partner with the best talent in the industry to help our clients achieve their dreams and aspirations</li>
+
+         <li class="bullet">With offices in Canada, the United States and Asia, your opportunities are unlimited</li>
+                 </ul>
+
+                 <p>So … if change and transformation excites you and you want to be part of the team that is redefining how we build technology in the insurance and investment industries – <a href="https://www.johnhancock.com/careers.html" class="blue-url">join us</a>!</p>
+
+               </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>BU Spark!</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/21/19 @ 10:00 AM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p><a href="http://www.bu.edu/spark" class="blue-url">BU Spark!</a>, our host for the high school PreHacks track during TechTogether, is an initiative to support student driven
+                  innovation and entrepreneurship in computer science, computer engineering and related disciplines at Boston University.
+                  BU Spark! aims to help students realize their technical potential by providing access to resources, knowledge, and expert
+                  networks to support their innovation journeys.</p> <br>
+
+                  <p>BU Spark! is housed by the <a href="https://www.bu.edu/hic/" class="blue-url">Hariri Institute for Computing</a>, the Institute initiates, catalyzes, and propels collaborative,
+                    interdisciplinary research and training initiatives for a better society by:<br>
+
+                    (a) promoting discovery and innovations through the use of computational and data-driven approaches <br>
+                    (b) advancing computing sciences inspired by challenges in engineering </p><br>
+
+                    <p>Spark! has two primary programming tracks available to students: The Fellowship Program and the X-Lab.</p>              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row announcement-card">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s1">
+                <img src="assets/imgs/megaphone-icon.png" alt="" class="speaker-icon">
+              </div>
+              <div class="col s11 m7 l7">
+                <h5>Free Coursera Courses</h5>
+              </div>
+              <div class="col s12 m3 l3 announcement-time-stamp">
+                <h6> Posted 3/16/19 @ 10:45 PM</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m8 l8 offset-m1 offset-l1">
+                <p>TechTogether Boston has partnered with Coursera to give everyone a month of free tech courses! More info can be found <a href="https://www.coursera.org/promo/TechTogether19" class="blue-url">here</a>. Offer valid until 4/15/19, while supplies last.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+   <footer>
+     <div>
+        <div class="row">
+           <div class="col s4 center-align">
+              <a href="https://www.facebook.com/TechTogetherBoston" target="_blank"><img src="assets/imgs/socialicons/facebook.png" alt="facebook icon" class="socialicon"></a>
+           </div>
+           <div class="col s4 center-align">
+              <a href="https://www.instagram.com/TechTogetherBoston/" target="_blank"><img src="assets/imgs/socialicons/instagram.png" alt="instagram icon" class="socialicon"></a>
+           </div>
+           <div class="col s4 center-align">
+              <a href="https://www.twitter.com/TechTogetherBos/" class="center-align" target="_blank"><img src="assets/imgs/socialicons/twitter.png" alt="twitter icon" class="socialicon"></a>
+           </div>
+        </div>
+        <div class="center-align" id="desktop-copyright">
+           <p> &copy; TechTogether 2019 / Boston, MA / info@techtogether.io </p>
+           <p><a class="blue-url" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="blank">MLH Code of Conduct</a></p>
+        </div>
+     </div>
+  </footer>
+
+
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+   <script src="assets/js/ham_menu.js"> </script>
+
+   </body>
+
+</html>

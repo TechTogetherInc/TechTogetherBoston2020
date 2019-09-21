@@ -121,7 +121,7 @@ header {
         display: table;
 
         &:first-child {
-            font-size: 3.75em;
+            font-size: 3.7em;
         }
 
     }
@@ -442,11 +442,11 @@ header {
 
     .answer-box {
         width: 100%;
-        min-height: 15em;
+        min-height: 17rem;
         background-color: #FFF;
         clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0); // does not work on IE, Edge, or Opera but that's ok
         -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
-        padding: 2em;
+        padding: 1em 2em 35% 2em;
         color: $dark-blue;
         font-size: 1.4rem;
         // display: flex;

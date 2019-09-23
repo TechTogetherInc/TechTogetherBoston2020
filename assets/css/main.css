@@ -405,7 +405,7 @@ header {
   background-color: #FFF;
   clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
   -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
-  padding: 1em 2em 35% 2em;
+  padding: 2em 2em 60% 2em;
   color: #000C54;
   font-size: 1.4rem;
 }
@@ -735,6 +735,7 @@ footer .form {
         -ms-flex-order: 3;
             order: 3;
     margin: 2em 0 0 0;
+    font-size: 1.25rem;
   }
   .faq-container .question-box {
     -webkit-box-ordinal-group: 3;
@@ -764,7 +765,7 @@ footer .form {
     font-size: 3em;
   }
   .headline h1:first-child {
-    font-size: 3em;
+    font-size: 2.75em;
   }
   .headline h2 {
     font-size: 1.5em;

@@ -446,12 +446,15 @@ header {
         background-color: #FFF;
         clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0); // does not work on IE, Edge, or Opera but that's ok
         -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
-        padding: 1em 2em 35% 2em;
+        padding: 2em 2em 60% 2em;
         color: $dark-blue;
         font-size: 1.4rem;
         // display: flex;
         // flex-flow: column;
         // justify-content: center;
+
+        //p {}
+
     }
 
     .question-box {
@@ -765,6 +768,7 @@ footer {
         .answer-box {
             order: 3;
             margin: 2em 0 0 0;
+            font-size: 1.25rem;
         }
 
         .question-box {
@@ -808,7 +812,7 @@ footer {
             font-size: 3em;
 
             &:first-child {
-                font-size: 3em;
+                font-size: 2.75em;
             }
         }
 

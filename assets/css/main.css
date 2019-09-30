@@ -36,6 +36,10 @@ p {
   display: none;
 }
 
+.background-image .navbar-toggler-icon {
+  background-image: url(/assets/imgs/nav-hamburger.png);
+}
+
 header {
   margin-bottom: 7em;
 }
@@ -115,7 +119,7 @@ header {
 .headline h3 {
   font-size: 1.25em;
   color: #fff;
-  margin: 1em 0;
+  margin: 1em 0 03em 0;
   font-weight: 500;
 }
 
@@ -123,8 +127,12 @@ header {
   margin: 2em 0;
 }
 
+.headline a {
+  color: #FFF;
+}
+
 .headline button {
-  margin: 2em 2em 0 0;
+  margin: 0;
   padding: 4px 2.5em;
   color: #fff;
   border: none;
@@ -154,10 +162,6 @@ header {
 
 .headline div {
   padding: 0;
-}
-
-.about-container {
-  padding: 0 20px 0 20px;
 }
 
 .about-container img {
@@ -192,7 +196,7 @@ header {
 }
 
 .what-container {
-
+  margin: 7em 0;
 }
 
 .what-container h1 {
@@ -246,8 +250,8 @@ header {
 
 .track-container p {
   color: #000C54;
-  font-size: 1.5em;
-  /* font-weight: bold; */
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .track-container .margin {
@@ -280,13 +284,13 @@ header {
 }
 
 .track-container section p {
-  font-size: 1.5em;
+  font-size: 1.05em;
   float: right;
 }
 
-/* .track-container section p:hover {
+.track-container section p:hover {
   text-decoration: underline;
-} */
+}
 
 .track-container section p span {
   margin: 0 5px;
@@ -335,7 +339,7 @@ header {
 }
 
 .explore-container section p {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -403,7 +407,7 @@ header {
   -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
   padding: 2em;
   color: #000C54;
-  font-size: 1.2em;
+  font-size: 1.4rem;
 }
 
 .faq-container .question-box {
@@ -426,8 +430,7 @@ header {
 
 .faq-container .question-box p {
   margin: 0;
-  font-weight: 600;
-  font-size: 1.4rem;
+  font-weight: bold;
   padding: 1em 2em;
   cursor: pointer;
 }
@@ -757,14 +760,6 @@ footer .form {
   p {
     font-size: 1em;
   }
-  .navbar-nav li:last-child button {
-    margin: 1em 0;
-  }
-  header .navbar-nav {
-    position: relative;
-    padding: 1.5em 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
   .headline h1 {
     font-size: 3em;
   }
@@ -775,7 +770,7 @@ footer .form {
     font-size: 1.5em;
   }
   .headline h3 {
-    font-size: 1.3em;
+    font-size: 1.25em;
   }
   .background-image .logo {
     display: none;
@@ -860,6 +855,9 @@ footer .form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .get-involved_container .links img {
+    width: 15em;
   }
   .get-involved_container .links h3 {
     display: inline;
@@ -957,5 +955,59 @@ footer .form {
   footer .social img {
     width: 2em;
     margin: 0 .5em;
+  }
+}
+
+/* Hamburger Menu*/
+@media screen and (max-width: 991px) {
+  nav ul.navbar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-align: center;
+    z-index: 5;
+    background-color: #808cFB;
+  }
+  nav ul.navbar-nav li:last-child button {
+    margin: 1em 0;
+  }
+  nav .navbar-collapse li {
+    height: 20%;
+    border-bottom: solid #555353 1px;
+  }
+  nav .navbar-collapse li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  nav .navbar-collapse .border-change {
+    border-bottom: solid #000 0px;
+  }
+  nav .navbar-collapse .navbar-nav li {
+    margin: 0;
+  }
+  nav .navbar-toggler {
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    z-index: 10;
+  }
+  nav .display-toggle {
+    display: none;
   }
 }

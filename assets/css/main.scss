@@ -44,7 +44,7 @@ p {
     }
 
     .navbar-toggler-icon {
-        background-image: url(/assets_2020/imgs/nav-hamburger.png);
+        background-image: url(/assets/imgs/nav-hamburger.png);
     }
 
 }
@@ -135,12 +135,16 @@ header {
     h3 {
         font-size: 1.25em;
         color: #fff;
-        margin: 1em 0;
+        margin: 1em 0 03em 0;
         font-weight: 500;
     }
 
     div:first-child.row {
         margin: 2em 0;
+    }
+
+    a {
+        color: #FFF;
     }
 
     // div:nth-child(5) {
@@ -150,7 +154,7 @@ header {
     // }
 
     button {
-        margin: 2em 2em 0 0;
+        margin: 0;
         padding: 4px 2.5em;
         color: #fff;
         border: none;
@@ -444,7 +448,10 @@ header {
         -webkit-clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 100%, 0 0);
         padding: 2em;
         color: $dark-blue;
-        font-size: 1.2em;
+        font-size: 1.4rem;
+        // display: flex;
+        // flex-flow: column;
+        // justify-content: center;
     }
 
     .question-box {
@@ -930,7 +937,7 @@ footer {
 
         .links {
 
-            img{
+            img {
                 width: 15em;
             }
 
@@ -1056,7 +1063,7 @@ footer {
 }
 
 /* Hamburger Menu*/
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
 
     nav {
         ul.navbar-nav {
@@ -1115,6 +1122,7 @@ footer {
         }
 
         .navbar-toggler {
+            display: inline-block;
             position: fixed;
             right: 5%;
             z-index: 10;
@@ -1128,4 +1136,3 @@ footer {
 
 
 }
-

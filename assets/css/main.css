@@ -550,24 +550,38 @@ header {
   display: none;
 }
 
-.sponsor-container .gold-sponsors,
-.sponsor-container .silver-sponsors,
-.sponsor-container .bronze-sponsors {
+.sponsor-container .mega-sponsors,
+.sponsor-container .giga-sponsors,
+.sponsor-container .tera-sponsors,
+.sponsor-container .peta-sponsors,
+.sponsor-container .custom-sponsors {
   padding: 0 10%;
   margin: 10em 0;
 }
 
-.sponsor-container .gold-sponsors .top-sponsor,
-.sponsor-container .silver-sponsors .top-sponsor,
-.sponsor-container .bronze-sponsors .top-sponsor {
+.sponsor-container .mega-sponsors .top-sponsor,
+.sponsor-container .giga-sponsors .top-sponsor,
+.sponsor-container .tera-sponsors .top-sponsor,
+.sponsor-container .peta-sponsors .top-sponsor,
+.sponsor-container .custom-sponsors .top-sponsor {
   text-align: center;
 }
 
-.sponsor-container .gold-sponsors img {
+.sponsor-container .mega-sponsors .grid,
+.sponsor-container .giga-sponsors .grid,
+.sponsor-container .tera-sponsors .grid,
+.sponsor-container .peta-sponsors .grid,
+.sponsor-container .custom-sponsors .grid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsor-container .mega-sponsors img {
   width: 40%;
 }
 
-.sponsor-container .gold-sponsors .grid {
+.sponsor-container .mega-sponsors .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -578,15 +592,15 @@ header {
   grid-column-gap: 5em;
 }
 
-.sponsor-container .gold-sponsors .grid img {
+.sponsor-container .mega-sponsors .grid img {
   width: 100%;
 }
 
-.sponsor-container .silver-sponsors img {
+.sponsor-container .giga-sponsors img {
   width: 40%;
 }
 
-.sponsor-container .silver-sponsors .grid {
+.sponsor-container .giga-sponsors .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -595,11 +609,11 @@ header {
   grid-column-gap: 5em;
 }
 
-.sponsor-container .silver-sponsors .grid img {
+.sponsor-container .giga-sponsors .grid img {
   width: 100%;
 }
 
-.sponsor-container .silver-sponsors .grid2 {
+.sponsor-container .giga-sponsors .grid2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -608,11 +622,11 @@ header {
   grid-column-gap: 5em;
 }
 
-.sponsor-container .silver-sponsors .grid2 img {
+.sponsor-container .giga-sponsors .grid2 img {
   width: 100%;
 }
 
-.sponsor-container .bronze-sponsors .grid {
+.sponsor-container .tera-sponsors .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -621,7 +635,33 @@ header {
   grid-column-gap: 2em;
 }
 
-.sponsor-container .bronze-sponsors .grid img {
+.sponsor-container .tera-sponsors .grid img {
+  width: 100%;
+}
+
+.sponsor-container .peta-sponsors .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+}
+
+.sponsor-container .peta-sponsors .grid img {
+  width: 100%;
+}
+
+.sponsor-container .custom-sponsors .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+}
+
+.sponsor-container .custom-sponsors .grid img {
   width: 100%;
 }
 
@@ -890,35 +930,47 @@ footer .form {
   .sponsor-container h2 {
     font-size: 2.5em;
   }
-  .sponsor-container .gold-sponsors img,
-  .sponsor-container .silver-sponsors img,
-  .sponsor-container .bronze-sponsors img {
+  .sponsor-container .mega-sponsors,
+  .sponsor-container .giga-sponsors,
+  .sponsor-container .tera-sponsors,
+  .sponsor-container .peta-sponsors,
+  .sponsor-container .custom-sponsors {
+    margin: 5em 0;
+  }
+  .sponsor-container .mega-sponsors img,
+  .sponsor-container .giga-sponsors img,
+  .sponsor-container .tera-sponsors img,
+  .sponsor-container .peta-sponsors img,
+  .sponsor-container .custom-sponsors img {
     width: 90%;
   }
-  .sponsor-container .gold-sponsors .grid,
-  .sponsor-container .gold-sponsors .grid2,
-  .sponsor-container .silver-sponsors .grid,
-  .sponsor-container .silver-sponsors .grid2,
-  .sponsor-container .bronze-sponsors .grid,
-  .sponsor-container .bronze-sponsors .grid2 {
+  .sponsor-container .mega-sponsors .grid,
+  .sponsor-container .mega-sponsors .grid2,
+  .sponsor-container .giga-sponsors .grid,
+  .sponsor-container .giga-sponsors .grid2,
+  .sponsor-container .tera-sponsors .grid,
+  .sponsor-container .tera-sponsors .grid2,
+  .sponsor-container .peta-sponsors .grid,
+  .sponsor-container .peta-sponsors .grid2,
+  .sponsor-container .custom-sponsors .grid,
+  .sponsor-container .custom-sponsors .grid2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-row-gap: 1em;
+    grid-row-gap: 1.5em;
+    grid-auto-rows: 1fr;
     text-align: center;
   }
-  .sponsor-container .gold-sponsors .grid img,
-  .sponsor-container .gold-sponsors .grid2 img,
-  .sponsor-container .silver-sponsors .grid img,
-  .sponsor-container .silver-sponsors .grid2 img,
-  .sponsor-container .bronze-sponsors .grid img,
-  .sponsor-container .bronze-sponsors .grid2 img {
+  .sponsor-container .mega-sponsors .grid img,
+  .sponsor-container .mega-sponsors .grid2 img,
+  .sponsor-container .giga-sponsors .grid img,
+  .sponsor-container .giga-sponsors .grid2 img,
+  .sponsor-container .tera-sponsors .grid img,
+  .sponsor-container .tera-sponsors .grid2 img,
+  .sponsor-container .peta-sponsors .grid img,
+  .sponsor-container .peta-sponsors .grid2 img,
+  .sponsor-container .custom-sponsors .grid img,
+  .sponsor-container .custom-sponsors .grid2 img {
     width: 90%;
-  }
-  .sponsor-container .silver-sponsors .grid {
-    margin-bottom: 0;
-  }
-  .sponsor-container .silver-sponsors .grid2 {
-    margin-top: 0;
   }
   footer {
         grid-template-areas: "lg . fm" ". . soc";

@@ -575,6 +575,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
+}
+
+.sponsor-container .mega-sponsors a,
+.sponsor-container .giga-sponsors a,
+.sponsor-container .tera-sponsors a,
+.sponsor-container .peta-sponsors a,
+.sponsor-container .custom-sponsors a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
 }
 
 .sponsor-container .mega-sponsors img {
@@ -596,21 +611,17 @@ header {
   width: 100%;
 }
 
-.sponsor-container .giga-sponsors img {
-  width: 40%;
-}
-
 .sponsor-container .giga-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-row-gap: 2em;
   grid-column-gap: 5em;
 }
 
 .sponsor-container .giga-sponsors .grid img {
-  width: 100%;
+  width: 75%;
 }
 
 .sponsor-container .giga-sponsors .grid2 {
@@ -655,8 +666,8 @@ header {
 .sponsor-container .custom-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 2em;
   grid-column-gap: 2em;
 }
@@ -786,6 +797,13 @@ footer .form {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .sponsor-container mega-sponsors a,
+  .sponsor-container .giga-sponsors a,
+  .sponsor-container .tera-sponsors a,
+  .sponsor-container .peta-sponsors a,
+  .sponsor-container .custom-sponsors a {
+    padding: 0;
   }
   footer .social img {
     width: 2em;

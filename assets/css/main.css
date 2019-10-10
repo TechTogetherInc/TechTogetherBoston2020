@@ -555,6 +555,7 @@ header {
 .sponsor-container .tera-sponsors,
 .sponsor-container .peta-sponsors,
 .sponsor-container .custom-sponsors {
+  text-align: center;
   padding: 0 10%;
   margin: 10em 0;
 }
@@ -575,25 +576,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
-}
-
-.sponsor-container .mega-sponsors a,
-.sponsor-container .giga-sponsors a,
-.sponsor-container .tera-sponsors a,
-.sponsor-container .peta-sponsors a,
-.sponsor-container .custom-sponsors a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2em;
-}
-
-.sponsor-container .mega-sponsors img {
-  width: 40%;
 }
 
 .sponsor-container .mega-sponsors .grid {

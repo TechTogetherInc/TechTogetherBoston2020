@@ -594,19 +594,14 @@ header {
     .peta-sponsors,
     .custom-sponsors {
 
+        text-align: center; // centers image because of how anchor tags work idk
+
         .top-sponsor {
             text-align: center; // centers image because of how anchor tags work idk
         }
 
         .grid {
-            align-items: center;
-            justify-items: center;
-        }
-
-        a {
-            display: flex;
-            justify-content: center;
-            padding: 2em;
+            align-items: center; // vertical
         }
 
         padding: 0 10%;
@@ -614,10 +609,6 @@ header {
     }
 
     .mega-sponsors {
-
-        img {
-            width: 40%;
-        }
 
         .grid {
             display: grid;

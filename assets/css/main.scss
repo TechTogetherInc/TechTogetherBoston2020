@@ -596,10 +596,6 @@ header {
 
         text-align: center; // centers image because of how anchor tags work idk
 
-        .top-sponsor {
-            text-align: center; // centers image because of how anchor tags work idk
-        }
-
         .grid {
             align-items: center; // vertical
         }
@@ -1037,17 +1033,11 @@ footer {
 
             margin: 5em 0;
 
-            img {
-                width: 90%;
-            }
-
-
             .grid,
             .grid2 {
                 grid-template-columns: 1fr;
-                grid-row-gap: 1.5em;
-                grid-auto-rows: 1fr;
-                text-align: center;
+                grid-row-gap: 3em;
+                grid-auto-rows: auto;
 
                 img {
                     width: 90%;

@@ -70,7 +70,7 @@ header {
 
 .navbar-collapse .navbar-nav p {
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -100,7 +100,7 @@ header {
 
 .headline h1 {
   font-size: 4em;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1em;
   margin-bottom: 30px;
   color: #fff;
@@ -114,7 +114,7 @@ header {
 .headline h2 {
   font-size: 1.5em;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .headline h3 {
@@ -138,7 +138,7 @@ header {
   color: #fff;
   border: none;
   border-radius: 100px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5em;
 }
 
@@ -171,12 +171,12 @@ header {
 
 .about-container h1 {
   color: #000C54;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .about-container h2 {
   color: #808cFB;
-  font-weight: bold;
+  font-weight: 600;
   margin: 1.5em 0;
 }
 
@@ -201,7 +201,7 @@ header {
 }
 
 .what-container h1 {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .what-container div {
@@ -238,13 +238,13 @@ header {
 }
 
 .track-container h1 {
-  font-weight: bold;
+  font-weight: 600;
   color: #000C54;
   padding: .3em 0;
 }
 
 .track-container h2 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2em;
   margin: 1em 0;
 }
@@ -252,7 +252,7 @@ header {
 .track-container p {
   color: #000C54;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .track-container .margin {
@@ -397,7 +397,7 @@ header {
 .faq-container .title h1,
 .faq-container .title h3 {
   color: #FFF;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .faq-container .answer-box {
@@ -431,7 +431,7 @@ header {
 
 .faq-container .question-box p {
   margin: 0;
-  font-weight: bold;
+  font-weight: 600;
   padding: 1em 2em;
   cursor: pointer;
 }
@@ -464,7 +464,7 @@ header {
 }
 
 .get-involved_container .title h1 {
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 0.3em solid #FD7361;
@@ -473,7 +473,7 @@ header {
 
 .get-involved_container .title h3 {
   color: #808cFB;
-  font-weight: bold;
+  font-weight: 600;
   margin: 1em 0;
 }
 
@@ -490,7 +490,7 @@ header {
 
 .get-involved_container .links h3 {
   background-color: #FD7361;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   padding: 1em 1em;
   text-align: center;
@@ -536,7 +536,7 @@ header {
 
 .sponsor-container .title h1 {
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .sponsor-container .title .display-2,

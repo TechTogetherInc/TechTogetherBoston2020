@@ -76,7 +76,7 @@ header {
 
         p {
             color: #fff;
-            font-weight: bold;
+            font-weight: 600;
             margin: 0;
         }
 
@@ -115,7 +115,7 @@ header {
 
     h1 {
         font-size: 4em;
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1em;
         margin-bottom: 30px;
         color: #fff;
@@ -130,7 +130,7 @@ header {
     h2 {
         font-size: 1.5em;
         color: #fff;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     h3 {
@@ -160,7 +160,7 @@ header {
         color: #fff;
         border: none;
         border-radius: $button-radius;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 1.5em;
 
         &:first-child {
@@ -203,12 +203,12 @@ header {
 
     h1 {
         color: $dark-blue;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     h2 {
         color: $purple;
-        font-weight: bold;
+        font-weight: 600;
         margin: 1.5em 0;
 
         span {
@@ -236,7 +236,7 @@ header {
     margin: 7em 0;
 
     h1 {
-        font-weight: bold;
+        font-weight: 600;
     }
 
     div {
@@ -279,13 +279,13 @@ header {
     padding: 0 5% 0 0;
 
     h1 {
-        font-weight: bold;
+        font-weight: 600;
         color: $dark-blue;
         padding: .3em 0;
     }
 
     h2 {
-        font-weight: bold;
+        font-weight: 600;
         font-size: 2em;
         margin: 1em 0;
     }
@@ -293,7 +293,7 @@ header {
     p {
         color: $dark-blue;
         font-size: 1.2em;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     .margin {
@@ -437,7 +437,7 @@ header {
         h1,
         h3 {
             color: #FFF;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 
@@ -476,7 +476,7 @@ header {
 
         p {
             margin: 0;
-            font-weight: bold;
+            font-weight: 600;
             padding: 1em 2em;
             cursor: pointer;
         }
@@ -505,7 +505,7 @@ header {
         padding: 0 1em;
 
         h1 {
-            font-weight: bold;
+            font-weight: 600;
             margin: 0;
             padding-bottom: 20px;
             border-bottom: .3em solid $pink;
@@ -514,7 +514,7 @@ header {
 
         h3 {
             color: $purple;
-            font-weight: bold;
+            font-weight: 600;
             margin: 1em 0;
         }
     }
@@ -527,7 +527,7 @@ header {
 
         h3 {
             background-color: $pink;
-            font-weight: bold;
+            font-weight: 600;
             color: #fff;
             padding: 1em 1em;
             text-align: center;
@@ -571,7 +571,7 @@ header {
 
         h1 {
             font-size: 3em;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .display-2,

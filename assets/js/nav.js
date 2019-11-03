@@ -1,5 +1,6 @@
-// Closes hamburger nav when FAQ is clicked on for mobile
+// Not needed at the moment...
 
+// Closes hamburger nav when FAQ is clicked on for mobile
 const faq = document.getElementById("faqButton");
 
 faq.addEventListener("click", closeNav);

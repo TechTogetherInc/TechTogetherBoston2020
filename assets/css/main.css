@@ -235,7 +235,7 @@ header {
 }
 
 .showcase-container {
-  margin: 7em 0;
+  margin: 3em 0;
 }
 
 .showcase-container h1 {
@@ -483,7 +483,8 @@ header {
   display: inline-block;
   color: #000C54;
   font-weight: 600;
-  margin-bottom: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
   border-bottom: 5px solid #0025F8;
 }
 
@@ -1287,6 +1288,8 @@ footer .hashtag {
   display: inline-block;
   color: #000C54;
   font-weight: 600;
+  padding-bottom: .5em;
+  border-bottom: 7px solid #FD7361;
 }
 
 .faq-container h3 {

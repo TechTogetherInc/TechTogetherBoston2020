@@ -242,7 +242,7 @@ header {
 }
 
 .showcase-container {
-    margin: 7em 0;
+    margin: 3em 0;
 
     h1 {
         font-weight: 600;
@@ -491,7 +491,8 @@ header {
         display: inline-block;
         color: $dark-blue;
         font-weight: 600;
-        margin-bottom: .5em;
+        padding-bottom: .5em;
+        margin-bottom: 1em;
         border-bottom: 5px solid $ocean-blue;
     }
 
@@ -1241,6 +1242,8 @@ footer {
         display: inline-block;
         color: $dark-blue;
         font-weight: 600;
+        padding-bottom: .5em;
+        border-bottom: 7px solid $pink;
     }
 
     h3 {

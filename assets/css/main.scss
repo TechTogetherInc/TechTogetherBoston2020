@@ -88,6 +88,12 @@ header {
             margin: 0;
         }
 
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
         button {
             color: #fff;
             background-color: $pink;
@@ -150,6 +156,9 @@ header {
 
     a {
         color: #FFF;
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     button {

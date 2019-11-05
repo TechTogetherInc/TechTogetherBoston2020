@@ -8,7 +8,6 @@ function barWidth() {
     for (i = 0; i < img.length; i++) {
         img[i].style.height = String((parseInt(getComputedStyle(height0).width.substring(0, getComputedStyle(height0).width.length - 2)) + 200) + "px");
     }
-
 }
 
 window.onload = barWidth; 

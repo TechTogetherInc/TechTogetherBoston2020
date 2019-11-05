@@ -62,7 +62,7 @@ header {
     background-image: url(/assets/imgs/graphics/hamburger.svg) !important;
 }
 
-.mobile2{
+.mobile2 {
     display: none;
 }
 
@@ -1142,6 +1142,10 @@ footer {
     }
 }
 
+.photo-section-temporary {
+    justify-content: center;
+}
+
 .scale-position1 {
     transform: scale(2);
     object-position: -1em .5em;
@@ -1566,6 +1570,17 @@ footer {
         }
     }
 
+    .faq-container {
+        padding: 0 10%;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 100%;
+            column-gap: 0%;
+        }
+
+    }
+
     .sponsor-container {
         .carousel {
             height: 25em;
@@ -1815,7 +1830,7 @@ footer {
 @media screen and (max-width: 991px) {
 
     nav {
-        p{
+        p {
             color: $dark-blue !important;
         }
 
@@ -1830,6 +1845,7 @@ footer {
             text-align: center;
             z-index: 5;
             background-color: $purple;
+
             li {
                 &:last-child {
                     button {
@@ -1839,15 +1855,15 @@ footer {
             }
         }
 
-        .mobile{
+        .mobile {
             display: none;
         }
 
-        .mobile2{
+        .mobile2 {
             display: block;
         }
 
-        .social{
+        .social {
             display: flex;
             justify-content: space-around;
         }

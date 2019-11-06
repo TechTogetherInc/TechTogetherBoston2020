@@ -1191,12 +1191,6 @@ footer .hashtag {
   width: 100%;
 }
 
-.photo-section-temporary {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .scale-position1 {
   -webkit-transform: scale(2);
           transform: scale(2);

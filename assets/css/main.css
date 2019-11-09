@@ -827,8 +827,8 @@ header {
   display: grid;
   -ms-grid-columns: 40% 40%;
       grid-template-columns: 40% 40%;
-  -ms-grid-rows: 15em;
-      grid-template-rows: 15em;
+  -ms-grid-rows: 18em;
+      grid-template-rows: 18em;
   grid-column-gap: 2%;
 }
 
@@ -852,6 +852,23 @@ header {
       grid-template-rows: 7em 7em;
   grid-row-gap: 2em;
   grid-column-gap: 5%;
+}
+
+.sponsor-container .title-sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.sponsor-container .title-sponsor p {
+  color: #808cFB;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 footer {
@@ -1445,6 +1462,9 @@ footer .hashtag {
   }
   .photo-section .grid div img {
     width: 100%;
+  }
+  .sponsor-container .title-sponsor p {
+    font-size: 1.75em;
   }
 }
 

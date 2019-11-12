@@ -248,7 +248,7 @@ header {
 
 .showcase-container h1 {
   font-weight: 600;
-  border-bottom: 7px solid #0025F8;
+  border-bottom: 5px solid #0025F8;
 }
 
 .showcase-container div {
@@ -338,7 +338,7 @@ header {
   color: #000C54;
   font-weight: 600;
   margin-bottom: .5em;
-  border-bottom: 7px solid #FD7361;
+  border-bottom: 5px solid #FD7361;
 }
 
 .track-container .title h3 {
@@ -422,7 +422,7 @@ header {
   font-weight: 600;
   display: inline-block;
   margin-bottom: .5em;
-  border-bottom: 7px solid #000C54;
+  border-bottom: 5px solid #000C54;
 }
 
 .explore-container .text p {
@@ -491,8 +491,9 @@ header {
   display: inline-block;
   color: #000C54;
   font-weight: 600;
+  padding-bottom: .5em;
   margin-bottom: 1em;
-  border-bottom: 7px solid #0025F8;
+  border-bottom: 5px solid #0025F8;
 }
 
 .get-involved-container h4 {
@@ -598,7 +599,7 @@ header {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 1em;
-  border-bottom: 7px solid #52D9F6;
+  border-bottom: 5px solid #52D9F6;
 }
 
 .schedule-container .grid {
@@ -717,7 +718,7 @@ header {
   font-weight: 600;
   font-size: 2.25em;
   color: #000C54;
-  border-bottom: 7px solid #FD7361;
+  border-bottom: 5px solid #FD7361;
 }
 
 .sponsor-container .text-section h3 {
@@ -816,8 +817,8 @@ header {
 .sponsor-container .very-top-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40%;
-      grid-template-columns: 40%;
+  -ms-grid-columns: 35%;
+      grid-template-columns: 35%;
   -ms-grid-rows: 20em;
       grid-template-rows: 20em;
 }
@@ -825,10 +826,10 @@ header {
 .sponsor-container .top-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 40%;
-      grid-template-columns: 40% 40%;
-  -ms-grid-rows: 18em;
-      grid-template-rows: 18em;
+  -ms-grid-columns: 28% 28% 28%;
+      grid-template-columns: 28% 28% 28%;
+  -ms-grid-rows: 20em;
+      grid-template-rows: 20em;
   grid-column-gap: 2%;
 }
 
@@ -837,8 +838,8 @@ header {
   display: grid;
   -ms-grid-columns: 22% 22% 22%;
       grid-template-columns: 22% 22% 22%;
-  -ms-grid-rows: 10em 10em;
-      grid-template-rows: 10em 10em;
+  -ms-grid-rows: 12em 12em;
+      grid-template-rows: 12em 12em;
   grid-row-gap: 2em;
   grid-column-gap: 5%;
 }
@@ -1656,8 +1657,8 @@ footer .hashtag {
     margin: 2em 0;
   }
   .sponsor-container .low-sponsors .grid {
-    -ms-grid-rows: minmax(5em, 12em);
-        grid-template-rows: minmax(5em, 12em);
+    -ms-grid-rows: minmax(5em, 10em);
+        grid-template-rows: minmax(5em, 10em);
     margin: 2em 0 5em 0;
   }
   .sponsor-container .col-sm-12 {

@@ -770,6 +770,7 @@ header {
     .mid-sponsors,
     .low-sponsors {
         padding: 0 2.5%;
+        margin: 5em 0;
 
         .grid {
             justify-content: center;
@@ -793,13 +794,12 @@ header {
             max-width: 100%;
         }
 
-        margin: 5em 0;
     }
 
     .very-top-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 40%;
+            grid-template-columns: 35%;
             grid-template-rows: 20em;
         }
     }
@@ -807,8 +807,8 @@ header {
     .top-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 40% 40%;
-            grid-template-rows: 18em;
+            grid-template-columns: 28% 28% 28%;
+            grid-template-rows: 20em;
             grid-column-gap: 2%;
         }
     }
@@ -817,7 +817,7 @@ header {
         .grid {
             display: grid;
             grid-template-columns: 22% 22% 22%;
-            grid-template-rows: 10em 10em;
+            grid-template-rows: 12em 12em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
         }
@@ -1673,7 +1673,7 @@ footer {
 
         .low-sponsors {
             .grid {
-                grid-template-rows: minmax(5em, 12em);
+                grid-template-rows: minmax(5em, 10em);
                 margin: 2em 0 5em 0;
             }
         }

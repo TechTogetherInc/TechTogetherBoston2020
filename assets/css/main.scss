@@ -96,7 +96,7 @@ header {
 
         button {
             color: #fff;
-            background-color: $pink;
+            background-color: $ocean-blue;
             border: none;
 
             p {
@@ -162,22 +162,35 @@ header {
         }
     }
 
-    button {
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button1,
+    .button2 {
         margin: 0;
         padding: .5em .5em;
         margin: .5em;
         color: #fff;
-        border: none;
         font-weight: 600;
         font-size: 1.5em;
+        text-align: center;
 
         p {
             margin: 0;
         }
     }
 
+    br {
+        display: none;
+    }
+
     .text-section {
         margin: 2em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         p {
             margin: 0;
@@ -193,13 +206,13 @@ header {
     .button1 {
         background-color: $pink;
         width: 42%;
-        word-wrap: break;
+        font-size: 1.2em;
     }
 
     .button2 {
         background-color: $ocean-blue;
         width: 42%;
-        word-wrap: break;
+        font-size: 1.2em;
     }
 
 }
@@ -528,25 +541,23 @@ header {
         flex-flow: wrap;
 
         div {
-            display: flex;
-            align-items: center;
             padding: 1.5em 1em;
             margin: 1em .5em;
-            width: 14em;
-        }
+            width: 18em;
+            text-align: center;
+            border: none;
 
-        a {
             &:first-child {
-                div {
-                    background-color: $ocean-blue;
-                }
+                background-color: $ocean-blue;
             }
 
             &:nth-child(2) {
-                div {
-                    background-color: $pink;
-                }
+                background-color: $pink;
             }
+        }
+
+        a {
+            display: inline;
         }
 
         p {
@@ -563,6 +574,7 @@ header {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        padding: 0 1em 0 0;
     }
 
     .carousel {
@@ -789,9 +801,8 @@ header {
         }
 
         img {
-            background-size: contain;
-            max-height: 100%;
             max-width: 100%;
+            max-height: 100%;
         }
 
     }
@@ -810,6 +821,14 @@ header {
             grid-template-columns: 28% 28% 28%;
             grid-template-rows: 20em;
             grid-column-gap: 2%;
+            grid-row-gap: 2em;
+            text-align: center;
+
+            div {
+                &:nth-child(4) {
+                    grid-column: 2;
+                }
+            }
         }
     }
 
@@ -840,7 +859,7 @@ header {
         p {
             color: $purple;
             font-weight: 600;
-            font-size: 2.5em;
+            font-size: 1.5em;
             margin: 0;
         }
     }
@@ -1433,7 +1452,7 @@ footer {
     .sponsor-container {
         .title-sponsor {
             p {
-                font-size: 1.75em;
+                font-size: 1.25em;
             }
         }
     }
@@ -1472,7 +1491,8 @@ footer {
             text-align: center;
         }
 
-        button {
+        .button1,
+        .button2 {
             margin: .5em 0;
         }
 
@@ -1661,6 +1681,12 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
+
+                div {
+                    &:nth-child(4) {
+                        grid-column: 1;
+                    }
+                }
             }
         }
 
@@ -1807,7 +1833,11 @@ footer {
 
     .headline {
         h1 {
-            font-size: 3.5em;
+            font-size: 2.5em;
+        }
+
+        .button-container {
+            flex-direction: column;
         }
     }
 
@@ -1949,6 +1979,16 @@ footer {
         }
 
     }
+}
 
+/* Misc Queries */
 
+@media screen and (max-width: 1475px) and (min-width: 1025px) {
+    .headline {
+        .button2 {
+            br {
+                display: block;
+            }
+        }
+    }
 }

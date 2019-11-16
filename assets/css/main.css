@@ -88,7 +88,7 @@ header {
 
 .navbar-collapse .navbar-nav button {
   color: #fff;
-  background-color: #FD7361;
+  background-color: #0025F8;
   border: none;
 }
 
@@ -147,22 +147,47 @@ header {
   text-decoration: none;
 }
 
-.headline button {
+.headline .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headline .button1,
+.headline .button2 {
   margin: 0;
   padding: .5em .5em;
   margin: .5em;
   color: #fff;
-  border: none;
   font-weight: 600;
   font-size: 1.5em;
+  text-align: center;
 }
 
-.headline button p {
+.headline .button1 p,
+.headline .button2 p {
   margin: 0;
+}
+
+.headline br {
+  display: none;
 }
 
 .headline .text-section {
   margin: 2em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .headline .text-section p {
@@ -185,13 +210,13 @@ header {
 .headline .button1 {
   background-color: #FD7361;
   width: 42%;
-  word-wrap: break;
+  font-size: 1.2em;
 }
 
 .headline .button2 {
   background-color: #0025F8;
   width: 42%;
-  word-wrap: break;
+  font-size: 1.2em;
 }
 
 .about-container {
@@ -521,23 +546,23 @@ header {
 }
 
 .get-involved-container .buttons div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 1.5em 1em;
   margin: 1em .5em;
-  width: 14em;
+  width: 18em;
+  text-align: center;
+  border: none;
 }
 
-.get-involved-container .buttons a:first-child div {
+.get-involved-container .buttons div:first-child {
   background-color: #0025F8;
 }
 
-.get-involved-container .buttons a:nth-child(2) div {
+.get-involved-container .buttons div:nth-child(2) {
   background-color: #FD7361;
+}
+
+.get-involved-container .buttons a {
+  display: inline;
 }
 
 .get-involved-container .buttons p {
@@ -560,6 +585,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding: 0 1em 0 0;
 }
 
 .get-involved-container .carousel {
@@ -809,9 +835,8 @@ header {
 .sponsor-container .top-sponsors img,
 .sponsor-container .mid-sponsors img,
 .sponsor-container .low-sponsors img {
-  background-size: contain;
-  max-height: 100%;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .sponsor-container .very-top-sponsors .grid {
@@ -831,6 +856,13 @@ header {
   -ms-grid-rows: 20em;
       grid-template-rows: 20em;
   grid-column-gap: 2%;
+  grid-row-gap: 2em;
+  text-align: center;
+}
+
+.sponsor-container .top-sponsors .grid div:nth-child(4) {
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 .sponsor-container .mid-sponsors .grid {
@@ -868,7 +900,7 @@ header {
 .sponsor-container .title-sponsor p {
   color: #808cFB;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin: 0;
 }
 
@@ -1465,7 +1497,7 @@ footer .hashtag {
     width: 100%;
   }
   .sponsor-container .title-sponsor p {
-    font-size: 1.75em;
+    font-size: 1.25em;
   }
 }
 
@@ -1499,7 +1531,8 @@ footer .hashtag {
             align-items: center;
     text-align: center;
   }
-  .headline button {
+  .headline .button1,
+  .headline .button2 {
     margin: .5em 0;
   }
   .background-image .logo {
@@ -1651,6 +1684,10 @@ footer .hashtag {
         grid-template-rows: minmax(5em, 12em);
     margin: 2em 0;
   }
+  .sponsor-container .top-sponsors .grid div:nth-child(4) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
   .sponsor-container .mid-sponsors .grid {
     -ms-grid-rows: minmax(5em, 12em);
         grid-template-rows: minmax(5em, 12em);
@@ -1783,7 +1820,13 @@ footer .hashtag {
 /* tablet only */
 @media screen and (max-width: 1024px) and (min-width: 501px) {
   .headline h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+  }
+  .headline .button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sponsor-container .very-top-sponsors,
   .sponsor-container .top-sponsors,
@@ -1891,5 +1934,12 @@ footer .hashtag {
   }
   nav .display-toggle {
     display: none;
+  }
+}
+
+/* Misc Queries */
+@media screen and (max-width: 1475px) and (min-width: 1025px) {
+  .headline .button2 br {
+    display: block;
   }
 }

@@ -1360,9 +1360,20 @@ footer .hashtag {
           column-gap: 5%;
 }
 
+.partnerships .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .partnerships .grid {
   -ms-grid-columns: 28% 28% 28%;
       grid-template-columns: 28% 28% 28%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-column-gap: 5%;
           column-gap: 5%;
 }

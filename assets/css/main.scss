@@ -66,6 +66,10 @@ header {
     display: none;
 }
 
+.navbar {
+    padding: 0 2%;
+}
+
 .navbar-collapse {
 
     .navbar-nav {
@@ -132,13 +136,8 @@ header {
         font-size: 3em;
         font-weight: 600;
         line-height: 1em;
-        margin-bottom: 30px;
         color: #fff;
-
-        &:nth-child(2) {
-            padding-bottom: .5em;
-            border-bottom: 7px solid $pink;
-        }
+        padding: 0;
     }
 
     h2 {
@@ -160,6 +159,13 @@ header {
         &:hover {
             text-decoration: none;
         }
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
     }
 
     .button-container {
@@ -269,7 +275,7 @@ header {
 
     h1 {
         font-weight: 600;
-        border-bottom: 5px solid $ocean-blue;
+        margin-bottom: 0;
     }
 
     div {
@@ -299,7 +305,26 @@ header {
     a {
         color: $dark-blue;
         font-weight: 600;
+    }
 
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $ocean-blue;
+        margin: 1em 0 1.5em 0;
+    }
+
+    // svg {
+    //     stroke: $dark-blue;
+    //     color: $dark-blue;
+    // }
+
+    .carousel-control-prev {
+        background: transparent;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: invert(25%);
     }
 
     .carousel {
@@ -322,15 +347,19 @@ header {
             border-radius: 50%;
         }
 
-        span {
-            background-color: $dark-blue;
-        }
     }
 
 }
 
 .track-container {
     padding: 0 5%;
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
+    }
 
     .left {
         padding: 0 5% 0 0;
@@ -362,8 +391,7 @@ header {
             display: inline-block;
             color: $dark-blue;
             font-weight: 600;
-            margin-bottom: .5em;
-            border-bottom: 5px solid $pink;
+            margin-bottom: 0;
         }
 
         h3 {
@@ -428,19 +456,24 @@ header {
     background-color: $dark-blue;
     margin: 7em 0 0 0;
     padding: 5em 0;
-    // padding: 0;
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $dark-blue;
+        margin: 1em 0 1.5em 0;
+    }
 
     .text {
         color: #fff;
         background-color: $purple;
-        padding: 5em 5em 15em 5em;
+        padding: 12.5em 5em 12.5em 5em;
         width: 40%;
 
         h1 {
             font-weight: 600;
             display: inline-block;
-            margin-bottom: .5em;
-            border-bottom: 5px solid $dark-blue;
+            margin-bottom: 0;
         }
 
         p {
@@ -474,11 +507,16 @@ header {
 
     h1 {
         display: inline-block;
-        border-bottom: 7px solid $blue;
         color: #FFF;
         font-weight: 600;
-        padding: 0 0 .3em 0;
-        margin: 0 0 2em 0;
+        margin: 0;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $blue;
+        margin: 1em 0 1.5em 0;
     }
 
     .carousel-inner,
@@ -498,10 +536,16 @@ header {
         background-color: $purple;
     }
 
+    .carousel-control-prev {
+        background: transparent;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: invert(25%);
+    }
+
     .carousel {
-        a {
-            background-color: rgba(0, 0, 0, .3);
-        }
+        margin: 4em 0;
     }
 
 }
@@ -514,9 +558,7 @@ header {
         display: inline-block;
         color: $dark-blue;
         font-weight: 600;
-        padding-bottom: .5em;
-        margin-bottom: 1em;
-        border-bottom: 5px solid $ocean-blue;
+        margin: 0;
     }
 
     h4 {
@@ -535,9 +577,16 @@ header {
         }
     }
 
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $ocean-blue;
+        margin: 1em 0 1.5em 0;
+    }
+
     .buttons {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-flow: wrap;
 
         div {
@@ -549,6 +598,7 @@ header {
 
             &:first-child {
                 background-color: $ocean-blue;
+                margin-left: 0;
             }
 
             &:nth-child(2) {
@@ -612,14 +662,21 @@ header {
     h1 {
         display: inline-block;
         font-weight: 600;
-        margin-bottom: 1em;
-        border-bottom: 5px solid $blue;
+        margin: 0;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $blue;
+        margin: 1em 0 1.5em 0;
     }
 
     .grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         column-gap: 5%;
+        margin: 3em 0;
 
         .col1,
         .col2,
@@ -730,15 +787,14 @@ header {
             display: inline-block;
             font-weight: 600;
             font-size: 2.25em;
-            color: $dark-blue;
-            border-bottom: 5px solid $pink;
+            margin: 0;
         }
 
         h3 {
             display: inline-block;
             font-weight: 600;
             color: $purple;
-            margin: 1.25em 0;
+            margin: .5em 0;
         }
 
         span {
@@ -775,6 +831,15 @@ header {
 
     .col-12 {
         padding: 0;
+    }
+
+    .title {
+        .bar-sm {
+            width: 3em;
+            height: .35em;
+            background-color: $dark-blue;
+            margin: 1em 0 1.5em 0;
+        }
     }
 
     .very-top-sponsors,
@@ -958,7 +1023,7 @@ footer {
 /***************** About Page ******************/
 
 .nav2 {
-    margin: 2.5em 0 0 0;
+    margin: 2em 0 0 0;
 
     img {
         width: 20em;
@@ -998,9 +1063,9 @@ footer {
 
     h1 {
         color: $dark-blue;
-        border-bottom: 7px solid $pink;
         display: inline-block;
         font-weight: 600;
+        margin: 0;
     }
 
     h3 {
@@ -1012,6 +1077,13 @@ footer {
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
     }
 
     .mission-list {
@@ -1109,9 +1181,15 @@ footer {
     h1 {
         font-weight: 600;
         color: $dark-blue;
-        padding: .25em 0;
         display: inline-block;
-        border-bottom: 7px solid $purple;
+        margin: 0;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $purple;
+        margin: 1em 0 1.5em 0;
     }
 
 }
@@ -1278,12 +1356,18 @@ footer {
         display: inline-block;
         color: $dark-blue;
         font-weight: 600;
-        padding-bottom: .5em;
-        border-bottom: 7px solid $pink;
+        margin: 0;
     }
 
     h3 {
         font-weight: 600;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
     }
 
     .grid {
@@ -1474,6 +1558,16 @@ footer {
         font-size: 1em;
     }
 
+    .nav2 {
+        img {
+            width: 10em;
+        }
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
 
     .headline {
         h2 {
@@ -1489,6 +1583,12 @@ footer {
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
 
         .button1,
@@ -1898,7 +1998,6 @@ footer {
 
 /* Hamburger Menu*/
 @media screen and (max-width: 991px) {
-
     nav {
         p {
             color: $dark-blue !important;
@@ -1923,6 +2022,10 @@ footer {
                     }
                 }
             }
+        }
+
+        #mlh-trust-badge {
+            right: 5.5em !important;
         }
 
         .mobile {
@@ -1970,6 +2073,7 @@ footer {
         .navbar-toggler {
             display: inline-block;
             position: fixed;
+            top: 3em;
             right: 5%;
             z-index: 30;
         }

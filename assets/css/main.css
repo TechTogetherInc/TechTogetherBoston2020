@@ -321,7 +321,8 @@ header {
   background: transparent;
 }
 
-.showcase-container .carousel-control-prev-icon, .showcase-container .carousel-control-next-icon {
+.showcase-container .carousel-control-prev-icon,
+.showcase-container .carousel-control-next-icon {
   -webkit-filter: invert(25%);
           filter: invert(25%);
 }
@@ -542,13 +543,24 @@ header {
   background: transparent;
 }
 
-.stats-container .carousel-control-prev-icon, .stats-container .carousel-control-next-icon {
+.stats-container .carousel-control-prev-icon,
+.stats-container .carousel-control-next-icon {
   -webkit-filter: invert(25%);
           filter: invert(25%);
 }
 
+.stats-container .carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .stats-container .carousel {
-  margin: 4em 0;
+  margin: 2em 0;
+  width: 60%;
 }
 
 .get-involved-container {
@@ -1515,6 +1527,9 @@ footer .hashtag {
     padding: 5em 20% 5em 10%;
   }
   .explore-container .carousel {
+    width: 100%;
+  }
+  .stats-container .carousel {
     width: 100%;
   }
   .photo-section {

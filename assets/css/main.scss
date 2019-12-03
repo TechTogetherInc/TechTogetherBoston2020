@@ -323,7 +323,8 @@ header {
         background: transparent;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon{
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         filter: invert(25%);
     }
 
@@ -540,14 +541,20 @@ header {
         background: transparent;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon{
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         filter: invert(25%);
     }
 
-    .carousel {
-        margin: 4em 0;
+    .carousel-container {
+        display: flex;
+        justify-content: center;
     }
 
+    .carousel {
+        margin: 2em 0;
+        width: 60%;
+    }
 }
 
 .get-involved-container {
@@ -1302,7 +1309,7 @@ footer {
 
 .partnerships {
 
-    .center{
+    .center {
         display: flex;
         align-items: center;
     }
@@ -1469,6 +1476,12 @@ footer {
             padding: 5em 20% 5em 10%;
         }
 
+        .carousel {
+            width: 100%;
+        }
+    }
+
+    .stats-container {
         .carousel {
             width: 100%;
         }

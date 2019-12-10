@@ -605,7 +605,6 @@ header {
 
             &:first-child {
                 background-color: $ocean-blue;
-                margin-left: 0;
             }
 
             &:nth-child(2) {
@@ -890,34 +889,34 @@ header {
     .top-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 28% 28% 28%;
+            grid-template-columns: 30% 30%;
             grid-template-rows: 20em;
-            grid-column-gap: 2%;
+            grid-column-gap: 10%;
             grid-row-gap: 2em;
             text-align: center;
-
-            div {
-                &:nth-child(4) {
-                    grid-column: 2;
-                }
-            }
         }
     }
 
     .mid-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 22% 22% 22%;
+            grid-template-columns: 25% 25% 25%;
             grid-template-rows: 12em 12em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
+
+            div {
+                &:nth-child(7) {
+                    grid-column: 2;
+                }
+            }
         }
     }
 
     .low-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 15% 15% 15% 15%;
+            grid-template-columns: 17% 17% 17% 17%;
             grid-template-rows: 7em 7em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
@@ -1732,7 +1731,6 @@ footer {
                 margin: 1em 0;
                 width: 100%;
             }
-
         }
 
         .col-sm-12 {
@@ -1801,12 +1799,6 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
-
-                div {
-                    &:nth-child(4) {
-                        grid-column: 1;
-                    }
-                }
             }
         }
 
@@ -1814,6 +1806,12 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
+
+                div {
+                    &:nth-child(7) {
+                        grid-column: 1;
+                    }
+                }
             }
         }
 

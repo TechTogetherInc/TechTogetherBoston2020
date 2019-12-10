@@ -617,7 +617,6 @@ header {
 
 .get-involved-container .buttons div:first-child {
   background-color: #0025F8;
-  margin-left: 0;
 }
 
 .get-involved-container .buttons div:nth-child(2) {
@@ -927,36 +926,36 @@ header {
 .sponsor-container .top-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 28% 28% 28%;
-      grid-template-columns: 28% 28% 28%;
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
   -ms-grid-rows: 20em;
       grid-template-rows: 20em;
-  grid-column-gap: 2%;
+  grid-column-gap: 10%;
   grid-row-gap: 2em;
   text-align: center;
-}
-
-.sponsor-container .top-sponsors .grid div:nth-child(4) {
-  -ms-grid-column: 2;
-  grid-column: 2;
 }
 
 .sponsor-container .mid-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 22% 22% 22%;
-      grid-template-columns: 22% 22% 22%;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
   -ms-grid-rows: 12em 12em;
       grid-template-rows: 12em 12em;
   grid-row-gap: 2em;
   grid-column-gap: 5%;
 }
 
+.sponsor-container .mid-sponsors .grid div:nth-child(7) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
 .sponsor-container .low-sponsors .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 15% 15% 15%;
-      grid-template-columns: 15% 15% 15% 15%;
+  -ms-grid-columns: 17% 17% 17% 17%;
+      grid-template-columns: 17% 17% 17% 17%;
   -ms-grid-rows: 7em 7em;
       grid-template-rows: 7em 7em;
   grid-row-gap: 2em;
@@ -1809,14 +1808,14 @@ footer .hashtag {
         grid-template-rows: minmax(5em, 12em);
     margin: 2em 0;
   }
-  .sponsor-container .top-sponsors .grid div:nth-child(4) {
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
   .sponsor-container .mid-sponsors .grid {
     -ms-grid-rows: minmax(5em, 12em);
         grid-template-rows: minmax(5em, 12em);
     margin: 2em 0;
+  }
+  .sponsor-container .mid-sponsors .grid div:nth-child(7) {
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
   .sponsor-container .low-sponsors .grid {
     -ms-grid-rows: minmax(5em, 10em);

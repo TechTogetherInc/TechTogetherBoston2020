@@ -905,11 +905,6 @@ header {
             grid-row-gap: 2em;
             grid-column-gap: 5%;
 
-            div {
-                &:nth-child(7) {
-                    grid-column: 2;
-                }
-            }
         }
     }
 
@@ -1807,11 +1802,6 @@ footer {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
 
-                div {
-                    &:nth-child(7) {
-                        grid-column: 1;
-                    }
-                }
             }
         }
 

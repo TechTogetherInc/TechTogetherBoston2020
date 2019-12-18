@@ -946,11 +946,6 @@ header {
   grid-column-gap: 5%;
 }
 
-.sponsor-container .mid-sponsors .grid div:nth-child(7) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
 .sponsor-container .low-sponsors .grid {
   display: -ms-grid;
   display: grid;
@@ -1812,10 +1807,6 @@ footer .hashtag {
     -ms-grid-rows: minmax(5em, 12em);
         grid-template-rows: minmax(5em, 12em);
     margin: 2em 0;
-  }
-  .sponsor-container .mid-sponsors .grid div:nth-child(7) {
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .sponsor-container .low-sponsors .grid {
     -ms-grid-rows: minmax(5em, 10em);

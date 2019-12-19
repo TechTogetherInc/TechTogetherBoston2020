@@ -918,6 +918,14 @@ header {
         }
     }
 
+    .spark {
+        grid-column: 2;
+
+        img {
+            width: 10em;
+        }
+    }
+
     .title-sponsor {
         display: flex;
         flex-flow: column;
@@ -1809,6 +1817,14 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 10em);
                 margin: 2em 0 5em 0;
+            }
+        }
+
+        .spark {
+            grid-column: 1;
+
+            img {
+                width: 10em;
             }
         }
 

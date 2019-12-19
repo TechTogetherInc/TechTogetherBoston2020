@@ -915,14 +915,16 @@ header {
             grid-template-rows: 7em 7em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
-        }
-    }
 
-    .spark {
-        grid-column: 2;
+            div {
+                &:nth-child(9) {
+                    grid-column: 2;
 
-        img {
-            width: 10em;
+                    img {
+                        width: 10em;
+                    }
+                }
+            }
         }
     }
 
@@ -1817,14 +1819,12 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 10em);
                 margin: 2em 0 5em 0;
-            }
-        }
 
-        .spark {
-            grid-column: 1;
-
-            img {
-                width: 10em;
+                div {
+                    &:nth-child(9) {
+                        grid-column: 1;
+                    }
+                }
             }
         }
 

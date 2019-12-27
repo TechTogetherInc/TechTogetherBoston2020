@@ -983,6 +983,93 @@ header {
   margin: 0;
 }
 
+.sponsor-container .carousel a {
+  margin: 0;
+}
+
+.sponsor-container .job-section {
+  margin: 5em 0 10em 0;
+  padding: 0 0 0 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsor-container .job-section p {
+  color: #000C54;
+}
+
+.sponsor-container .job-section a {
+  float: none;
+  text-decoration: underline;
+  color: #000C54;
+  font-weight: 600;
+}
+
+.sponsor-container .job-section li {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.sponsor-container .job-section img {
+  width: 100%;
+}
+
+.sponsor-container .job-section .carousel-container,
+.sponsor-container .job-section .sponsor-logos {
+  width: 50%;
+}
+
+.sponsor-container .job-section .carousel {
+  width: 100%;
+}
+
+.sponsor-container .job-section .sponsor-logos,
+.sponsor-container .job-section .carousel {
+  padding: 2em;
+}
+
+.sponsor-container .job-section .carousel {
+  height: auto;
+  padding: 0;
+}
+
+.sponsor-container .job-section .carousel a {
+  width: 10%;
+}
+
+.sponsor-container .job-section .carousel-inner,
+.sponsor-container .job-section .carousel-item {
+  height: auto;
+  margin: 0;
+}
+
+.sponsor-container .job-section .description-section {
+  background-color: rgba(128, 140, 251, 0.2);
+  padding: 5em 10%;
+  min-height: 30em;
+}
+
+.sponsor-container .job-section .hidden {
+  display: none;
+}
+
+.sponsor-container .sponsor-section-title {
+  padding: 0 5%;
+  margin: 5em 0 0 0;
+}
+
+.sponsor-container .sponsor-section-title h1 {
+  color: #000C54;
+  font-weight: 600;
+}
+
 footer {
   background-color: #000C54;
   color: #FFF;

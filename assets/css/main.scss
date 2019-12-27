@@ -4,6 +4,7 @@ $blue: #52D9F6;
 $red: #E73F33;
 $dark-blue: #000C54;
 $ocean-blue: #0025F8;
+$light-purple: rgba(128, 140, 251, 0.2);
 $button-radius: 100px;
 
 body {
@@ -735,6 +736,7 @@ header {
 
 }
 
+
 .sponsor-container {
     margin: 0 0 5em 0;
 
@@ -940,6 +942,90 @@ header {
         }
     }
 
+    .carousel {
+        a {
+            margin: 0;
+        }
+    }
+
+    .job-section {
+        margin: 5em 0 10em 0;
+        padding: 0 0 0 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: $dark-blue;
+        }
+
+        a {
+            float: none;
+            text-decoration: underline;
+            color: $dark-blue;
+            font-weight: 600;
+        }
+
+        li {
+            height: 1em;
+            width: 1em;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .carousel-container,
+        .sponsor-logos {
+            width: 50%;
+        }
+
+        .carousel {
+            width: 100%;
+        }
+
+        .sponsor-logos,
+        .carousel {
+            padding: 2em;
+        }
+
+        .carousel {
+            height: auto;
+            padding: 0;
+
+            a {
+                width: 10%;
+            }
+        }
+
+        .carousel-inner,
+        .carousel-item {
+            height: auto;
+            margin: 0;
+        }
+
+        .description-section {
+            background-color: $light-purple;
+            padding: 5em 10%;
+            min-height: 30em;
+        }
+
+        .hidden{
+            display: none;
+        }
+    }
+
+    .sponsor-section-title {
+        padding: 0 5%;
+        margin: 5em 0 0 0;
+
+        h1 {
+            color: $dark-blue;
+            font-weight: 600;
+        }
+    }
 }
 
 

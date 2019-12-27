@@ -1520,6 +1520,230 @@ footer .hashtag {
 }
 
 /********************* Attend Page *********************/
+.general-header-container {
+  padding: 0 5%;
+  margin: 0 0 5em 0;
+}
+
+.general-header-container h1 {
+  font-weight: 600;
+  color: #000C54;
+}
+
+.general-header-container .bar-sm {
+  width: 3em;
+  height: .35em;
+  background-color: #FD7361;
+  margin: 1em 0 1.5em 0;
+}
+
+.info-container {
+  padding: 0 5%;
+  font-size: 1.25em;
+}
+
+.info-container span {
+  font-weight: 600;
+}
+
+.info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-container li {
+  margin: .5em 0;
+}
+
+.info-container li:before {
+  content: "\2605";
+  margin-right: 1em;
+}
+
+.info-container .horizontal-line {
+  width: 5px;
+  height: 100%;
+}
+
+.info-container .left {
+  padding: 2em 2em;
+  margin: 0 2em 0 0;
+  width: 40%;
+}
+
+.info-container .right {
+  width: 50%;
+}
+
+.prehacks-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 3em 0;
+}
+
+.prehacks-info h4 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.prehacks-info .left {
+  background-color: #0AA895;
+  color: #FFF;
+}
+
+.prehacks-info .right {
+  color: #0AA895;
+}
+
+.hacker-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 3em 0;
+}
+
+.hacker-info h4 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.hacker-info .left {
+  background-color: #C4C4C4;
+  color: #6B7373;
+}
+
+.signup-container {
+  padding: 0 5%;
+  color: #000C54;
+  scrollbar-color: #E73F33;
+}
+
+.signup-container span {
+  color: #808cFB;
+  font-weight: 600;
+}
+
+.signup-container h5 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.signup-container .line {
+  margin: 5em 0;
+  width: 95%;
+  height: 1px;
+  background-color: #6B7373;
+}
+
+.signup-container .container-fluid {
+  overflow-x: auto;
+}
+
+.signup-container .scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+  border-radius: 10em;
+}
+
+.signup-container .scroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.signup-container .scroll::-webkit-scrollbar-thumb {
+  border-radius: 10em;
+  background-color: #808cFB;
+}
+
+.signup-container .card {
+  padding: 2em 5%;
+  min-height: 35em;
+}
+
+.signup-container .card-divider {
+  height: 1px;
+  width: 100%;
+  margin: 2em 0;
+  background-color: #6B7373;
+}
+
+.signup-container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.signup-container .button-container div {
+  width: 60%;
+  margin: 2em 0;
+  background-color: #808cFB;
+}
+
+.signup-container .button-container p {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: .5em 0;
+  color: #FFF;
+  margin: 0;
+}
+
+.signup-container .button-container a {
+  text-align: center;
+  display: inline;
+  width: 100%;
+}
+
+.signup-container .button-container a:hover {
+  text-decoration: none;
+}
+
+.contact-info-container {
+  padding: 0 5%;
+  margin: 3em 0;
+}
+
+.contact-info-container .line {
+  margin: 2em 0;
+  width: 100%;
+  height: 1px;
+  background-color: #6B7373;
+}
+
+.contact-info-container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contact-info-container p {
+  width: 50%;
+  text-align: end;
+}
+
+.contact-info-container a {
+  text-decoration: underline;
+  color: #000;
+}
+
 .faq-container {
   margin: 5em 0;
   padding: 0 5%;
@@ -2000,6 +2224,40 @@ footer .hashtag {
     -webkit-column-gap: 3%;
             column-gap: 3%;
   }
+  .info-container {
+    padding: 0 10%;
+  }
+  .prehacks-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prehacks-info .left,
+  .prehacks-info .right {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .hacker-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hacker-info .left,
+  .hacker-info .right {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .signup-container {
+    padding: 0 10%;
+  }
+  .contact-info-container {
+    padding: 0 10%;
+  }
+  .contact-info-container p {
+    width: 80%;
+  }
   footer {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -2080,6 +2338,12 @@ footer .hashtag {
     -webkit-column-gap: 5%;
             column-gap: 5%;
   }
+  .contact-info-container p {
+    width: 60%;
+  }
+  .signup-container .card {
+    min-height: 40em;
+  }
 }
 
 /* Hamburger Menu*/
@@ -2119,7 +2383,7 @@ footer .hashtag {
         justify-content: space-around;
   }
   nav .navbar-collapse li {
-    height: 25vh;
+    height: 20vh;
     border-bottom: solid #555353 1px;
   }
   nav .navbar-collapse li a {

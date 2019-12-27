@@ -1539,7 +1539,7 @@ footer {
             }
         }
     }
-    
+
 }
 
 .contact-info-container {
@@ -2263,6 +2263,12 @@ footer {
         }
     }
 
+    .signup-container {
+        .card {
+            min-height: 40em;
+        }
+    }
+
 }
 
 /* Hamburger Menu*/
@@ -2312,7 +2318,7 @@ footer {
 
         .navbar-collapse {
             li {
-                height: 25vh;
+                height: 20vh;
                 border-bottom: solid rgb(85, 83, 83) 1px;
 
 

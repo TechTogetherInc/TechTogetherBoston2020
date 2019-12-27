@@ -2251,6 +2251,9 @@ footer .hashtag {
   .contact-info-container p {
     width: 60%;
   }
+  .signup-container .card {
+    min-height: 40em;
+  }
 }
 
 /* Hamburger Menu*/
@@ -2290,7 +2293,7 @@ footer .hashtag {
         justify-content: space-around;
   }
   nav .navbar-collapse li {
-    height: 25vh;
+    height: 20vh;
     border-bottom: solid #555353 1px;
   }
   nav .navbar-collapse li a {

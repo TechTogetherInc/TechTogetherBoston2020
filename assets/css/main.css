@@ -1050,6 +1050,12 @@ header {
   margin: 0;
 }
 
+.sponsor-container .job-section .carousel-control-prev-icon,
+.sponsor-container .job-section .carousel-control-next-icon {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
 .sponsor-container .job-section .description-section {
   background-color: rgba(128, 140, 251, 0.2);
   padding: 5em 10%;
@@ -1922,6 +1928,21 @@ footer .hashtag {
   .sponsor-container .title-sponsor p {
     font-size: 1.25em;
   }
+  .sponsor-container .job-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .sponsor-container .job-section .carousel-container,
+  .sponsor-container .job-section .sponsor-logos {
+    width: 100%;
+  }
+  .sponsor-container .job-section .sponsor-logos {
+    min-height: 20em;
+  }
 }
 
 /* phone only */
@@ -2139,6 +2160,9 @@ footer .hashtag {
   }
   .sponsor-container .col-sm-12 {
     padding: 0;
+  }
+  .sponsor-container .job-section .sponsor-logos {
+    min-height: 10em;
   }
   .mission-container {
     -webkit-box-orient: vertical;

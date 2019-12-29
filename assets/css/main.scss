@@ -1009,13 +1009,18 @@ header {
             margin: 0;
         }
 
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(50%);
+        }
+
         .description-section {
             background-color: $light-purple;
             padding: 5em 10%;
             min-height: 30em;
         }
 
-        .hidden{
+        .hidden {
             display: none;
         }
     }
@@ -1859,8 +1864,23 @@ footer {
                 font-size: 1.25em;
             }
         }
-    }
 
+        .job-section {
+            flex-flow: column;
+            width: 100%;
+            padding: 0 5%;
+
+            .carousel-container,
+            .sponsor-logos {
+                width: 100%;
+            }
+
+            .sponsor-logos{
+                min-height: 20em;
+            }
+
+        }
+    }
 }
 
 /* phone only */
@@ -2124,6 +2144,13 @@ footer {
 
         .col-sm-12 {
             padding: 0;
+        }
+
+        .job-section {
+            .sponsor-logos{
+                min-height: 10em;
+            }
+
         }
 
     }

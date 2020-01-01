@@ -1021,6 +1021,10 @@ header {
   width: 100%;
 }
 
+.sponsor-container .job-section .sponsor-logos img:nth-child(1) {
+  display: block;
+}
+
 .sponsor-container .job-section .carousel-container,
 .sponsor-container .job-section .sponsor-logos {
   width: 50%;
@@ -1064,6 +1068,16 @@ header {
 
 .sponsor-container .job-section .hidden {
   display: none;
+}
+
+.sponsor-container .job-section .list-reset li {
+  height: auto;
+  width: auto;
+  background-color: transparent;
+}
+
+.sponsor-container .job-section .list-reset li a {
+  font-weight: 500;
 }
 
 .sponsor-container .sponsor-section-title {

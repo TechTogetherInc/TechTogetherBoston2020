@@ -980,6 +980,14 @@ header {
             width: 100%;
         }
 
+        .sponsor-logos {
+            img {
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+
         .carousel-container,
         .sponsor-logos {
             width: 50%;
@@ -1022,6 +1030,18 @@ header {
 
         .hidden {
             display: none;
+        }
+
+        .list-reset {
+            li {
+                height: auto;
+                width: auto;
+                background-color: transparent;
+
+                a {
+                    font-weight: 500;
+                }
+            }
         }
     }
 
@@ -1875,7 +1895,7 @@ footer {
                 width: 100%;
             }
 
-            .sponsor-logos{
+            .sponsor-logos {
                 min-height: 20em;
             }
 
@@ -2147,7 +2167,7 @@ footer {
         }
 
         .job-section {
-            .sponsor-logos{
+            .sponsor-logos {
                 min-height: 10em;
             }
 

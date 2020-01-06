@@ -4,7 +4,11 @@ $blue: #52D9F6;
 $red: #E73F33;
 $dark-blue: #000C54;
 $ocean-blue: #0025F8;
+$light-purple: rgba(128, 140, 251, 0.2);
 $button-radius: 100px;
+$green: #0AA895;
+$gray:#C4C4C4;
+$gray2: #6B7373;
 
 body {
     font-family: Barlow !important;
@@ -605,7 +609,6 @@ header {
 
             &:first-child {
                 background-color: $ocean-blue;
-                margin-left: 0;
             }
 
             &:nth-child(2) {
@@ -735,6 +738,7 @@ header {
     }
 
 }
+
 
 .sponsor-container {
     margin: 0 0 5em 0;
@@ -890,37 +894,42 @@ header {
     .top-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 28% 28% 28%;
+            grid-template-columns: 30% 30%;
             grid-template-rows: 20em;
-            grid-column-gap: 2%;
+            grid-column-gap: 10%;
             grid-row-gap: 2em;
             text-align: center;
-
-            div {
-                &:nth-child(4) {
-                    grid-column: 2;
-                }
-            }
         }
     }
 
     .mid-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 22% 22% 22%;
+            grid-template-columns: 25% 25% 25%;
             grid-template-rows: 12em 12em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
+
         }
     }
 
     .low-sponsors {
         .grid {
             display: grid;
-            grid-template-columns: 15% 15% 15% 15%;
+            grid-template-columns: 17% 17% 17% 17%;
             grid-template-rows: 7em 7em;
             grid-row-gap: 2em;
             grid-column-gap: 5%;
+
+            div {
+                &:nth-child(9) {
+                    grid-column: 2;
+
+                    img {
+                        width: 10em;
+                    }
+                }
+            }
         }
     }
 
@@ -936,6 +945,115 @@ header {
         }
     }
 
+    .carousel {
+        a {
+            margin: 0;
+        }
+    }
+
+    .job-section {
+        margin: 5em 0 10em 0;
+        padding: 0 0 0 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: $dark-blue;
+        }
+
+        a {
+            float: none;
+            text-decoration: underline;
+            color: $dark-blue;
+            font-weight: 600;
+        }
+
+        li {
+            height: 1em;
+            width: 1em;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .sponsor-logos {
+            img {
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+
+        .carousel-container,
+        .sponsor-logos {
+            width: 50%;
+        }
+
+        .carousel {
+            width: 100%;
+        }
+
+        .sponsor-logos,
+        .carousel {
+            padding: 2em;
+        }
+
+        .carousel {
+            height: auto;
+            padding: 0;
+
+            a {
+                width: 10%;
+            }
+        }
+
+        .carousel-inner,
+        .carousel-item {
+            height: auto;
+            margin: 0;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(50%);
+        }
+
+        .description-section {
+            background-color: $light-purple;
+            padding: 5em 10%;
+            min-height: 30em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .list-reset {
+            li {
+                height: auto;
+                width: auto;
+                background-color: transparent;
+
+                a {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .sponsor-section-title {
+        padding: 0 5%;
+        margin: 5em 0 0 0;
+
+        h1 {
+            color: $dark-blue;
+            font-weight: 600;
+        }
+    }
 }
 
 
@@ -1005,7 +1123,7 @@ footer {
     .col3 {
         img {
             width: 100%;
-            max-height: 25em;
+            max-height: 28em;
             margin: 1em 0;
         }
 
@@ -1362,6 +1480,214 @@ footer {
 
 /********************* Attend Page *********************/
 
+.general-header-container {
+    padding: 0 5%;
+    margin: 0 0 5em 0;
+
+    h1 {
+        font-weight: 600;
+        color: $dark-blue;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
+    }
+}
+
+.info-container {
+    padding: 0 5%;
+    font-size: 1.25em;
+
+    span {
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: .5em 0;
+    }
+
+    li:before {
+        content: "\2605";
+        margin-right: 1em;
+    }
+
+    .horizontal-line {
+        width: 5px;
+        height: 100%;
+    }
+
+    .left {
+        padding: 2em 2em;
+        margin: 0 2em 0 0;
+        width: 40%;
+    }
+
+    .right {
+        width: 50%;
+    }
+}
+
+.prehacks-info {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3em 0;
+
+    h4 {
+        margin-bottom: 1em;
+        font-weight: 600;
+    }
+
+    .left {
+        background-color: $green;
+        color: #FFF;
+    }
+
+    .right {
+        color: $green;
+    }
+
+}
+
+.hacker-info {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3em 0;
+
+    h4 {
+        margin-bottom: 1em;
+        font-weight: 600;
+    }
+
+    .left {
+        background-color: $gray;
+        color: $gray2;
+    }
+}
+
+.signup-container {
+    padding: 0 5%;
+    color: $dark-blue;
+    scrollbar-color: $red;
+
+    span {
+        color: $purple;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 1.25em;
+        font-weight: 600;
+    }
+
+    .line {
+        margin: 5em 0;
+        width: 95%;
+        height: 1px;
+        background-color: $gray2;
+    }
+
+    .container-fluid {
+        overflow-x: auto;
+    }
+
+    .scroll::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+        border-radius: 10em;
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10em;
+        background-color: $purple;
+    }
+
+    .card {
+        padding: 2em 5%;
+        min-height: 35em;
+    }
+
+    .card-divider {
+        height: 1px;
+        width: 100%;
+        margin: 2em 0;
+        background-color: $gray2;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        div {
+            width: 60%;
+            margin: 2em 0;
+            background-color: $purple;
+        }
+
+        p {
+            font-size: 1.5em;
+            font-weight: 600;
+            padding: .5em 0;
+            color: #FFF;
+            margin: 0;
+        }
+
+        a {
+            text-align: center;
+            display: inline;
+            width: 100%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.contact-info-container {
+    padding: 0 5%;
+    margin: 3em 0;
+
+    .line {
+        margin: 2em 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray2;
+    }
+
+    .text-container {
+        display: flex;
+        align-items: flex-end;
+        ;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    p {
+        width: 50%;
+        text-align: end;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+}
+
 .faq-container {
     margin: 5em 0;
     padding: 0 5%;
@@ -1443,7 +1769,6 @@ footer {
     }
 
     .background-image {
-
         .navbar-toggler-icon {
             background-image: url(/assets/imgs/nav-hamburger.png);
         }
@@ -1559,13 +1884,27 @@ footer {
                 font-size: 1.25em;
             }
         }
-    }
 
+        .job-section {
+            flex-flow: column;
+            width: 100%;
+            padding: 0 5%;
+
+            .carousel-container,
+            .sponsor-logos {
+                width: 100%;
+            }
+
+            .sponsor-logos {
+                min-height: 20em;
+            }
+
+        }
+    }
 }
 
 /* phone only */
 @media screen and (max-width: 500px) {
-
     header {
         margin-bottom: 3em;
     }
@@ -1587,7 +1926,6 @@ footer {
     .navbar {
         padding: 0 5%;
     }
-
 
     .headline {
         h2 {
@@ -1732,7 +2070,6 @@ footer {
                 margin: 1em 0;
                 width: 100%;
             }
-
         }
 
         .col-sm-12 {
@@ -1801,12 +2138,6 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
-
-                div {
-                    &:nth-child(4) {
-                        grid-column: 1;
-                    }
-                }
             }
         }
 
@@ -1814,6 +2145,7 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 12em);
                 margin: 2em 0;
+
             }
         }
 
@@ -1821,11 +2153,24 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 10em);
                 margin: 2em 0 5em 0;
+
+                div {
+                    &:nth-child(9) {
+                        grid-column: 1;
+                    }
+                }
             }
         }
 
         .col-sm-12 {
             padding: 0;
+        }
+
+        .job-section {
+            .sponsor-logos {
+                min-height: 10em;
+            }
+
         }
 
     }
@@ -1917,6 +2262,42 @@ footer {
         .grid {
             grid-template-columns: 30% 30% 30%;
             column-gap: 3%;
+        }
+    }
+
+    .info-container {
+        padding: 0 10%;
+    }
+
+    .prehacks-info {
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+            margin: 1em 0;
+        }
+    }
+
+    .hacker-info {
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+            margin: 1em 0;
+        }
+    }
+
+    .signup-container {
+        padding: 0 10%;
+    }
+
+    .contact-info-container {
+        padding: 0 10%;
+
+        p {
+            width: 80%;
         }
     }
 
@@ -2014,6 +2395,18 @@ footer {
         }
     }
 
+    .contact-info-container {
+        p {
+            width: 60%;
+        }
+    }
+
+    .signup-container {
+        .card {
+            min-height: 40em;
+        }
+    }
+
 }
 
 /* Hamburger Menu*/
@@ -2063,7 +2456,7 @@ footer {
 
         .navbar-collapse {
             li {
-                height: 25vh;
+                height: 20vh;
                 border-bottom: solid rgb(85, 83, 83) 1px;
 
 

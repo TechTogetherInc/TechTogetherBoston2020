@@ -1,0 +1,385 @@
+// TT Colors
+$pink: #FD7361;
+$purple: #808cFB;
+$blue: #52D9F6;
+$red: #E73F33;
+// other colors
+$dark-blue: #0025F8;
+$dark-red: #FF1E2D;
+$gray: #d3d3d3;
+$gray2: #929292;
+
+body {
+    background-color: #F4F4F4;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 20% auto;
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 3em 0;
+}
+
+a {
+    color: #000;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.side-navigation {
+    position: fixed;
+    background-color: #FFF;
+    width: 20%;
+    height: 100vh;
+    box-shadow: 0 0 1em $gray;
+    overflow-wrap: break-word;
+
+    img {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    nav {
+        height: 100%;
+        padding: 10vh 0 0 0;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+
+        i,
+        a {
+            font-size: 1.15em;
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    li {
+        padding: 1.5em 0 1.5em 10%;
+
+        &:hover {
+            background-color: $gray;
+        }
+    }
+}
+
+.main-section {
+    width: 100%;
+    padding: 2em 10%;
+    margin: 5em 0;
+    grid-column-start: 2;
+
+    h3 {
+        margin: 1em 0;
+    }
+}
+
+.card {
+    box-shadow: 0 0 1em $gray;
+}
+
+.navbar {
+    display: none;
+    padding: 0;
+    margin: 0 0 2em 0;
+
+    a {
+        text-align: right;
+    }
+
+    img {
+        display: none;
+    }
+
+    .navbar-toggler {
+        padding-top: 0;
+    }
+}
+
+.home {
+    margin: 0;
+
+    span {
+        font-weight: 600;
+    }
+
+    .top-cards {
+        .card {
+            padding: 1em 10% 1em 20%;
+            margin: 1em 0;
+        }
+
+        p {
+            margin: 0;
+
+            &:first-child {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .bottom-cards {
+        span {
+            font-size: .75em;
+            color: $gray2;
+        }
+
+        p {
+            &:last-child {
+                float: right;
+            }
+        }
+
+        .card {
+            margin: 1em 0;
+            padding: 1.5em 5%;
+        }
+
+        .special-card {
+            background-color: $purple;
+
+            p,
+            h5,
+            span {
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.schedule {
+    td {
+        padding: 2em .75em;
+    }
+
+    tr {
+        &:nth-child(1n) {
+            td {
+                &:first-child {
+                    border-left: 1em solid $dark-blue;
+                }
+            }
+        }
+
+        &:nth-child(2n) {
+            td {
+                &:first-child {
+                    border-left: 1em solid $pink;
+                }
+            }
+        }
+
+        &:nth-child(3n) {
+            td {
+                &:first-child {
+                    border-left: 1em solid $purple;
+                }
+            }
+        }
+
+        &:nth-child(4n) {
+            td {
+                &:first-child {
+                    border-left: 1em solid $dark-red;
+                }
+            }
+        }
+
+    }
+
+    .buttons {
+        margin: 2em 0;
+    }
+
+    .table {
+        background-color: #FFF;
+    }
+
+    .col {
+        padding-left: 0;
+
+        button {
+            width: 100%;
+            color: #000;
+            padding: 1em;
+            font-weight: 600;
+            border: 1px #000 solid;
+            background-color: #FFF;
+            text-align: center;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    #day1-btn {
+        border: none;
+        background-color: $purple;
+        color: #FFF;
+    }
+
+    #day2-tbl,
+    #day3-tbl {
+        display: none;
+    }
+
+}
+
+.map {
+    img {
+        width: 100%;
+    }
+
+    .map-container {
+        div {
+            margin-bottom: 5em;
+        }
+    }
+}
+
+.sponsors {
+    .card {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        min-height: 8em;
+        margin-bottom: 2em;
+        padding: 1em;
+
+
+        img {
+            max-width: 100%;
+            max-height: 6em;
+        }
+
+        p {
+            &:nth-child(1) {
+                font-weight: 600;
+                font-size: 1.25em;
+            }
+
+            &:nth-child(2) {
+                margin: 0;
+            }
+
+        }
+    }
+
+    .sponsor-logos {
+        margin: 2em 0;
+    }
+
+}
+
+.challenges {
+    .sub-title {
+        margin: 2em 0 0 0;
+    }
+
+    .prize-section {
+        margin: 0 0 2em 0;
+
+        .row {
+            margin: 1em 0;
+        }
+
+        .col-lg-3 {
+            margin: 1em 0;
+        }
+    }
+
+    .card {
+        padding: 1em;
+
+        p {
+            font-size: 1.15em;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.faq {
+    span {
+        font-size: .75em;
+        color: $gray2;
+    }
+
+    p {
+        &:last-child {
+            float: right;
+        }
+    }
+
+    .card {
+        margin: 1em 0;
+        padding: 1.5em 5%;
+    }
+}
+
+
+
+// phone
+@media screen and (max-width: 500px) {
+    .sponsors {
+        .card {
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            row-gap: 1em;
+
+            p {
+                &:nth-child(1) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// breakpoint for bootstrap md
+@media screen and (max-width: 767px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    .main-section {
+        grid-column-start: 1;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            display: block;
+            width: 13em;
+        }
+    }
+
+    .side-navigation {
+        display: none;
+    }
+
+    .main-section {
+        margin-top: 2.5em;
+    }
+}

@@ -923,8 +923,6 @@ header {
 
             div {
                 &:nth-child(9) {
-                    grid-column: 2;
-
                     img {
                         width: 10em;
                     }
@@ -2153,12 +2151,6 @@ footer {
             .grid {
                 grid-template-rows: minmax(5em, 10em);
                 margin: 2em 0 5em 0;
-
-                div {
-                    &:nth-child(9) {
-                        grid-column: 1;
-                    }
-                }
             }
         }
 

@@ -1027,6 +1027,7 @@ header {
 
 .sponsor-container .job-section .carousel {
   width: 100%;
+  height: 40em;
 }
 
 .sponsor-container .job-section .sponsor-logos,
@@ -1035,7 +1036,6 @@ header {
 }
 
 .sponsor-container .job-section .carousel {
-  height: auto;
   padding: 0;
 }
 
@@ -1045,7 +1045,6 @@ header {
 
 .sponsor-container .job-section .carousel-inner,
 .sponsor-container .job-section .carousel-item {
-  height: auto;
   margin: 0;
 }
 
@@ -1058,7 +1057,7 @@ header {
 .sponsor-container .job-section .description-section {
   background-color: rgba(128, 140, 251, 0.2);
   padding: 5em 10%;
-  min-height: 30em;
+  height: 100%;
 }
 
 .sponsor-container .job-section .hidden {
@@ -1663,6 +1662,7 @@ footer .hashtag {
 
 .signup-container .scroll::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #F5F5F5;
   border-radius: 10em;
 }
@@ -1716,7 +1716,6 @@ footer .hashtag {
 .signup-container .button-container a {
   text-align: center;
   display: inline;
-  width: 100%;
 }
 
 .signup-container .button-container a:hover {
@@ -2168,6 +2167,9 @@ footer .hashtag {
   }
   .sponsor-container .job-section .sponsor-logos {
     min-height: 10em;
+  }
+  .sponsor-container .job-section .carousel {
+    height: 55em;
   }
   .mission-container {
     -webkit-box-orient: vertical;

@@ -1758,6 +1758,25 @@ footer .hashtag {
   color: #000;
 }
 
+.travel-container {
+  margin: 5em 0;
+  padding: 0 5%;
+}
+
+.travel-container h1 {
+  display: inline-block;
+  color: #000C54;
+  font-weight: 600;
+  margin: 0;
+}
+
+.travel-container .bar-sm {
+  width: 3em;
+  height: .35em;
+  background-color: #FD7361;
+  margin: 1em 0 1.5em 0;
+}
+
 .faq-container {
   margin: 5em 0;
   padding: 0 5%;

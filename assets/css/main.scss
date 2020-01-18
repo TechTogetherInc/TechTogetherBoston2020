@@ -1686,6 +1686,25 @@ footer {
     }
 }
 
+.travel-container {
+    margin: 5em 0;
+    padding: 0 5%;
+
+    h1 {
+        display: inline-block;
+        color: $dark-blue;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .bar-sm {
+        width: 3em;
+        height: .35em;
+        background-color: $pink;
+        margin: 1em 0 1.5em 0;
+    }
+}
+
 .faq-container {
     margin: 5em 0;
     padding: 0 5%;

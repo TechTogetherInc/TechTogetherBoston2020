@@ -1758,25 +1758,6 @@ footer .hashtag {
   color: #000;
 }
 
-.travel-container {
-  margin: 5em 0;
-  padding: 0 5%;
-}
-
-.travel-container h1 {
-  display: inline-block;
-  color: #000C54;
-  font-weight: 600;
-  margin: 0;
-}
-
-.travel-container .bar-sm {
-  width: 3em;
-  height: .35em;
-  background-color: #FD7361;
-  margin: 1em 0 1.5em 0;
-}
-
 .faq-container {
   margin: 5em 0;
   padding: 0 5%;
@@ -2433,7 +2414,7 @@ footer .hashtag {
         justify-content: space-around;
   }
   nav .navbar-collapse li {
-    height: 20vh;
+    height: 25vh;
     border-bottom: solid #555353 1px;
   }
   nav .navbar-collapse li a {

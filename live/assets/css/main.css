@@ -468,6 +468,10 @@ a:hover {
   padding: 1.5em 5%;
 }
 
+.faq .card a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 500px) {
   .main-section h3 {
     margin-top: 0;

@@ -530,6 +530,10 @@ a {
     .card {
         margin: 1em 0;
         padding: 1.5em 5%;
+
+        a{
+            text-decoration: underline;
+        }
     }
 }
 

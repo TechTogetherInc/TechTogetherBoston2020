@@ -24,3 +24,21 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#toggler4').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup4').html();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#toggler5').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup5').html();
+        }
+    });
+});

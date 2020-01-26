@@ -94,8 +94,8 @@ a:hover {
   position: fixed;
   -ms-grid-columns: (16.67%)[6];
       grid-template-columns: repeat(6, 16.67%);
-  -ms-grid-rows: 15vh;
-      grid-template-rows: 15vh;
+  -ms-grid-rows: 12vh;
+      grid-template-rows: 12vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -219,6 +219,10 @@ a:hover {
   padding: 2em .75em;
 }
 
+.schedule td a {
+  text-decoration: underline;
+}
+
 .schedule tr:nth-child(1) td:first-child, .schedule tr:nth-child(5) td:first-child, .schedule tr:nth-child(9) td:first-child, .schedule tr:nth-child(13) td:first-child, .schedule tr:nth-child(17) td:first-child, .schedule tr:nth-child(21) td:first-child, .schedule tr:nth-child(25) td:first-child, .schedule tr:nth-child(29) td:first-child, .schedule tr:nth-child(33) td:first-child, .schedule tr:nth-child(37) td:first-child {
   border-left: 1em solid #0025F8;
 }
@@ -260,6 +264,10 @@ a:hover {
 
 .schedule .col button:focus {
   outline: 0;
+}
+
+.schedule .customPopup {
+  display: none;
 }
 
 .schedule #day1-btn {

@@ -72,7 +72,8 @@
                     <tbody>
                         <tr>
                             <td>8:30-9:30pm</td>
-                            <td>How the Web Works (DNS, SSL, HTTP)</td>
+                            <td>How the Web Works (DNS, SSL, HTTP)
+                            </td>
                             <td>AWS</td>
                             <td>Friends Lounge</td>
                         </tr>
@@ -153,7 +154,15 @@
                         </tr>
                         <tr>
                             <td>11:00-12:00pm</td>
-                            <td>Resume Workshop</td>
+                            <td>
+                                Resume Workshop
+                                <a href="#" id="toggler3" class="popover-toggle" data-trigger="focus"
+                                    title="Resume Workshop" onclick="return false;">more info</a>
+                                <div class="customPopup" id="customPopup3">
+                                    <p>Join this resume workshop to get advice and feedback from engineers and
+                                        recruiters on how to address resume writing. </p>
+                                </div>
+                            </td>
                             <td>Bloomberg</td>
                             <td>Conference Room 1</td>
                         </tr>
@@ -231,7 +240,31 @@
                         </tr>
                         <tr>
                             <td>4:00-5:00pm</td>
-                            <td>Blockchain</td>
+                            <td>Blockchain Basics
+                                <a href="#" id="toggler1" class="popover-toggle" data-trigger="focus"
+                                    title="Blockchain Basics" onclick="return false;">more info</a>
+                                <div class="customPopup" id="customPopup1">
+                                    <p>Blockchain is changing the way business conduct transactions. This secure,
+                                        distributed, and open technology is lowering costs, speeding up processes,
+                                        building a new level of trust in secure interactions and transforming lives for
+                                        those in need. Bring your laptop, energy and questions to this interactive
+                                        workshop!</p>
+                                    <p>The workshop will:</p>
+                                    <ul>
+                                        <li>Provide an introduction to Blockchain concepts and technology</li>
+                                        <li>Show how Blockchain impacts social and environmental causes and YOUR life
+                                        </li>
+                                        <li>Engage you via hands-on exercises (using your laptop)</li>
+                                        <li>Connect you with amazing women from Dell Technologies who are passionate
+                                            about how Blockchain can change the world</li>
+                                    </ul>
+                                    <p>Presenters:</p>
+                                    <ul>
+                                        <li>Bhanuja Nagore, Data Scientist, Dell Technologies</li>
+                                        <li>Semirah Dolan, Pre-Sales Engineer, Dell Technologies</li>
+                                    </ul>
+                                </div>
+                            </td>
                             <td>Dell</td>
                             <td>Conference Room 2</td>
                         </tr>
@@ -242,10 +275,28 @@
                             <td>Black Box Theatre</td>
                         </tr>
                         <tr>
+                            <td>5:00-6:00pm</td>
+                            <td>
+                                TechTogether: Intro to Processing
+                                <a href="#" id="toggler2" class="popover-toggle" data-trigger="focus"
+                                    title="Intro to Processing" onclick="return false;">more info</a>
+                                <div class="customPopup" id="customPopup2">
+                                    <p>Come learn how to turn code into art in this interactive, beginner friendly
+                                        workshop hosted by TechTogether’s Director of Partnerships: Sarah Chou! We will
+                                        be learning Processing basics - shapes, colors, sizes etc, and how to iterate on
+                                        that knowledge to create generative art. No programming experience necessary
+                                        (but Java backgrounds help!) Recommended that you have Processing downloaded and
+                                        installed ahead of time.</p>
+                                </div>
+                            </td>
+                            <td>Sarah (TT Organizer)</td>
+                            <td>Conference Room 1e</td>
+                        </tr>
+                        <tr>
                             <td>8:00-9:00pm</td>
                             <td>Mini Event - Karaoke</td>
                             <td>Slalom</td>
-                            <td>TBA</td>
+                            <td>Black Box Theatre</td>
                         </tr>
                     </tbody>
                 </table>
@@ -275,27 +326,27 @@
             <div class="mobile-nav">
                 <a href="index.html">
                     <i class="far fa-bell"></i>
-                    <p>Announcements</p>
+                    <!-- <p>Announcements</p> -->
                 </a>
                 <a href="schedule.html">
                     <i class="far fa-calendar-plus"></i>
-                    <p>Schedule</p>
+                    <!-- <p>Schedule</p> -->
                 </a>
                 <a href="map.html">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>Map</p>
+                    <!-- <p>Map</p> -->
                 </a>
                 <a href="sponsors.html">
                     <i class="far fa-handshake"></i>
-                    <p>Sponsors</p>
+                    <!-- <p>Sponsors</p> -->
                 </a>
                 <a href="challenges.html">
                     <i class="fas fa-award"></i>
-                    <p>Challenges &amp; Prizes</p>
+                    <!-- <p>Challenges &amp; Prizes</p> -->
                 </a>
                 <a href="faq.html">
                     <i class="far fa-comments"></i>
-                    <p>FAQ</p>
+                    <!-- <p>FAQ</p> -->
                 </a>
             </div>
 
@@ -312,6 +363,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="assets/js/schedule.js"></script>
+    <script src="assets/js/popup-custom.js"></script>
+
 </body>
 
 </html>

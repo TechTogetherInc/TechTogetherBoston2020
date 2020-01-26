@@ -101,7 +101,7 @@ a {
     display: none;
     position: fixed;
     grid-template-columns: repeat(6, 16.67%);
-    grid-template-rows: 15vh;
+    grid-template-rows: 12vh;
     align-items: center;
     justify-items: center;
     background-color: $purple;
@@ -210,6 +210,10 @@ a {
 
     td {
         padding: 2em .75em;
+
+        a{
+            text-decoration: underline;
+        }
     }
 
     tr {
@@ -309,6 +313,10 @@ a {
                 outline: 0;
             }
         }
+    }
+
+    .customPopup{
+        display: none;
     }
 
     #day1-btn {

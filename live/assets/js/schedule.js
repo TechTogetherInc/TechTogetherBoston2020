@@ -1,3 +1,5 @@
+$("[data-toggle=popover]").popover(); // initialize bootstrap popovers 
+
 const btn1 = document.getElementById("day1-btn");
 const btn2 = document.getElementById("day2-btn");
 const btn3 = document.getElementById("day3-btn");

@@ -237,6 +237,7 @@ a:hover {
 
 .schedule .table {
   background-color: #FFF;
+  width: 100%;
 }
 
 .schedule .col {
@@ -303,19 +304,6 @@ a:hover {
   max-height: 6em;
 }
 
-.sponsors .card p {
-  text-align: center;
-}
-
-.sponsors .card p:nth-child(1) {
-  font-weight: 600;
-  font-size: 1.15em;
-}
-
-.sponsors .card p:nth-child(2) {
-  margin: 0;
-}
-
 .sponsors .card .grid {
   display: -ms-grid;
   display: grid;
@@ -328,6 +316,19 @@ a:hover {
   width: 100%;
 }
 
+.sponsors .card .grid p {
+  text-align: center;
+}
+
+.sponsors .card .grid p:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.15em;
+}
+
+.sponsors .card .grid p:nth-child(2) {
+  margin: 0;
+}
+
 .sponsors .card .link-container {
   margin: .5em 0;
   width: 100%;
@@ -336,10 +337,6 @@ a:hover {
 
 .sponsors .card .link-container a {
   color: #808cFB;
-}
-
-.sponsors .card .collapse p {
-  font-weight: normal;
 }
 
 .sponsors .card .collapse a {
@@ -356,16 +353,20 @@ a:hover {
   overflow-x: hidden;
 }
 
-.challenges a:active {
-  text-decoration: none;
+.challenges a {
+  text-decoration: underline;
 }
 
-.challenges a:hover {
+.challenges a:active {
   text-decoration: none;
 }
 
 .challenges ol {
   padding: 0 0 0 1em;
+}
+
+.challenges .link-container a {
+  text-decoration: none;
 }
 
 .challenges .sub-title {

@@ -211,6 +211,10 @@ a:hover {
   color: #FFF;
 }
 
+.schedule {
+  padding: 2em 5% 7em 5%;
+}
+
 .schedule td {
   padding: 2em .75em;
 }
@@ -408,14 +412,16 @@ a:hover {
 
 .challenges .card p {
   font-size: 1.1em;
-  font-weight: 600;
   text-align: center;
   margin: 0;
 }
 
+.challenges .title {
+  font-weight: 600;
+}
+
 .challenges .collapse p {
   font-size: 1em;
-  font-weight: normal;
   text-align: left;
   margin: 0 0 .5em 0;
 }

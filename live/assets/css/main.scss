@@ -206,6 +206,8 @@ a {
 }
 
 .schedule {
+    padding: 2em 5% 7em 5%; // little wider for the schedule table
+
     td {
         padding: 2em .75em;
     }
@@ -421,8 +423,8 @@ a {
         padding: 0 0 0 1em;
     }
 
-    .link-container{
-        a{
+    .link-container {
+        a {
             text-decoration: none;
         }
     }
@@ -461,18 +463,18 @@ a {
 
         p {
             font-size: 1.1em;
-            font-weight: 600;
             text-align: center;
             margin: 0;
         }
+    }
 
-
+    .title {
+        font-weight: 600;
     }
 
     .collapse {
         p {
             font-size: 1em;
-            font-weight: normal;
             text-align: left;
             margin: 0 0 .5em 0;
         }

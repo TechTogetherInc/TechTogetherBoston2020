@@ -120,19 +120,13 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: .5em;
+  padding: .25em;
   color: #FFF;
 }
 
-.mobile-nav p {
-  font-size: .75em;
-  margin: 0;
-  word-wrap: break-word;
-  word-break: break-all;
-}
-
 .mobile-nav i {
-  margin: 0 0 .25em 0;
+  margin: 0;
+  font-size: 1.25em;
 }
 
 .home {
@@ -211,12 +205,9 @@ a:hover {
   color: #FFF;
 }
 
-.schedule {
-  padding: 2em 5% 7em 5%;
-}
-
 .schedule td {
   padding: 2em .75em;
+  word-break: break-word;
 }
 
 .schedule td a {
@@ -241,11 +232,15 @@ a:hover {
 
 .schedule .buttons {
   margin: 2em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em;
 }
 
 .schedule .table {
   background-color: #FFF;
   width: 100%;
+  table-layout: fixed;
 }
 
 .schedule .col {
@@ -365,10 +360,6 @@ a:hover {
   overflow-x: hidden;
 }
 
-.challenges a {
-  text-decoration: underline;
-}
-
 .challenges a:active {
   text-decoration: none;
 }
@@ -424,6 +415,10 @@ a:hover {
   margin: 0;
 }
 
+.challenges .card a {
+  text-decoration: underline;
+}
+
 .challenges .title {
   font-weight: 600;
 }
@@ -475,6 +470,12 @@ a:hover {
 @media screen and (max-width: 500px) {
   .main-section h3 {
     margin-top: 0;
+  }
+  .schedule {
+    padding: 2em 0 7em 0;
+  }
+  .schedule .temp, .schedule .buttons, .schedule h3 {
+    padding: 0 10%;
   }
   .sponsors .card {
     -ms-grid-columns: 100%;

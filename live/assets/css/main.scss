@@ -9,15 +9,10 @@ $dark-red: #FF1E2D;
 $gray: #d3d3d3;
 $gray2: #929292;
 
-html{
-    overflow-x: hidden;
-}
-
 body {
     background-color: #F4F4F4;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
-    position: relative;
 }
 
 main {
@@ -92,7 +87,6 @@ a {
     max-width: 100%;
     padding: 2em 10% 7em 10%;
     grid-column-start: 2;
-    overflow: hidden;
 
     h3 {
         margin: 1em 0;

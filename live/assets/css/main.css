@@ -1,12 +1,7 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: #F4F4F4;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  position: relative;
 }
 
 main {
@@ -83,7 +78,6 @@ a:hover {
   padding: 2em 10% 7em 10%;
   -ms-grid-column: 2;
       grid-column-start: 2;
-  overflow: hidden;
 }
 
 .main-section h3 {

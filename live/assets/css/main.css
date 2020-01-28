@@ -1,7 +1,12 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #F4F4F4;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
+  position: relative;
 }
 
 main {
@@ -11,7 +16,6 @@ main {
   height: 100vh;
   -ms-grid-columns: 20% auto;
       grid-template-columns: 20% auto;
-  overflow-x: hidden;
 }
 
 hr {

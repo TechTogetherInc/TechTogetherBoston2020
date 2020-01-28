@@ -11,6 +11,7 @@ main {
   height: 100vh;
   -ms-grid-columns: 20% auto;
       grid-template-columns: 20% auto;
+  overflow-x: hidden;
 }
 
 hr {

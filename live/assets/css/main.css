@@ -235,6 +235,7 @@ a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 1em;
+  background-color: #FFF;
 }
 
 .schedule .table {
@@ -399,19 +400,12 @@ a:hover {
 }
 
 .challenges .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-height: 10em;
   padding: 2em;
 }
 
 .challenges .card p {
   font-size: 1.1em;
-  text-align: center;
   margin: 0;
 }
 
@@ -421,6 +415,7 @@ a:hover {
 
 .challenges .title {
   font-weight: 600;
+  text-align: center;
 }
 
 .challenges .collapse p {

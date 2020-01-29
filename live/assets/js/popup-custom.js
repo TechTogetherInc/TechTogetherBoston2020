@@ -42,3 +42,22 @@ $(document).ready(function () {
         }
     });
 });
+
+
+$(document).ready(function () {
+    $('#toggler6').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup6').html();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#toggler7').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup7').html();
+        }
+    });
+});

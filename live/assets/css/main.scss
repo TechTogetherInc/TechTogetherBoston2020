@@ -207,7 +207,6 @@ a {
 }
 
 .schedule {
-
     td {
         padding: 2em .75em;
         word-break: break-word;
@@ -293,6 +292,7 @@ a {
         margin: 2em 0;
         position: sticky;
         top: 1em;
+        background-color: #FFF;
     }
 
     .table {
@@ -467,14 +467,13 @@ a {
     }
 
     .card {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         min-height: 10em;
         padding: 2em;
 
         p {
             font-size: 1.1em;
-            text-align: center;
             margin: 0;
         }
 
@@ -485,6 +484,7 @@ a {
 
     .title {
         font-weight: 600;
+        text-align: center;
     }
 
     .collapse {

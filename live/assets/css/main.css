@@ -164,7 +164,7 @@ a:hover {
   width: 65%;
 }
 
-.home .top-cards .card p {
+.home .top-cards .card a p {
   display: inline;
 }
 
@@ -489,7 +489,9 @@ a:hover {
   .schedule {
     padding: 2em 0 7em 0;
   }
-  .schedule .temp, .schedule .buttons, .schedule h3 {
+  .schedule .temp,
+  .schedule .buttons,
+  .schedule h3 {
     padding: 0 10%;
   }
   .sponsors .card {

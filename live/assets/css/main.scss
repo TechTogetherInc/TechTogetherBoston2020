@@ -158,8 +158,10 @@ a {
                 }
             }
 
-            p{
-                display: inline;
+            a {
+                p {
+                    display: inline;
+                }
             }
 
         }
@@ -210,7 +212,7 @@ a {
         }
     }
 
-    .card-link{
+    .card-link {
         text-decoration: underline;
     }
 
@@ -356,11 +358,11 @@ a {
         margin-top: 2em;
     }
 
-    img{
+    img {
         width: 100%;
     }
 
-    iframe{
+    iframe {
         width: 100%;
         height: 30em;
     }
@@ -371,7 +373,7 @@ a {
         }
     }
 
-    .gmap_canvas{
+    .gmap_canvas {
         width: 100%;
     }
 }
@@ -463,7 +465,7 @@ a {
             text-decoration: none;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 color: $purple;
                 text-decoration: underline;
             }
@@ -517,8 +519,8 @@ a {
         text-align: center;
     }
 
-    .modal-body{
-        a{
+    .modal-body {
+        a {
             text-decoration: underline;
         }
     }
@@ -591,10 +593,12 @@ a {
         }
     }
 
-    .schedule{
+    .schedule {
         padding: 2em 0 7em 0;
 
-        .temp, .buttons, h3{
+        .temp,
+        .buttons,
+        h3 {
             padding: 0 10%;
         }
 

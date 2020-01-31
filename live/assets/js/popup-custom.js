@@ -61,3 +61,30 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#toggler8').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup8').html();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#toggler9').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup9').html();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#toggler10').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup10').html();
+        }
+    });
+});

@@ -164,6 +164,10 @@ a:hover {
   width: 65%;
 }
 
+.home .top-cards .card p {
+  display: inline;
+}
+
 .home .top-cards .col-lg-4 {
   min-height: 1em;
   margin: 1em 0;

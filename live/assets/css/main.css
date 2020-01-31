@@ -205,6 +205,10 @@ a:hover {
   color: #FFF;
 }
 
+.home .card-link {
+  text-decoration: underline;
+}
+
 .schedule td {
   padding: 2em .75em;
   word-break: break-word;

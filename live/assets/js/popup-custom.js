@@ -88,3 +88,22 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#toggler11').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup11').html();
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('#toggler12').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup12').html();
+        }
+    });
+});

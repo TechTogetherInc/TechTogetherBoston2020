@@ -302,7 +302,7 @@ a {
     .buttons {
         margin: 2em 0;
         position: sticky;
-        top: 1em;
+        top: 0em;
         background-color: #FFF;
     }
 
@@ -515,6 +515,12 @@ a {
     .title {
         font-weight: 600;
         text-align: center;
+    }
+
+    .modal-body{
+        a{
+            text-decoration: underline;
+        }
     }
 
     // .collapse {

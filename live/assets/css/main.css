@@ -242,7 +242,7 @@ a:hover {
   margin: 2em 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 1em;
+  top: 0em;
   background-color: #FFF;
 }
 
@@ -438,6 +438,10 @@ a:hover {
 .challenges .title {
   font-weight: 600;
   text-align: center;
+}
+
+.challenges .modal-body a {
+  text-decoration: underline;
 }
 
 .challenges .container-fluid {

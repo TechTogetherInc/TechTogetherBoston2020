@@ -194,6 +194,10 @@ a:hover {
   float: right;
 }
 
+.home .bottom-cards a {
+  text-decoration: underline;
+}
+
 .home .bottom-cards .card {
   margin: 1em 0;
   padding: 1.5em 5%;

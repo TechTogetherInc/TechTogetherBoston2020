@@ -107,3 +107,12 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#toggler13').popover({
+        html: true,
+        content: function () {
+            return $('#customPopup13').html();
+        }
+    });
+});

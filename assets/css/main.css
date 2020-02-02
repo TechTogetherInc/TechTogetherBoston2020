@@ -1070,8 +1070,23 @@ header {
   background-color: transparent;
 }
 
-.sponsor-container .job-section .list-reset li a {
+.sponsor-container .job-section .list-reset p {
+  margin: 0;
+}
+
+.sponsor-container .job-section .list-reset a {
+  cursor: pointer;
   font-weight: 500;
+}
+
+.sponsor-container .job-section .list-reset a:hover {
+  text-decoration: underline;
+}
+
+.sponsor-container .modal-body a {
+  margin: 0;
+  float: none;
+  color: #808cFB;
 }
 
 .sponsor-container .sponsor-section-title {

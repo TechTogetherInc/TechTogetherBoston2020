@@ -1036,11 +1036,28 @@ header {
                 height: auto;
                 width: auto;
                 background-color: transparent;
+            }
 
-                a {
-                    font-weight: 500;
+            p{
+                margin: 0;
+            }
+
+            a{
+                cursor: pointer;
+                font-weight: 500;
+
+                &:hover{
+                    text-decoration: underline;
                 }
             }
+        }
+    }
+
+    .modal-body{
+        a{
+            margin: 0;
+            float: none;
+            color: $purple;
         }
     }
 
@@ -1054,6 +1071,7 @@ header {
         }
     }
 }
+
 
 
 footer {

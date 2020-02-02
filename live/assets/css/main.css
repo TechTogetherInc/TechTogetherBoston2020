@@ -164,6 +164,10 @@ a:hover {
   width: 65%;
 }
 
+.home .top-cards .card a p {
+  display: inline;
+}
+
 .home .top-cards .col-lg-4 {
   min-height: 1em;
   margin: 1em 0;
@@ -190,6 +194,10 @@ a:hover {
   float: right;
 }
 
+.home .bottom-cards a {
+  text-decoration: underline;
+}
+
 .home .bottom-cards .card {
   margin: 1em 0;
   padding: 1.5em 5%;
@@ -203,6 +211,10 @@ a:hover {
 .home .bottom-cards .special-card h5,
 .home .bottom-cards .special-card span {
   color: #FFF;
+}
+
+.home .card-link {
+  text-decoration: underline;
 }
 
 .schedule td {
@@ -234,7 +246,7 @@ a:hover {
   margin: 2em 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 1em;
+  top: 0em;
   background-color: #FFF;
 }
 
@@ -285,8 +297,21 @@ a:hover {
   margin-top: 2em;
 }
 
+.map img {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 30em;
+}
+
 .map .map-container div {
   margin-bottom: 5em;
+}
+
+.map .gmap_canvas {
+  width: 100%;
 }
 
 .sponsors {
@@ -347,11 +372,6 @@ a:hover {
   color: #808cFB;
 }
 
-.sponsors .card .collapse a {
-  font-size: 1em;
-  text-decoration: underline;
-}
-
 .sponsors .sponsor-logos {
   margin: 2em 0;
 }
@@ -371,6 +391,12 @@ a:hover {
 
 .challenges .link-container a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.challenges .link-container a:hover {
+  color: #808cFB;
+  text-decoration: underline;
 }
 
 .challenges .sub-title {
@@ -418,10 +444,8 @@ a:hover {
   text-align: center;
 }
 
-.challenges .collapse p {
-  font-size: 1em;
-  text-align: left;
-  margin: 0 0 .5em 0;
+.challenges .modal-body a {
+  text-decoration: underline;
 }
 
 .challenges .container-fluid {
@@ -469,7 +493,9 @@ a:hover {
   .schedule {
     padding: 2em 0 7em 0;
   }
-  .schedule .temp, .schedule .buttons, .schedule h3 {
+  .schedule .temp,
+  .schedule .buttons,
+  .schedule h3 {
     padding: 0 10%;
   }
   .sponsors .card {
